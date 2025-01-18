@@ -10,4 +10,10 @@ export default defineConfig({
         }),
         vue(),
     ],
+    server: {
+        https: true, // Ensure HTTPS is enabled in dev
+        hmr: {
+            host: "https://friigemate-yp6ck.kinsta.app/", // Specify your production domain
+        },
+    },
 });
