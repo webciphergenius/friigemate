@@ -10,10 +10,18 @@ export default defineConfig({
         }),
         vue(),
     ],
+    build: {
+        manifest: true,
+        rollupOptions: {
+            output: {
+                publicPath: "/build/", // Ensure this matches your hosting setup
+            },
+        },
+    },
     server: {
         https: true, // Ensure HTTPS is enabled in dev
         hmr: {
-            host: "https://friigemate-yp6ck.kinsta.app/", // Specify your production domain
+            host: "friigemate-yp6ck.kinsta.app", // Use your domain
         },
     },
 });
