@@ -11,17 +11,12 @@ export default defineConfig({
         vue(),
     ],
     build: {
-        manifest: true,
+        manifest: true, // Ensure the manifest is generated
+        outDir: "public/build", // Set the correct output directory
         rollupOptions: {
             output: {
-                publicPath: "/build/", // Ensure this matches your hosting setup
+                publicPath: "/build/", // Ensure public path matches Laravel expectations
             },
-        },
-    },
-    server: {
-        https: true, // Ensure HTTPS is enabled in dev
-        hmr: {
-            host: "friigemate-yp6ck.kinsta.app", // Use your domain
         },
     },
 });
