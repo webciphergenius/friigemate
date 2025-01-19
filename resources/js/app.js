@@ -1,10 +1,10 @@
-import "./bootstrap";
 import { createApp } from "vue";
+import HomePage from "./components/HomePage.vue";
 
-const app = createApp({});
-
-// Example: Add a Vue component
-import ExampleComponent from "./components/ExampleComponent.vue";
-app.component("example-component", ExampleComponent);
+const app = createApp({
+    components: {
+        HomePage,
+    },
+});
 
 app.mount("#app");

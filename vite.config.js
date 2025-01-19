@@ -10,6 +10,11 @@ export default defineConfig({
         }),
         vue(),
     ],
+    resolve: {
+        alias: {
+            vue: "vue/dist/vue.esm-bundler.js",
+        },
+    },
     build: {
         manifest: true, // Ensure the manifest is generated
         outDir: "public/build", // Set the correct output directory
