@@ -15,13 +15,4 @@ export default defineConfig({
             vue: "vue/dist/vue.esm-bundler.js",
         },
     },
-    build: {
-        manifest: true, // Ensure the manifest is generated
-        outDir: "public/build", // Set the correct output directory
-        rollupOptions: {
-            output: {
-                // Ensure public path matches Laravel expectations
-            },
-        },
-    },
 });
