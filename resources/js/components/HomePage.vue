@@ -1,6 +1,6 @@
 <template>
     <div class="text-center">
-        <h1>Welcome to My Laravel + Vue App</h1>
+        <h1>Welcome to My Vue App</h1>
         <p>This is a sample homepage built with Laravel and Vue.js.</p>
     </div>
 </template>
