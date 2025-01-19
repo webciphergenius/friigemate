@@ -15,7 +15,7 @@ export default defineConfig({
         outDir: "public/build", // Set the correct output directory
         rollupOptions: {
             output: {
-                publicPath: "/build/", // Ensure public path matches Laravel expectations
+                // Ensure public path matches Laravel expectations
             },
         },
     },
