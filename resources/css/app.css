@@ -1,3 +1,429 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+h2 {
+    font-size: 48px !important;
+    font-weight: 700 !important;
+}
+h3 {
+    font-size: 34px !important;
+    font-weight: 600 !important;
+}
+header.mainHead {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+div#navbarSupportedContent {
+    flex-grow: unset;
+    gap: 40px;
+}
+ul.list-inline.socialLinks {
+    margin: 0;
+}
+div#navbarSupportedContent a.nav-link {
+    color: #fff;
+    padding: 0 25px;
+}
+a.navbar-brand {
+    position: relative;
+}
+a.navbar-brand img {
+    position: relative;
+    z-index: 1;
+}
+a.navbar-brand:before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    background: url(../images/weblogobg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+nav.navbar.navbar-expand-lg {
+    padding: 0;
+}
+.pgHero {
+    background: url(../images/hero-bg01img.png);
+    background-size: cover;
+    background-position: top center;
+    padding: 220px 0 50px;
+}
+h1 {
+    font-size: 3.2rem !important;
+}
+.sameSpace {
+    padding: 120px 0;
+}
+a.yellowBtn {
+    background: #f8a407;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 16px 25px;
+    display: inline-flex;
+    border-radius: 4px;
+}
+ul.logisticList {
+    padding-left: 1.5rem;
+}
+ul.logisticList ::marker {
+    color: #f8a407;
+    font-size: 23px;
+}
+section.partnerMain:before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 70%;
+    background: #f0f0f0;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.partnerBlock {
+    padding-top: 60px;
+}
+section.partnerMain {
+    position: relative;
+    padding: 80px 0;
+}
+section.logisticsMain {
+    padding-bottom: 120px;
+}
+section.featuredMate .rounded img {
+    height: 60px;
+}
+section.howWorks {
+    background: url(../images/darksecbg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.howWorks {
+    background: url(../images/darksecbg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+}
+section.howWorks .secHeading {
+    color: #fff;
+}
+.mainWorkBlock {
+    background: #fff;
+    padding: 80px 60px;
+    max-width: 78%;
+    margin: 50px auto 0;
+    position: relative;
+    z-index: 99;
+}
+.mainWorkBlock:before {
+    content: "";
+    position: absolute;
+    width: 115%;
+    height: 88%;
+    background: #fff;
+    opacity: 0.6;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+section.skilledMain {
+    padding: 80px 0;
+}
+.count-up p {
+    margin: 0;
+}
+.count-up {
+    padding: 40px 20px;
+}
+.count-up p.counter-count {
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 1.23;
+    margin: 8px 0 5px;
+}
+.count-up strong {
+    display: block;
+}
+.b-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.b-right {
+    border-right: 1px solid #ccc;
+}
+figure.statinfoimg {
+    padding-left: 3rem;
+}
+.infoStat .row.align-items-center {
+    padding: 40px 0;
+}
+section.teamSec {
+    background: #f0f0f0;
+    padding: 80px 0;
+}
+section.testimonialsSec {
+    padding: 80px 0;
+}
+section.infoStat {
+    padding-bottom: 80px;
+}
+.teamBlock img {
+    width: 100%;
+}
+.teamBlock {
+    background: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.teamBlock p {
+    color: #888888;
+}
+.teamBlock ul.list-inline {
+    margin: 0;
+}
+.teamBlock a {
+    color: #999999;
+    font-size: 21px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+.slider-item img {
+    margin: 0 auto;
+}
+.slider-item {
+    padding: 30px;
+}
+.wrapperSlider {
+    padding-top: 40px;
+}
+.my-slider .slick-slide {
+    opacity: 0.2;
+}
+.my-slider .slick-slide.slick-active.slick-center {
+    opacity: 1;
+}
+section.solutionSec {
+    background: url(../images/solution-imgbg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.solutionSec * {
+    color: #fff;
+}
+.sameSpacing {
+    padding: 80px 0;
+}
+section.pressSec.sameSpacing {
+    background: #f0f0f0;
+}
+section.pressSec ul {
+    padding: 40px 0;
+}
+section.pressSec li.list-inline-item {
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    padding: 40px 0;
+    background: #fff;
+    margin: 0 10px;
+}
+.newsBlock {
+    padding: 40px 0;
+}
+ul.newsBottom a {
+    color: #000;
+    font-weight: 500;
+}
+ul.newsBottom {
+    margin: 0;
+    border-top: 1px solid rgb(0 0 0 / 10%);
+    padding: 12px 0;
+}
+.newData p {
+    color: #333333;
+    padding-bottom: 20px;
+}
+span.newsMeta {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    padding: 5px 0 10px;
+}
+.newData h4 {
+    font-size: 18px;
+}
+form.newsletterForm {
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    margin: 40px auto 0;
+}
+section.newsletterSec {
+    background: url(../images/newsletterbg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.newsletterSec * {
+    color: #fff;
+}
+form.newsletterForm input {
+    padding: 10px 0;
+}
+form.newsletterForm * {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+form.newsletterForm input#email {
+    flex-basis: 90%;
+}
+form.newsletterForm input[type="submit"] {
+    flex-basis: 10%;
+    text-align: right;
+    color: transparent;
+    background: url(../images/submitBtn.png) no-repeat;
+    background-size: auto;
+    background-position: right;
+}
+form.newsletterForm input#email::placeholder {
+    color: #fff;
+}
+ul.footer-list li {
+    list-style: none;
+    padding: 5px 0;
+}
+ul.footer-list {
+    padding: 0;
+    margin: 0;
+}
+.footerApp img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+.footerWidget.web-list,
+.footerApp,
+.footerForm {
+    margin-top: 6rem;
+}
+form.footerContact {
+    box-shadow: 0 1px 15px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+}
+form.footerContact h5 img {
+    padding-right: 10px;
+}
+form.footerContact h5 {
+    color: #fff;
+    font-size: 16px;
+    background: #000;
+    padding: 14px 25px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 500;
+}
+form.footerContact input {
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    width: 100%;
+    padding: 15px;
+}
+form.footerContact textarea {
+    border: none;
+    padding: 15px;
+    width: 100%;
+    height: 120px;
+}
+form.footerContact input[type="submit"] {
+    width: auto;
+    background: #f8a407;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 25px;
+    display: inline-flex;
+    border-radius: 4px;
+}
+.row.newsBlock {
+    padding-bottom: 0;
+}
+.contactSubmit.text-end {
+    padding: 0 20px 20px;
+}
+.row.bottom-footer {
+    border-top: 1px solid #ededed;
+    padding: 20px 0;
+    margin: 20px 0 0;
+}
+.row.bottom-footer * {
+    color: #000;
+    text-decoration: none;
+}
+.bottomLeft a {
+    color: #f8a407 !important;
+}
+ul.list-inline.info-List li.list-inline-item {
+    line-height: 14px;
+}
+ul.list-inline.info-List li.list-inline-item:last-child {
+    border-left: 1px solid #000;
+    padding-left: 15px;
+}
+footer.mainfooter {
+    padding: 20px 0 40px;
+}
+ul.bulletList {
+    padding-left: 1.5rem;
+}
+ul.bulletList ::marker {
+    color: #f8a407;
+    font-size: 23px;
+}
+.slider-data li:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #f8a407;
+    border-radius: 100%;
+    margin-top: 8px;
+    margin-left: -16px;
+}
+.slider-data li {
+    list-style: none;
+    position: relative;
+    padding: 2px 0;
+}
+.portfolio-item img {
+    width: 100%;
+}
+.portfolio-slider .slick-track {
+    padding: 3rem 0;
+}
+.portfolio-slider .slick-center:before {
+    content: "";
+    position: absolute;
+    width: 114%;
+    height: 114%;
+    background: url(../images/iphone-cover.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+.portfolio-slider .slick-slide {
+    padding: 20px 0;
+    opacity: 0.2;
+}
+.portfolio-slider .slick-center {
+    position: relative;
+    opacity: 1;
+}
+.container-fluid .wrapperSlider {
+    overflow: hidden;
+}
