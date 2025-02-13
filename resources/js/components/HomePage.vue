@@ -12,27 +12,26 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              About
+                            <a class="nav-link" href="#home" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Home
                             </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Screens</a></li>
-                              <li><a class="dropdown-item" href="#">Features</a></li>
-                              <li><a class="dropdown-item" href="#">Our Team</a></li>
-                              <li><a class="dropdown-item" href="#">Blog</a></li>
-                            </ul>
+                           
+                      </li>
+                     
+                      <li class="nav-item">
+                        <a class="nav-link" href="#screen">Screens</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Screens</a>
+                        <a class="nav-link" href="#feature">Features</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#team">Our Team</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Our Team</a>
+                        <a class="nav-link" href="#myblg">Blog</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#footer">Contact</a>
                       </li>
                     </ul>
                     <ul class="list-inline socialLinks">
@@ -48,7 +47,7 @@
         
     </header>
     
-    <div class="wrapperMain">
+    <div class="wrapperMain" id="home">
         <section class="pgHero">
             <div class="container">
                 <div class="row align-items-center">
@@ -64,8 +63,8 @@
                     <div class="col-sm-6">
                         <div class="heroContent text-end text-white">
                             <h1 class="fw-bold">
-                                General Overview "Redefining Freight
-                                Management."
+                                Redefining Freight
+                                Management
                             </h1>
                             <p>
                                 Effortless logistics, smarter solutions, and
@@ -295,7 +294,7 @@
             </div>
             <div class="container-fluid">
                 <div class="wrapperSlider">
-                    <div class="portfolio-slider">
+                    <div class="portfolio-slider" id="screen">
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
@@ -413,7 +412,7 @@
             </div>
         </section>
 
-        <section class="featuredMate">
+        <section class="featuredMate" id="feature">
             <div class="container text-center py-5">
                 <h2 class="fw-bold">Features In This App</h2>
                 <p class="text-muted">
@@ -768,7 +767,7 @@
             </div>
         </section>
 
-        <section class="teamSec">
+        <section class="teamSec" id="team">
             <div class="container">
                 <div class="secHeading text-center">
                     <h2>Our Executive Team</h2>
@@ -1397,7 +1396,7 @@
             </div>
         </section>
 
-        <section class="newsSec sameSpacing">
+        <section class="newsSec sameSpacing" id="myblg">
             <div class="container">
                 <div class="secHeading text-center">
                     <h2>Our Latest News</h2>
@@ -1552,7 +1551,7 @@
             </div>
         </section>
     </div>
-    <footer class="mainfooter">
+    <footer class="mainfooter" id ="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-9">
