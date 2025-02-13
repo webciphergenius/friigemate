@@ -660,9 +660,6 @@
                 </div>
             </div>
         </section>
-
-        
-
         <section class="teamSec" id="team">
             <div class="container">
                 <div class="secHeading text-center">
