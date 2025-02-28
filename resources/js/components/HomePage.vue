@@ -5,7 +5,7 @@
             
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                  <a class="navbar-brand fw-bold" href="/"><img src="../../images/webLogo.png" alt="brand-logo"></a>
+                  <a class="navbar-brand fw-bold" href="/"><img src="../../images/logo.png" alt="brand-logo"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -54,7 +54,7 @@
                     <div class="col-sm-6">
                         <figure class="m-0">
                             <img
-                                src="../../images/hero-01img.png"
+                                src="../../images/hero-7-img.png.png"
                                 alt="hero-image"
                                 class="w-75"
                             />
@@ -156,7 +156,7 @@
                     <div class="col-sm-6">
                         <figure class="logisticsFigure text-center m-0">
                             <img
-                                src="../../images/logistics-img.png"
+                                src="../../images/smater01img.png"
                                 alt="logistics-image"
                                 class="w-75"
                             />
@@ -245,7 +245,7 @@
                     <div class="col-sm-6">
                         <figure class="partnerFigure text-center m-0">
                             <img
-                                src="../../images/partner-img.png"
+                                src="../../images/partner-sec01img.png"
                                 alt="partner-image"
                                 class="w-45"
                             />
@@ -298,7 +298,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/portfolio01.png"
+                                    src="../../images/explore01img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -306,7 +306,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/portfolio02.png"
+                                    src="../../images/Driver/explore01img (1).png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -314,7 +314,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/portfolio03.png"
+                                    src="../../images/Driver/explore02img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -322,7 +322,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/portfolio04.png"
+                                    src="../../images/Driver/explore03img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -330,7 +330,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/portfolio05.png"
+                                    src="../../images/Driver/explore06img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -338,7 +338,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/portfolio06.png"
+                                    src="../../images/Driver/explore05img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -346,7 +346,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/portfolio07.png"
+                                    src="../../images/Driver/explore06img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -354,59 +354,17 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/portfolio01.png"
+                                    src="../../images/Driver/explore07img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
                         </div>
-                        <div class="portfolio-item text-center">
-                            <figure>
-                                <img
-                                    src="../../images/portfolio02.png"
-                                    alt="portfolio-image"
-                                />
-                            </figure>
-                        </div>
-                        <div class="portfolio-item text-center">
-                            <figure>
-                                <img
-                                    src="../../images/portfolio03.png"
-                                    alt="portfolio-image"
-                                />
-                            </figure>
-                        </div>
-                        <div class="portfolio-item text-center">
-                            <figure>
-                                <img
-                                    src="../../images/portfolio04.png"
-                                    alt="portfolio-image"
-                                />
-                            </figure>
-                        </div>
-                        <div class="portfolio-item text-center">
-                            <figure>
-                                <img
-                                    src="../../images/portfolio05.png"
-                                    alt="portfolio-image"
-                                />
-                            </figure>
-                        </div>
-                        <div class="portfolio-item text-center">
-                            <figure>
-                                <img
-                                    src="../../images/portfolio06.png"
-                                    alt="portfolio-image"
-                                />
-                            </figure>
-                        </div>
-                        <div class="portfolio-item text-center">
-                            <figure>
-                                <img
-                                    src="../../images/portfolio07.png"
-                                    alt="portfolio-image"
-                                />
-                            </figure>
-                        </div>
+                        
+                       
+                        
+                        
+                       
+                       
                     </div>
                 </div>
             </div>
@@ -595,7 +553,7 @@
                         <div class="col-sm-6">
                             <figure class="logisticsFigure text-center m-0">
                                 <img
-                                    src="../../images/image-10.png"
+                                    src="../../images/Driver/how-works-img.png"
                                     alt="logistics-image"
                                     class="w-75"
                                 />
@@ -612,7 +570,7 @@
                     <div class="col-sm-6">
                         <figure class="logisticsFigure text-center m-0">
                             <img
-                                src="../../images/image-13.png"
+                                src="../../images/image-13.png.png"
                                 alt="logistics-image"
                                 class="w-75"
                             />
@@ -1106,7 +1064,7 @@
                     <div class="col-sm-6">
                         <figure class="logisticsFigure text-center m-0">
                             <img
-                                src="../../images/solution-img01.png"
+                                src="../../images/Driver/logistics-img.png"
                                 alt="logistics-image"
                                 class="w-50"
                             />

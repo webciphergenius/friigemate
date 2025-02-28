@@ -427,3 +427,7 @@ ul.bulletList ::marker {
 .container-fluid .wrapperSlider {
     overflow: hidden;
 }
+/* Dev */
+a.navbar-brand.fw-bold img {
+    width: 150px;
+}
