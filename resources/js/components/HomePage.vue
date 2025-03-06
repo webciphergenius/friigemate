@@ -1,6 +1,6 @@
 <template>
       <header class="mainHead">
-   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
         <div class="container">
             
             <nav class="navbar navbar-expand-lg">
@@ -733,6 +733,130 @@
                             </figure>
                             <h5>Rich Silivianch</h5>
                             <p>Creative Director</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><i class="fa fa-facebook-f"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><i class="fa fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><img
+                                            src="../../images/socialIcon.png"
+                                            alt="social-icon"
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="teamBlock">
+                            <figure>
+                                <img
+                                    src="../../images/dummy-user.jpeg"
+                                    alt="team-image"
+                                />
+                            </figure>
+                            <h5>Peter Tysdale</h5>
+                            <p>Chief Financial Officer</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><i class="fa fa-facebook-f"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><i class="fa fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><img
+                                            src="../../images/socialIcon.png"
+                                            alt="social-icon"
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="teamBlock">
+                            <figure>
+                                <img
+                                    src="../../images/dummy-user.jpeg"
+                                    alt="team-image"
+                                />
+                            </figure>
+                            <h5>Michael Moskowitz</h5>
+                            <p>Operations Manager</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><i class="fa fa-facebook-f"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><i class="fa fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><img
+                                            src="../../images/socialIcon.png"
+                                            alt="social-icon"
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="teamBlock">
+                            <figure>
+                                <img
+                                    src="../../images/dummy-usergirl.jpg"
+                                    alt="team-image"
+                                />
+                            </figure>
+                            <h5>Jasmine Puranda</h5>
+                            <p>Business Development Consultant</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><i class="fa fa-facebook-f"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><i class="fa fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                        ><img
+                                            src="../../images/socialIcon.png"
+                                            alt="social-icon"
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="teamBlock">
+                            <figure>
+                                <img
+                                    src="../../images/dummy-user.jpeg"
+                                    alt="team-image"
+                                />
+                            </figure>
+                            <h5>Chief Operating Officer</h5>
+                            <p>Chief Operating Officer</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#"
