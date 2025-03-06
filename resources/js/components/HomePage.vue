@@ -634,12 +634,12 @@
                         <div class="teamBlock">
                             <figure>
                                 <img
-                                    src="../../images/team-1.jpg.png"
+                                    src="../../images/rick.png"
                                     alt="team-image"
                                 />
                             </figure>
-                            <h5>John Brown</h5>
-                            <p>Loremipsum</p>
+                            <h5>Richard Marthens</h5>
+                            <p>Chief Executive Officer/Founder</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#"
@@ -665,12 +665,12 @@
                         <div class="teamBlock">
                             <figure>
                                 <img
-                                    src="../../images/team-2.jpg.png"
+                                    src="../../images/doreen.jpg"
                                     alt="team-image"
                                 />
                             </figure>
-                            <h5>Hannah Harper</h5>
-                            <p>Loremipsum</p>
+                            <h5>Doreen Julye</h5>
+                            <p>Chief Marketing Officer</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#"
@@ -696,12 +696,12 @@
                         <div class="teamBlock">
                             <figure>
                                 <img
-                                    src="../../images/team-3.jpg.png"
+                                    src="../../images/Dev.png"
                                     alt="team-image"
                                 />
                             </figure>
-                            <h5>Matthew Anderson</h5>
-                            <p>Loremipsum</p>
+                            <h5>Devender Kumar</h5>
+                            <p>Chief Technology Officer</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#"
@@ -731,8 +731,8 @@
                                     alt="team-image"
                                 />
                             </figure>
-                            <h5>Megan Coleman</h5>
-                            <p>Loremipsum</p>
+                            <h5>Rich Silivianch</h5>
+                            <p>Creative Director</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#"
@@ -1201,51 +1201,7 @@
             </div>
         </section>
 
-        <section class="pressSec sameSpacing">
-            <div class="container text-center">
-                <div class="secHeading">
-                    <h2>Press About FreightMate™</h2>
-                    <p>
-                        FreightMate® is making waves in the logistics industry!
-                        Here's what leading <br />media outlets are saying about
-                        our innovative platform:
-                    </p>
-                </div>
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item">
-                        <img
-                            src="../../images/press-1.png.png"
-                            alt="press-icon"
-                        />
-                    </li>
-                    <li class="list-inline-item">
-                        <img
-                            src="../../images/press-2.png.png"
-                            alt="press-icon"
-                        />
-                    </li>
-                    <li class="list-inline-item">
-                        <img
-                            src="../../images/press-3.png.png"
-                            alt="press-icon"
-                        />
-                    </li>
-                    <li class="list-inline-item">
-                        <img
-                            src="../../images/press-4.png.png"
-                            alt="press-icon"
-                        />
-                    </li>
-                </ul>
-                <p>
-                    Discover why FreightMate is at the forefront of the
-                    logistics industry.
-                </p>
-                <a href="javascript:void(0)" class="webBtn yellowBtn"
-                    >What Our Clients Say</a
-                >
-            </div>
-        </section>
+        
 
         <section class="newsSec sameSpacing" id="myblg">
             <div class="container">
@@ -1409,7 +1365,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="footerWidget web-icon">
-                                <img src="../../images/webLogo.png" alt="footer-logo"></img>
+                                <img src="../../images/logo.png" alt="footer-logo" class="fadlo"></img>
                                 <p><strong>FreightMate®: Efficient. Reliable. Trusted.</strong><br>
                                 Transforming the logistics landscape, FreightMate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
                             </div>
