@@ -431,3 +431,15 @@ ul.bulletList ::marker {
 a.navbar-brand.fw-bold img {
     width: 150px;
 }
+.fadlo {
+    width: 150px;
+}
+.footerWidget.web-icon p {
+    padding-right: 4rem;
+}
+.teamBlock figure img {
+    border-radius: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: top;
+}
