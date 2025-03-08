@@ -306,6 +306,14 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
+                                    src="../../images/explore01-2img.png"
+                                    alt="portfolio-image"
+                                />
+                            </figure>
+                        </div>
+                        <div class="portfolio-item text-center">
+                            <figure>
+                                <img
                                     src="../../images/Driver/explore01img (1).png"
                                     alt="portfolio-image"
                                 />
@@ -727,7 +735,7 @@
                         <div class="teamBlock">
                             <figure>
                                 <img
-                                    src="../../images/team-4.jpg.png"
+                                    src="../../images/rich-photo.png"
                                     alt="team-image"
                                 />
                             </figure>
