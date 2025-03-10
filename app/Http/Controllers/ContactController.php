@@ -1,26 +1,32 @@
-<?php 
+<?php
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
 {
     public function store(Request $request)
     {
         // Validate the request
-        $validatedData = $request->validate([
+        $validator = Validator::make($request->all(), [
             'username' => 'required|string|max:255',
-            'email' => 'required|email',
-            'message' => 'required|string|max:1000'
+            'email' => 'required|email|max:255',
+            'message' => 'required|string',
         ]);
 
-        // Send an email
-        Mail::to('admin@example.com')->send(new ContactMail($validatedData));
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
 
-        // Return a JSON response
-        return response()->json(['message' => 'Your message has been sent successfully!'], 200);
+        // Process the data (e.g., save to database or send email)
+        // Example: Save to database
+        // Contact::create($request->all());
+
+        // Example: Send email
+         Mail::to('admin@example.com')->send(new ContactFormMail($request->all()));
+
+        return response()->json(['message' => 'Message sent successfully!'], 200);
     }
 }
 ?>
