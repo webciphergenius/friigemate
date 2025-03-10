@@ -1,6 +1,7 @@
 <template>
       <header class="mainHead">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
         <div class="container">
             
             <nav class="navbar navbar-expand-lg">
@@ -1478,15 +1479,17 @@
                         logistics.
                     </p>
                 </div>
-                <form action="#" method="post" class="newsletterForm d-flex">
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Your email address"
-                    />
-                    <input type="submit" value="Submit" />
-                </form>
+               <form @submit.prevent="subscribeToNewsletter" class="newsletterForm d-flex">
+      <input
+        type="email"
+        v-model="newsletterEmail"
+        placeholder="Your email address"
+        required
+      />
+      <input type="submit" value="Submit" />
+    </form>
+    <p v-if="newsletterSuccessMessage" class="success">{{ newsletterSuccessMessage }}</p>
+    <p v-if="newsletterErrorMessage" class="error">{{ newsletterErrorMessage }}</p>
             </div>
         </section>
     </div>
@@ -1550,15 +1553,18 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="footerForm">
-                        <form action="#" method="post" class="footerContact">
+                      <form @submit.prevent="submitForm" class="footerContact">
                             <h5><img src="../../images/message-icon.png" alt="message-icon"> Quick Contact Form</h5>
-                            <input type="text" name="username" id="username" placeholder="Your Name*" required>
-                            <input type="email" name="email" id="email" placeholder="Email Address*" required>
-                            <textarea name="message" id="message" placeholder="Your Message ..."></textarea>
+                            <input type="text" name="username" id="username" v-model="form.username"  placeholder="Your Name*" required>
+                            <input type="email" name="email" id="email" v-model="form.email" placeholder="Email Address*" required>
+                            <textarea name="message" id="message" v-model="form.message" placeholder="Your Message ..."></textarea>
                             <div class="contactSubmit text-end">
                                 <input type="submit" value="Send">
                             </div>
+                            <p v-if="successMessage" class="success">{{ successMessage }}</p>
+    <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
                         </form>
+                        
                     </div>
                 </div>
             </div>
@@ -1647,7 +1653,58 @@ onMounted(() => {
 });
 </script>
 <script>
+import axios from 'axios';
 export default {
-    name: "HomePage",
+ name: "HomePage",
+  data() {
+    return {
+      form: {
+        username: '',
+        email: '',
+        message: '',
+      },
+      successMessage: "",
+      errorMessage: "",
+    };
+  },
+  methods: {
+    async submitForm() {
+    console.log(this.form); 
+      try {
+        const response = await axios.post('/contact', this.form);
+        console.log('Form submitted successfully:', response.data);
+        alert('Message sent successfully!');
+        this.resetForm();
+      } catch (error) {
+        console.error('Error submitting form:', error.response.data);
+        alert('Failed to send message. Please try again.');
+      }
+    },
+    resetForm() {
+      this.formData = {
+        username: '',
+        email: '',
+        message: '',
+      };
+    },
+    // Function to submit the newsletter form
+    async subscribeToNewsletter() {
+      try {
+        const response = await axios.post("http://fridgemate.test/newsletter", {
+          email: this.newsletterEmail,
+        });
+
+        console.log(response.data);
+        this.newsletterSuccessMessage = "Subscribed successfully!";
+        this.newsletterErrorMessage = "";
+        this.newsletterEmail = ""; // Reset form
+      } catch (error) {
+        console.error(error.response.data);
+        this.newsletterErrorMessage = "Failed to subscribe. Please enter a valid email.";
+        this.newsletterSuccessMessage = "";
+      }
+    },
+  },
 };
+
 </script>
