@@ -1501,6 +1501,10 @@
                         <div class="col-sm-6">
                             <div class="footerWidget web-icon">
                                 <img src="../../images/logo.png" alt="footer-logo" class="fadlo"></img>
+                                <br>
+                                   <br>
+                                     
+
                                 <p><strong>FreightMate®: Efficient. Reliable. Trusted.</strong><br>
                                 Transforming the logistics landscape, FreightMate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
                             </div>
@@ -1690,7 +1694,7 @@ export default {
     // Function to submit the newsletter form
     async subscribeToNewsletter() {
       try {
-        const response = await axios.post("http://fridgemate.test/newsletter", {
+        const response = await axios.post("/newsletter", {
           email: this.newsletterEmail,
         });
 
