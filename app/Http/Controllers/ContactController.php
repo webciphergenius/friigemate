@@ -3,7 +3,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 class ContactController extends Controller
 {
     public function store(Request $request)
@@ -24,7 +25,7 @@ class ContactController extends Controller
         // Contact::create($request->all());
 
         // Example: Send email
-         Mail::to('admin@example.com')->send(new ContactFormMail($request->all()));
+         Mail::to('info@gofreightmate.com')->send(new ContactMail($request->all()));
 
         return response()->json(['message' => 'Message sent successfully!'], 200);
     }

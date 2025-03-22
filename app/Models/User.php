@@ -6,9 +6,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-
+use Firefly\FilamentBlog\Traits\HasBlog;
 class User extends Authenticatable
 {
+    public function canComment(): bool
+    {
+        // your conditional logic here
+        return true;
+    }
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
