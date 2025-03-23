@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-
+use Illuminate\Support\Facades\Log;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -9,11 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Firefly\FilamentBlog\Traits\HasBlog;
 class User extends Authenticatable
 {
-    public function canComment(): bool
-    {
-        // your conditional logic here
-        return true;
-    }
+    
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
@@ -50,4 +46,14 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    public function canComment(): bool
+    {
+        // your conditional logic here
+        return true;
+    }
+    public function canAccessPanel(Panel $panel): bool
+{
+    Log::info('canAccessPanel called for user: ' . $this->email);
+    return true;
+}
 }
