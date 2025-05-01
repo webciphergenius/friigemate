@@ -643,7 +643,7 @@
                         <div class="teamBlock">
                             <figure>
                                 <img
-                                    src="../../images/rick.png"
+                                    src="../../images/rick-img.png"
                                     alt="team-image"
                                 />
                             </figure>
@@ -705,7 +705,7 @@
                         <div class="teamBlock">
                             <figure>
                                 <img
-                                    src="../../images/Dev.png"
+                                    src="../../images/dev-sir-img.png"
                                     alt="team-image"
                                 />
                             </figure>
