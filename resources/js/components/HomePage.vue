@@ -635,7 +635,7 @@
                         Meet the dedicated professionals driving FreightMate® to
                         success. With years of experience and a <br />commitment
                         to innovation, our team ensures we deliver the best
-                        logistics solutions for our clients.s
+                        logistics solutions for our clients.
                     </p>
                 </div>
                 <div class="row text-center">
