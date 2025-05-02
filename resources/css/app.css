@@ -462,4 +462,10 @@ figure.partnerFigure img {
 form.newsletterForm {
     width: auto;
 }
+.mainWorkBlock {
+    padding: 30px 20px;
+}
+.logisticsBlock {
+    padding-bottom: 20px;
+}
 }

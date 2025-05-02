@@ -679,7 +679,7 @@
                                 />
                             </figure>
                             <h5>Doreen Julye</h5>
-                            <p>Chief Marketing Officer</p>
+                            <p>Chief Operating Officer</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#"
@@ -1355,7 +1355,7 @@
                         </figure>
                         <div class="newData">
                             <span class="newsMeta"
-                                >May 10, 2024 in Loremipsum</span
+                                >May 10, 2024</span
                             >
                             <h4>
                                 Empowering Drivers: How FreightMate is
@@ -1396,7 +1396,7 @@
                         </figure>
                         <div class="newData">
                             <span class="newsMeta"
-                                >May 10, 2024 in Loremipsum</span
+                                >May 10, 2024</span
                             >
                             <h4>Simplifying Deliveries for Small Businesses</h4>
                             <p>
@@ -1434,7 +1434,7 @@
                         </figure>
                         <div class="newData">
                             <span class="newsMeta"
-                                >May 10, 2024 in Loremipsum</span
+                                >May 10, 2024</span
                             >
                             <h4>
                                 The Future of Freight: Insights from FreightMate
