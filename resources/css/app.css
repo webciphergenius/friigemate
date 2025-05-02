@@ -277,7 +277,7 @@ section.newsletterSec * {
 }
 form.newsletterForm input {
     padding: 10px 0;
-    color: #000000;
+    color: #FFF;
 }
 form.newsletterForm input:focus-visible {
     outline: none;
@@ -452,7 +452,7 @@ a.navbar-brand.fw-bold img {
     object-position: top;
 }
 form.newsletterForm ::placeholder {
-    color: #000;
+    color: #FFFFFF;
 }
 @media only screen and (min-width: 1440px) {
 .teamBlock figure img {
