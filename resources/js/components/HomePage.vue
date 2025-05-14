@@ -798,12 +798,12 @@
                         <div class="teamBlock">
                             <figure>
                                 <img
-                                    src="../../images/dummy-user.jpeg"
+                                    src="../../images/michael-moskowitz-img.jpg"
                                     alt="team-image"
                                 />
                             </figure>
                             <h5>Michael Moskowitz</h5>
-                            <p>Operations Manager</p>
+                            <p>VP/Sales Operations</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#"
