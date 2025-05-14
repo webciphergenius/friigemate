@@ -860,12 +860,12 @@
                         <div class="teamBlock">
                             <figure>
                                 <img
-                                    src="../../images/dummy-user.jpeg"
+                                    src="../../images/reena-img.png"
                                     alt="team-image"
                                 />
                             </figure>
-                            <h5>Chief Operating Officer</h5>
-                            <p>Chief Operating Officer</p>
+                            <h5>Reena Shaw</h5>
+                            <p>Marketing Director</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#"
