@@ -740,7 +740,7 @@
                                     alt="team-image"
                                 />
                             </figure>
-                            <h5>Rich Silivianch</h5>
+                            <h5>Rich Silivanch</h5>
                             <p>Creative Director</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
