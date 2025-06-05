@@ -417,7 +417,7 @@ ul.bulletList ::marker {
     position: absolute;
     width: 109%;
     height: 105%;
-    background: url(/build/assets/iphone-cover-DDL6Ajyn.png) no-repeat;
+    background: url(/build/assets/iphone-cover.png) no-repeat;
     background-size: cover;
     background-position: center;
     left: 50%;
