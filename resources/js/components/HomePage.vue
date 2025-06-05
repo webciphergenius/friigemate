@@ -360,20 +360,6 @@
                                 />
                             </figure>
                         </div>
-                        <div class="portfolio-item text-center">
-                            <figure>
-                                <img
-                                    src="../../images/Driver/explore07img.png"
-                                    alt="portfolio-image"
-                                />
-                            </figure>
-                        </div>
-                        
-                       
-                        
-                        
-                       
-                       
                     </div>
                 </div>
             </div>
