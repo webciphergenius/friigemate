@@ -417,11 +417,11 @@ ul.bulletList ::marker {
     position: absolute;
     width: 109%;
     height: 105%;
-    background: url(/build/assets/iphone-cover.png) no-repeat;
+    background: url(../images/iphone-cover.png) no-repeat;
     background-size: cover;
     background-position: center;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
 }
 .portfolio-slider .slick-slide {
