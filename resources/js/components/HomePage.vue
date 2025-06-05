@@ -55,7 +55,7 @@
                     <div class="col-sm-6">
                         <figure class="m-0">
                             <img
-                                src="../../images/hero-7-img.png.png"
+                                src="../../images/hero-7-img.png"
                                 alt="hero-image"
                                 class="w-75"
                             />
