@@ -111,6 +111,12 @@ section.howWorks {
 section.howWorks .secHeading {
     color: #fff;
 }
+section.helpSec.sameSpacing .row.align-items-center {
+    padding-top: 30px;
+}
+section#myblg {
+    padding-top: 0;
+}
 .mainWorkBlock {
     position: relative;
 }

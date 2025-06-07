@@ -819,8 +819,8 @@
                                     alt="team-image"
                                 />
                             </figure>
-                            <h5>Jasmine Puranda</h5>
-                            <p>Business Development Consultant</p>
+                            <h5>Shanita Julye</h5>
+                            <p>Office & Logistics Support Addministrator</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#"
