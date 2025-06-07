@@ -112,6 +112,9 @@ section.howWorks .secHeading {
     color: #fff;
 }
 .mainWorkBlock {
+    position: relative;
+}
+.mainWorkBlock .row.align-items-center {
     background: #fff;
     padding: 80px 60px;
     max-width: 78%;
@@ -122,13 +125,12 @@ section.howWorks .secHeading {
 .mainWorkBlock:before {
     content: "";
     position: absolute;
-    width: 115%;
+    width: 88%;
     height: 88%;
-    background: #fff;
-    opacity: 0.6;
-    z-index: -1;
+    background: rgb(11 59 162 / 59%);
+    opacity: .6;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     top: 50%;
 }
 section.skilledMain {
