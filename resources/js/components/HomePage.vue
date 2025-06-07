@@ -1186,7 +1186,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="footerWidget web-icon">
-                                <img src="../../images/logo.png" alt="footer-logo" class="fadlo"></img>
+                                <img src="../../images/footer-logo-img.png" alt="footer-logo" class="fadlo"></img>
                                 <br>
                                    <br>
                                      
