@@ -1,5 +1,5 @@
 h2 {
-    font-size: 48px !important;
+    font-size: 40px !important;
     font-weight: 700 !important;
 }
 h3 {
@@ -57,7 +57,7 @@ h1 {
     padding: 120px 0;
 }
 a.yellowBtn {
-    background: #f8a407;
+    background: #F58743;
     color: #fff;
     text-transform: capitalize;
     text-decoration: none;
@@ -70,7 +70,7 @@ ul.logisticList {
     padding-left: 1.5rem;
 }
 ul.logisticList ::marker {
-    color: #f8a407;
+    color: #F58743;
     font-size: 23px;
 }
 section.partnerMain:before {
