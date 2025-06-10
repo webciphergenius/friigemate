@@ -478,9 +478,148 @@ form.newsletterForm {
     width: auto;
 }
 .mainWorkBlock {
-    padding: 30px 20px;
+    padding: 30px 0;
 }
 .logisticsBlock {
     padding-bottom: 20px;
 }
+a.navbar-brand.fw-bold img {
+    width: 120px;
+}
+.navbar-toggler {
+    border-color: #fff;
+}
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+div#navbarSupportedContent {
+    background: #192031;
+}
+div#navbarSupportedContent a.nav-link {
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(255 255 255 / 20%);
+}
+ul.navbar-nav li.nav-item {
+    padding: 0 20px;
+}
+ul.list-inline.socialLinks {
+    padding: 0 20px 20px;
+}
+ul.list-inline.socialLinks li.list-inline-item {
+    padding-right: 15px;
+}
+.pgHero {
+    background-position: 90%;
+    padding: 180px 0 60px;
+}
+section.pgHero figure {
+    text-align: center;
+}
+section.pgHero figure img {
+    width: 55% !important;
+}
+section.pgHero h1 {
+    font-size: 34px !important;
+    margin-top: 2rem;
+}
+section.pgHero .heroContent {
+    text-align: center !important;
+}
+.sameSpace {
+    padding: 60px 0;
+}
+h2 {
+    font-size: 30px!important;
+}
+section.logisticsMain {
+    padding-bottom: 30px;
+}
+section.partnerMain {
+    padding: 40px 20px;
+}
+.partnerBlock {
+    padding-top: 0;
+}
+.slider-data.text-center.my-5 {
+    text-align: left !important;
+    margin: 10px 0 !important;
+}
+.portfolio-slider .slick-center:before {
+    height: 113%;
+    z-index: 1;
+}
+.mainWorkBlock .row.align-items-center {
+    padding: 40px 10px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.mainWorkBlock h3 {
+    text-align: center;
+    font-size: 28px !important;
+}
+section.howWorks {
+    padding: 50px 0 30px;
+}
+section.skilledMain {
+    padding: 50px 0 40px;
+}
+section.teamSec, section.helpSec {
+    padding: 50px 0;
+}
+section.solutionSec {
+    padding: 50px 0 40px;
+}
+section.solutionSec .logisticsBlock h3 {
+    margin: 30px 0 20px;
+}
+.heroBtns a {
+    margin-right: 10px;
+}
+ul.newsBottom {
+    text-align: left !important;
+}
+.newData {
+    padding-bottom: 35px;
+}
+section#myblg {
+    padding-bottom: 0;
+}
+.footerWidget.web-list, .footerApp, .footerForm {
+    margin-top: 2rem;
+}
+.footerWidget.footerApp img {
+    width: 160px;
+}
+.row.bottom-footer * {
+    text-align: center;
+}
+.row.bottom-footer {
+    padding: 20px 0 0;
+}
+.bottomLeft {
+    padding-bottom: 10px;
+}
+section#team .secHeading {
+    padding-bottom: 15px;
+}
+section.skilledMain figure.logisticsFigure {
+    padding-bottom: 20px;
+}
+section#feature .row.row-cols-1 {
+    margin-top: 0 !important;
+}
+figure.partnerFigure {
+    padding-top: 20px;
+}
+figure.logisticsFigure {
+    padding-bottom: 20px;
+}
+section.statMain .col-sm-4:nth-child(2) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+section.pgHero .heroBtns img {
+    width: 160px;
+}
+
 }
