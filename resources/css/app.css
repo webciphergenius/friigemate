@@ -467,6 +467,40 @@ form.newsletterForm ::placeholder {
     height: 220px;
 }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+div#navbarSupportedContent a.nav-link {
+    padding: 0 15px;
+}
+section.partnerMain {
+    padding: 30px 0 120px;
+}
+.portfolio-slider .slick-center:before {
+    width: 120%;
+    height: 107%;
+    z-index: 1;
+}
+.teamBlock {
+    padding: 30px 20px;
+}
+section.solutionSec {
+    padding: 50px 0 60px;
+}
+section.solutionSec .heroBtns a {
+    margin-right: 20px;
+}
+section#myblg figure img {
+    width: 100%;
+}
+.footerWidget.web-icon p {
+    padding-right: 2rem;
+}
+.footerWidget h5 {
+    font-size: 17px !important;
+}
+.bottomLeft {
+    padding-right: 140px;
+}
+}
 @media only screen and (max-width: 767px) {
 .teamBlock figure img {
     height: 270px;
