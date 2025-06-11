@@ -10,3 +10,7 @@ use App\Http\Controllers\NewsletterController;
 
 Route::post('/contact', [ContactController::class, 'store']);
 Route::post('/newsletter', [NewsletterController::class, 'subscribe']);
+
+Route::get('/registration', function () {
+    return view('registration');
+});

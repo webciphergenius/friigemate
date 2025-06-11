@@ -9,7 +9,7 @@
 <body>
     <div id="app">
         <home-page></home-page>
-       
+        <register-form></register-form>
     </div>
 </body>
 </html>
