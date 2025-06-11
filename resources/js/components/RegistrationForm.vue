@@ -8,7 +8,7 @@
           v-model="form.name"
           type="text"
           class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          placeholder="Enter your name"
+          placeholder="Enter Your Name"
           required
         />
       </div>
@@ -18,7 +18,7 @@
           v-model="form.email"
           type="email"
           class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          placeholder="Enter your email"
+          placeholder="Enter Your Email"
           required
         />
       </div>
@@ -28,7 +28,7 @@
           v-model="form.password"
           type="password"
           class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          placeholder="Enter your password"
+          placeholder="Enter Your Password"
           required
         />
       </div>
