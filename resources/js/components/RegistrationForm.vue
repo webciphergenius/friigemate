@@ -105,7 +105,7 @@
 
       <div class="mb-4">
         <label>SMS OTP <br /><small>(6 digit code sent to phone number)</small></label>
-        <div class="flex justify-center space-x-2 mt-2">
+        <div class="flex justify-center space-x-2 mt-2 otp-field-block">
           <input
             v-for="(digit, index) in otp"
             :key="index"
