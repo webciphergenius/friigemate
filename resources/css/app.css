@@ -464,10 +464,8 @@ form.newsletterForm ::placeholder {
 }
 /* Registration Form SH */
 .mainRegister {
-    background: url(/build/assets/hero-bg01img-aKiOuSax.png);
-    background-size: cover;
-    background-position: center bottom;
-    padding: 130px 0 190px !important;
+    padding: 60px 0 !important;
+    background: linear-gradient(0deg,rgba(30, 95, 235, 1) 0%, rgba(1, 13, 38, 1) 85%);
 }
 form.registerFormMain {
     width: 550px;
@@ -479,9 +477,9 @@ form.registerFormMain input {
     width: 100%;
     height: 50px;
     padding: 0 15px;
-    border-radius: 3px;
-    border: none;
-    background: rgb(255 255 255 / 20%);
+    border-radius: 3px !important;
+    border: none !important;
+    background: #fff3;
     color: #fff;
     outline: none;
 }
@@ -495,6 +493,23 @@ form.registerFormMain button {
     border: none;
     height: 50px;
     width: 250px;
+}
+.double-field {
+    display: flex;
+    gap: 1.5rem;
+}
+form.registerFormMain textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0 15px;
+    border-radius: 3px;
+    border: none;
+    background: #fff3;
+    color: #fff;
+    outline: none;
+}
+.submitBtn {
+    text-align: center;
 }
 /* Registration Form EH */
 @media only screen and (min-width: 1440px) {
