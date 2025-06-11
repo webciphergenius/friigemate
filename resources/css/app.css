@@ -511,6 +511,10 @@ form.registerFormMain textarea {
 .submitBtn {
     text-align: center;
 }
+.otp-field-block {
+    display: flex;
+    gap: 5px;
+}
 /* Registration Form EH */
 @media only screen and (min-width: 1440px) {
 .teamBlock figure img {
