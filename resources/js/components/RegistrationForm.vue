@@ -1,10 +1,9 @@
 <template>
-  <div class="max-w-md mx-auto p-6 bg-white rounded-xl shadow-md space-y-4">
+  <div class="mainRegister p-5 text-center text-white">
     <h2 class="text-2xl font-bold text-center mb-4">Registration Form</h2>
 
-    <form @submit.prevent="handleSubmit">
+    <form @submit.prevent="handleSubmit" class="registerFormMain">
       <div class="mb-4">
-        <label class="block text-gray-700">Name</label>
         <input
           v-model="form.name"
           type="text"
@@ -15,7 +14,6 @@
       </div>
 
       <div class="mb-4">
-        <label class="block text-gray-700">Email</label>
         <input
           v-model="form.email"
           type="email"
@@ -26,7 +24,6 @@
       </div>
 
       <div class="mb-4">
-        <label class="block text-gray-700">Password</label>
         <input
           v-model="form.password"
           type="password"

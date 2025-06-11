@@ -462,6 +462,41 @@ a.navbar-brand.fw-bold img {
 form.newsletterForm ::placeholder {
     color: #FFFFFF;
 }
+/* Registration Form SH */
+.mainRegister {
+    background: url(/build/assets/hero-bg01img-aKiOuSax.png);
+    background-size: cover;
+    background-position: center bottom;
+    padding: 130px 0 190px !important;
+}
+form.registerFormMain {
+    width: 550px;
+}
+form.registerFormMain input::placeholder {
+    color: #fff;
+}
+form.registerFormMain input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    border-radius: 3px;
+    border: none;
+    background: rgb(255 255 255 / 20%);
+    color: #fff;
+    outline: none;
+}
+form.registerFormMain button {
+    background: #f58743;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 0 25px;
+    border-radius: 4px !important;
+    border: none;
+    height: 50px;
+    width: 250px;
+}
+/* Registration Form EH */
 @media only screen and (min-width: 1440px) {
 .teamBlock figure img {
     height: 220px;
