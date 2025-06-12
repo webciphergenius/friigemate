@@ -516,6 +516,24 @@ form.registerFormMain textarea {
     gap: 5px;
 }
 /* Registration Form EH */
+.mainHead {
+  position: relative;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+header.mainHead.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #21233c;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+header.mainHead.sticky a.navbar-brand.fw-bold img {
+    width: 110px;
+}
 @media only screen and (min-width: 1440px) {
 .teamBlock figure img {
     height: 220px;

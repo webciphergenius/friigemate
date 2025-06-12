@@ -1396,5 +1396,12 @@ export default {
     },
   },
 };
-
+window.addEventListener('scroll', function () {
+  const header = document.querySelector('.mainHead');
+  if (window.scrollY > 150) {
+    header.classList.add('sticky');
+  } else {
+    header.classList.remove('sticky');
+  }
+});
 </script>
