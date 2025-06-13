@@ -1,8 +1,8 @@
 <template>
   <div class="mainRegister p-5 text-white">
-    <h2 class="text-2xl font-bold text-center mb-5">Registering as Shipper</h2>
+    <h2 class="text-2xl font-bold text-center mb-5">Registering as Driver</h2>
 
-    <form @submit.prevent="handleSubmit" class="registerFormMain mx-auto">
+    <form @submit.prevent="handleSubmit" class="registerFormMain registrationDriverForm mx-auto">
       <div class="mb-4 double-field">
         <div class="item-field">
           <label>First Name</label>
@@ -25,9 +25,9 @@
       </div>
 
       <div class="mb-4">
-        <label>Company</label>
+        <label>Vehicle Type</label>
         <input
-          v-model="form.company"
+          v-model="form.vehicletype"
           type="text"
           class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
           required
@@ -35,20 +35,20 @@
       </div>
 
       <div class="mb-4">
-        <label>Phone</label>
+        <label>Vehicle Number</label>
         <input
-          v-model="form.phone"
-          type="tel"
+          v-model="form.vehiclenumber"
+          type="number"
           class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
           required
         />
       </div>
 
       <div class="mb-4">
-        <label>Email</label>
+        <label>Load Capacity</label>
         <input
-          v-model="form.email"
-          type="email"
+          v-model="form.loadcapacity"
+          type="text"
           class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
           required
         />
@@ -64,13 +64,28 @@
         />
       </div>
 
-      <div class="mb-4">
-        <label>Address</label>
-        <textarea
-          v-model="form.address"
-          class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          required
-        ></textarea>
+      <div class="mb-4 uploadFiles">
+        <label>Please Verify Your ID</label>
+            <!-- License Verification -->
+            <div class="fieldUpload">
+                <label class="block mb-2 font-medium">License Verification</label>
+                <input type="file" @change="handleFileUpload($event, 'license')" />
+                <p v-if="form.license" class="text-green-600 mt-1">File: {{ form.license.name }}</p>
+            </div>
+
+            <!-- Insurance Verification -->
+            <div class="fieldUpload">
+                <label class="block mb-2 font-medium">Insurance Verification</label>
+                <input type="file" @change="handleFileUpload($event, 'insurance')" />
+                <p v-if="form.insurance" class="text-green-600 mt-1">File: {{ form.insurance.name }}</p>
+            </div>
+
+            <!-- Registration Verification -->
+            <div class="fieldUpload">
+                <label class="block mb-2 font-medium">Registration Verification</label>
+                <input type="file" @change="handleFileUpload($event, 'registration')" />
+                <p v-if="form.registration" class="text-green-600 mt-1">File: {{ form.registration.name }}</p>
+            </div>
       </div>
 
       <div class="mb-4">
@@ -128,7 +143,7 @@
         </button>
       </div>
       <div class="text-center alternativeForm">
-        <a href="registration-driver">Registering as Driver</a>
+        <a href="registration">Registering as Shipper</a>
       </div>
     </form>
 
