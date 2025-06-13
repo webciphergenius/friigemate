@@ -14,3 +14,7 @@ Route::post('/newsletter', [NewsletterController::class, 'subscribe']);
 Route::get('/registration', function () {
     return view('registration');
 });
+
+Route::get('/registration-driver', function () {
+    return view('registration-driver');
+});
