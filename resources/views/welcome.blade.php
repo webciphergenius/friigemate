@@ -9,8 +9,6 @@
 <body>
     <div id="app">
         <home-page></home-page>
-        <RegistrationForm />
-        <RegistrationDriver />
     </div>
 </body>
 </html>
