@@ -41,6 +41,7 @@
                         <li class="list-inline-item"><a href="#"><img src="../../images/insta.png" alt="social-icon"></a></li>
                         <li class="list-inline-item"><a href="#"><img src="../../images/tiktok.png" alt="social-icon"></a></li>
                     </ul>
+                    <a href="https://gofreightmate.com/registration" class="getstartedBtn">Get Started</a>
                 </div>
             </div>
               </nav>
@@ -72,7 +73,7 @@
                                 unmatched reliability.
                             </p>
                             <a
-                                href="javascript:void(0)"
+                                href="https://gofreightmate.com/registration"
                                 class="btn border border-2 rounded-0 text-white p-3 my-3 bold"
                                 >Get Started Today</a
                             >

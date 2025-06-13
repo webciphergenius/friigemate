@@ -13,14 +13,14 @@ header.mainHead {
 }
 div#navbarSupportedContent {
     flex-grow: unset;
-    gap: 40px;
+    gap: 30px;
 }
 ul.list-inline.socialLinks {
     margin: 0;
 }
 div#navbarSupportedContent a.nav-link {
     color: #fff;
-    padding: 0 25px;
+    padding: 0 20px;
 }
 a.navbar-brand {
     position: relative;
@@ -533,6 +533,22 @@ header.mainHead.sticky {
 }
 header.mainHead.sticky a.navbar-brand.fw-bold img {
     width: 110px;
+}
+.alternativeForm a {
+    color: #fff;
+    padding-top: 2rem;
+    display: inline-block;
+}
+a.getstartedBtn {
+    background: #f58743;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    width: 120px;
+    text-align: center;
 }
 @media only screen and (min-width: 1440px) {
 .teamBlock figure img {

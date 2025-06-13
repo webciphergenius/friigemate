@@ -45,6 +45,22 @@
       </div>
 
       <div class="mb-4">
+        <label>SMS OTP <br /><small>(6 digit code sent to phone number)</small></label>
+        <div class="flex justify-center space-x-2 mt-2 otp-field-block">
+          <input
+            v-for="(digit, index) in otp"
+            :key="index"
+            v-model="otp[index]"
+            maxlength="1"
+            @input="handleInput(index, $event)"
+            @keydown.backspace="handleBackspace(index, $event)"
+            class="w-12 h-12 text-center text-xl border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="text"
+          />
+        </div>
+      </div>
+
+      <div class="mb-4">
         <label>Email</label>
         <input
           v-model="form.email"
@@ -101,22 +117,6 @@
           class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
           required
         />
-      </div>
-
-      <div class="mb-4">
-        <label>SMS OTP <br /><small>(6 digit code sent to phone number)</small></label>
-        <div class="flex justify-center space-x-2 mt-2 otp-field-block">
-          <input
-            v-for="(digit, index) in otp"
-            :key="index"
-            v-model="otp[index]"
-            maxlength="1"
-            @input="handleInput(index, $event)"
-            @keydown.backspace="handleBackspace(index, $event)"
-            class="w-12 h-12 text-center text-xl border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-            type="text"
-          />
-        </div>
       </div>
 
       <div class="submitBtn">
