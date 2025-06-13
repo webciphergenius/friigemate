@@ -29,6 +29,13 @@ a.navbar-brand img {
     position: relative;
     z-index: 1;
 }
+.fieldUpload label {
+    padding-top: 15px;
+    font-size: 14px;
+}
+.fieldUpload  input[type="file"] {
+    padding: 10px 15px;
+}
 /* a.navbar-brand:before {
     content: "";
     position: absolute;
