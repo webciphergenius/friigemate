@@ -183,7 +183,7 @@ const form = reactive({
   phone: '',
   email: '',
   vehicletype: '',
-  vehiclenumber
+  vehiclenumber: '',
   loadcapacity: '',
   zipcode: '',
   license: '',
