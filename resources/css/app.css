@@ -24,12 +24,12 @@ div#navbarSupportedContent a.nav-link {
 }
 a.navbar-brand {
     position: relative;
-}
+} 
 a.navbar-brand img {
     position: relative;
     z-index: 1;
 }
-.fieldUpload label {
+.fieldUpload label { 
     padding-top: 15px;
     font-size: 14px;
 }

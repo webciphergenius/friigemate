@@ -71,12 +71,12 @@
                             <p>
                                 Effortless logistics, smarter solutions, and
                                 unmatched reliability.
-                            </p>
+                            </p> 
                             <a
                                 href="https://gofreightmate.com/registration"
                                 class="btn border border-2 rounded-0 text-white p-3 my-3 bold"
                                 >Get Started Today</a
-                            >
+                            > 
                             <div class="heroBtns">
                                 <a href="javascript:void(0)"
                                     ><img
