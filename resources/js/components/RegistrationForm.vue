@@ -7,20 +7,20 @@
         class="px-4 py-2 rounded"
         @click="activeTab = 'shipper'"
       >
-        Signup as Shipper
+        Shipper
       </button>
       <button
         :class="{'bg-blue-500 text-white': activeTab === 'driver', 'bg-gray-300 text-black': activeTab !== 'driver'}"
         class="px-4 py-2 rounded"
         @click="activeTab = 'driver'"
       >
-        Signup as Driver
+        Driver
       </button>
     </div>
 
     <!-- Shipper Form -->
-    <div v-if="activeTab === 'shipper'">
-      <h2 class="text-2xl font-bold text-center mb-5">Registering as Shipper</h2>
+    <div v-if="activeTab === 'shipper'" class="mainTabContent">
+      <h2 class="text-2xl font-bold text-center mb-5">Signup as Shipper</h2>
       <form @submit.prevent="handleSubmit('shipper')" class="registerFormMain mx-auto">
         <div class="mb-4 double-field">
           <div class="item-field">
@@ -98,8 +98,8 @@
     </div>
 
     <!-- Driver Form -->
-    <div v-if="activeTab === 'driver'">
-      <h2 class="text-2xl font-bold text-center mb-5">Registering as Driver</h2>
+    <div v-if="activeTab === 'driver'" class="mainTabContent">
+      <h2 class="text-2xl font-bold text-center mb-5">Signup as Driver</h2>
       <form @submit.prevent="handleSubmit('driver')" class="registerFormMain registrationDriverForm mx-auto">
         <div class="mb-4 double-field">
           <div class="item-field">

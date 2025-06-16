@@ -471,10 +471,11 @@ form.newsletterForm ::placeholder {
 }
 /* Registration Form SH */
 .mainRegister {
-    padding: 60px 0!important;
-    background: url(/build/assets/hero-bg01img-aKiOuSax.png);
+    padding: 60px 0 !important;
+    background: url(https://gofreightmate.com/build/assets/darksecbg-BEVs2bxE.png);
     background-size: cover;
-    background-position: top center;
+    background-position: bottom center;
+    margin-top: -2px;
 }
 .panelLogo {
     text-align: center;
@@ -482,9 +483,6 @@ form.newsletterForm ::placeholder {
 }
 .panelLogo img {
     width: 110px;
-}
-form.registerFormMain {
-    width: 550px;
 }
 form.registerFormMain input::placeholder {
     color: #fff;
@@ -532,6 +530,34 @@ form.registerFormMain textarea {
     gap: 5px;
 }
 /* Registration Form EH */
+.tab-buttons {
+    text-align: center;
+}
+.tab-buttons button {
+    background: #0951a4;
+    color: #fff !important;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px !important;
+    border-radius: 4px !important;
+    width: 180px;
+    text-align: center;
+    border: none;
+    margin: 0 6px;
+}
+.tab-buttons button.text-white {
+    background: #f58743;
+}
+.double-field .item-field {
+    flex-basis: 50%;
+}
+.mainTabContent {
+    background: rgb(11 59 162 / 40%);
+    width: 650px;
+    margin: 0 auto;
+    padding: 30px 45px 45px;
+}
 .mainHead {
   position: relative;
   width: 100%;
