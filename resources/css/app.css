@@ -471,8 +471,17 @@ form.newsletterForm ::placeholder {
 }
 /* Registration Form SH */
 .mainRegister {
-    padding: 60px 0 !important;
-    background: linear-gradient(0deg,rgba(30, 95, 235, 1) 0%, rgba(1, 13, 38, 1) 85%);
+    padding: 60px 0!important;
+    background: url(/build/assets/hero-bg01img-aKiOuSax.png);
+    background-size: cover;
+    background-position: top center;
+}
+.panelLogo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.panelLogo img {
+    width: 110px;
 }
 form.registerFormMain {
     width: 550px;
