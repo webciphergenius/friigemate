@@ -20,7 +20,7 @@
 
     <!-- Shipper Form -->
     <div v-if="activeTab === 'shipper'" class="mainTabContent">
-      <h2 class="text-2xl font-bold text-center mb-5">Signup as Shipper</h2>
+      <h2 class="text-2xl font-bold text-center mb-5">Register as Shipper</h2>
       <form @submit.prevent="handleSubmit('shipper')" class="registerFormMain mx-auto">
         <div class="mb-4 double-field">
           <div class="item-field">
@@ -99,7 +99,7 @@
 
     <!-- Driver Form -->
     <div v-if="activeTab === 'driver'" class="mainTabContent">
-      <h2 class="text-2xl font-bold text-center mb-5">Signup as Driver</h2>
+      <h2 class="text-2xl font-bold text-center mb-5">Register as Driver</h2>
       <form @submit.prevent="handleSubmit('driver')" class="registerFormMain registrationDriverForm mx-auto">
         <div class="mb-4 double-field">
           <div class="item-field">
