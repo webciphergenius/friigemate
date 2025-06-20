@@ -816,12 +816,12 @@
                         <div class="teamBlock">
                             <figure>
                                 <img
-                                    src="../../images/dummy-usergirl.jpg"
+                                    src="../../images/shanita-img.png"
                                     alt="team-image"
                                 />
                             </figure>
                             <h5>Shanita Julye</h5>
-                            <p>Office & Logistics Support Addministrator</p>
+                            <p>Office & Logistics Support Administrator</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#"
