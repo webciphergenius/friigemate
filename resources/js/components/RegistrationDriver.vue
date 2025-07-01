@@ -205,29 +205,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-import { reactive, ref } from "vue";
-
-const form = reactive({
-    firstname: "",
-    lastname: "",
-    company: "",
-    phone: "",
-    email: "",
-    vehicletype: "",
-    vehiclenumber: "",
-    loadcapacity: "",
-    zipcode: "",
-    license: "",
-    insurance: "",
-    registration: "",
-    username: "",
-    password: "",
-    confirmpassword: "",
-});
-
-function handleSubmit() {
-    console.log("Form Data:", form);
-}
-</script>
