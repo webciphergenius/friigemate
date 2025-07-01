@@ -392,33 +392,6 @@
     </div>
 </template>
 
-<script setup>
-import { reactive, ref } from "vue";
-
-const activeTab = ref("shipper");
-const form = reactive({
-    firstname: "",
-    lastname: "",
-    company: "",
-    phone: "",
-    email: "",
-    vehicletype: "",
-    vehiclenumber: "",
-    loadcapacity: "",
-    zipcode: "",
-    license: "",
-    insurance: "",
-    registration: "",
-    username: "",
-    password: "",
-    confirmpassword: "",
-});
-
-function handleSubmit(type) {
-    console.log("Form Data:", form);
-}
-</script>
-
 <style scoped>
 .input-style {
     @apply mt-1 block w-full border-gray-300 rounded-md shadow-sm;
