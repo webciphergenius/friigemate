@@ -67,15 +67,3 @@
     
   </div>
 </template>
-
-<script>
-export default {
-  name: 'PrivacyPolicy'
-}
-</script>
-
-<style scoped>
-.privacy-policy {
-  line-height: 1.7;
-}
-</style>
