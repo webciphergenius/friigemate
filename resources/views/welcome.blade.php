@@ -9,7 +9,6 @@
 <body>
     <div id="app">
         <home-page></home-page>
-        <privacy-policy></privacy-policy>
     </div>
 </body>
 </html>
