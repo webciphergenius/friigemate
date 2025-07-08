@@ -18,3 +18,7 @@ Route::get('/registration', function () {
 Route::get('/registration-driver', function () {
     return view('registration-driver');
 });
+
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+});
