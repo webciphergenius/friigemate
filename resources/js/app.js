@@ -9,9 +9,9 @@ import HomePage from "./components/HomePage.vue";
 const app = createApp({
     components: {
         HomePage,
-        RegistrationForm,
-        RegistrationDriver,
         PrivacyPolicy,
+        RegistrationForm,
+        RegistrationDriver
     },
 });
 
