@@ -25,7 +25,7 @@
       </b><br>
       We require this information to understand your needs and provide you with a better service, and in particular for the following reasons:
     </p>
-
+ 
     <ul class="list-disc list-inside mb-4">
       <li>Internal record keeping.</li>
       <li>We may use the information to improve our products and services.</li>
