@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="app">
-        <privacyPolicy></privacyPolicy>
+        <privacy-policy></privacy-policy>
     </div>
 </body>
 </html>
