@@ -592,6 +592,55 @@ a.getstartedBtn {
     width: 120px;
     text-align: center;
 }
+.privacy-policy-head {
+    background: url(../images/policy-banner-hero.png);
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0;
+    text-align: center;
+}
+.privacy-policy-head h1 {
+    font-size: 59px !important;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.privacy-policy-head p {
+    color: #FFFFFF;
+}
+.privacy-policy h2 {
+    text-align: center;
+    font-size: 32px !important;
+    font-weight: 700;
+    color: #000000;
+}
+.privacy-policy h3 {
+    font-size: 24px !important;
+    color: #4E76C7;
+    margin-top: 4rem !important;
+}
+.privacy-policy p:has(b) {
+    margin: 0 0 0.5rem !important;
+}
+.privacy-policy ul {
+    padding: 0;
+}
+.privacy-policy ul li {
+    list-style: none;
+    position: relative;
+    padding: 0.2rem 0 0 1rem;
+}
+.privacy-policy ul li:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    left: 0;
+    top: 10px;
+    background: url(../images/list-vector-icon.png);
+    background-position: center;
+    background-size: cover;
+}
+
 @media only screen and (min-width: 1440px) {
 .teamBlock figure img {
     height: 220px;
