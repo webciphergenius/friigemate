@@ -15,10 +15,10 @@
                             <div class="footerWidget web-list">
                                 <h5>Useful Links</h5>
                                 <ul class="footer-list">
-                                    <li>How It Works?</li>
-                                    <li>Privacy Policy</li>
-                                    <li>Terms of Service</li>
-                                    <li>Site Map</li>
+                                    <li><a href="#">How It Works?</a></li>
+                                    <li><a href="https://gofreightmate.com/privacy-policy">Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Site Map</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -26,10 +26,10 @@
                             <div class="footerWidget web-list">
                                 <h5>Support</h5>
                                 <ul class="footer-list">
-                                    <li>FAQs</li>
-                                    <li>Editor Help</li>
-                                    <li>Life Chatting</li>
-                                    <li>Contact Us</li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Editor Help</a></li>
+                                    <li><a href="#">Life Chatting</a></li>
+                                    <li><a href="#">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                         <div class="col-sm-4 text-end">
                             <ul class="list-inline info-List">
                                 <li class="list-inline-item"><a href="#">Site Map </a></li>
-                                <li class="list-inline-item"><a href="#"> Privacy Policy</a></li>
+                                <li class="list-inline-item"><a href="https://gofreightmate.com/privacy-policy"> Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
