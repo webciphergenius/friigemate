@@ -1237,7 +1237,7 @@
                         <div class="col-sm-4 text-end">
                             <ul class="list-inline info-List">
                                 <li class="list-inline-item"><a href="#">Site Map </a></li>
-                                <li class="list-inline-item"><a href="#"> Privacy Policy</a></li>
+                                <li class="list-inline-item"><a href="https://gofreightmate.com/privacy-policy"> Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
