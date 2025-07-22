@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="footerWidget web-icon">
-                                <img src="assets/images/webLogo.png" alt="footer-logo">
+                                <img src="../..//webLogo.png" alt="footer-logo">
                                 <p><strong>FreightMate®: Efficient. Reliable. Trusted.</strong><br>
                                 Transforming the logistics landscape, FreightMate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
                             </div>
@@ -36,8 +36,8 @@
                         <div class="col-sm-2">
                             <div class="footerWidget footerApp">
                                 <div class="heroBtns">
-                                    <a href="javascript:void(0)"><img src="assets/images/app-store-icon.png" alt="app-store"></a>
-                                    <a href="javascript:void(0)"><img src="assets/images/play-store-icon.png" alt="play-store"></a>
+                                    <a href="javascript:void(0)"><img src="../..//app-store-icon.png" alt="app-store"></a>
+                                    <a href="javascript:void(0)"><img src="../..//play-store-icon.png" alt="play-store"></a>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                 <div class="col-sm-3">
                     <div class="footerForm">
                         <form action="#" method="post" class="footerContact">
-                            <h5><img src="assets/images/message-icon.png" alt="message-icon"> Quick Contact Form</h5>
+                            <h5><img src="../..//message-icon.png" alt="message-icon"> Quick Contact Form</h5>
                             <input type="text" name="username" id="username" placeholder="Your Name*" required>
                             <input type="email" name="email" id="email" placeholder="Email Address*" required>
                             <textarea name="message" id="message" placeholder="Your Message ..."></textarea>
