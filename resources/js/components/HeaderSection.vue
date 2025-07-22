@@ -39,6 +39,7 @@
                         <li class="list-inline-item"><a href="#"><img src="assets/images/insta.png" alt="social-icon"></a></li>
                         <li class="list-inline-item"><a href="#"><img src="assets/images/tiktok.png" alt="social-icon"></a></li>
                     </ul>
+                  </div>
                 </div>
               </nav>
         </div>
