@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="footerWidget web-icon">
-                                <img src="assets/images/webLogo.png" alt="footer-logo"></img>
+                                <img src="assets/images/webLogo.png" alt="footer-logo">
                                 <p><strong>FreightMate®: Efficient. Reliable. Trusted.</strong><br>
                                 Transforming the logistics landscape, FreightMate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
                             </div>
