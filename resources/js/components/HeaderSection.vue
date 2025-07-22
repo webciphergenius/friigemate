@@ -34,10 +34,10 @@
                       </li>
                     </ul>
                     <ul class="list-inline socialLinks">
-                        <li class="list-inline-item"><a href="#"><img src="assets/images/facebook.png" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="#"><img src="assets/images/youtube.png" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="#"><img src="assets/images/insta.png" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="#"><img src="assets/images/tiktok.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="../../images/facebook.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="../../images/youtube.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="../../images/insta.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="../../images/tiktok.png" alt="social-icon"></a></li>
                     </ul>
                   </div>
                 </div>
