@@ -201,7 +201,7 @@ export default {
 
             try {
                 const response = await axios.post(
-                    "http://localhost:3000/api/register",
+                    "https://backend-92zcp.kinsta.app/api/register",
                     data,
                     {
                         headers: {
@@ -222,7 +222,7 @@ export default {
         async verifyOtp() {
             try {
                 const response = await axios.post(
-                    "http://localhost:3000/api/verify-otp",
+                    "https://backend-92zcp.kinsta.app/api/verify-otp",
                     {
                         phone: this.formData.phone,
                         otp: this.otp,
@@ -240,7 +240,7 @@ export default {
         async resendOtp() {
             try {
                 const response = await axios.post(
-                    "http://localhost:3000/api/resend-otp",
+                    "https://backend-92zcp.kinsta.app/api/resend-otp",
                     {
                         phone: this.formData.phone,
                     }
