@@ -1,207 +1,282 @@
 <template>
-    <div class="mainRegister p-5 text-white">
-        <h2 class="text-2xl font-bold text-center mb-5">
-            Registering as Driver
-        </h2>
-
-        <form
-            @submit.prevent="handleSubmit"
-            class="registerFormMain registrationDriverForm mx-auto"
-        >
-            <div class="mb-4 double-field">
-                <div class="item-field">
-                    <label>First Name</label>
+    <div>
+        <div v-if="!registrationComplete">
+            <h2>Driver Registration</h2>
+            <form @submit.prevent="registerDriver">
+                <div class="form-group">
+                    <label for="first_name">First Name</label>
                     <input
-                        v-model="form.firstname"
                         type="text"
-                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                        v-model="formData.first_name"
+                        id="first_name"
                         required
                     />
                 </div>
-                <div class="item-field">
-                    <label>Last Name</label>
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
                     <input
-                        v-model="form.lastname"
                         type="text"
-                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                        v-model="formData.last_name"
+                        id="last_name"
                         required
                     />
                 </div>
-            </div>
-
-            <div class="mb-4">
-                <label>Phone</label>
-                <input
-                    v-model="form.phone"
-                    type="tel"
-                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-                    required
-                />
-            </div>
-
-            <div class="mb-4">
-                <label
-                    >SMS OTP <br /><small
-                        >(6 digit code sent to phone number)</small
-                    ></label
-                >
-                <div class="flex justify-center space-x-2 mt-2 otp-field-block">
+                <div class="form-group">
+                    <label for="phone">Phone</label>
                     <input
-                        v-for="(digit, index) in otp"
-                        :key="index"
-                        v-model="otp[index]"
-                        maxlength="1"
-                        @input="handleInput(index, $event)"
-                        @keydown.backspace="handleBackspace(index, $event)"
-                        class="w-12 h-12 text-center text-xl border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                         type="text"
+                        v-model="formData.phone"
+                        id="phone"
+                        required
                     />
                 </div>
-            </div>
-
-            <div class="mb-4">
-                <label>Email</label>
-                <input
-                    v-model="form.email"
-                    type="email"
-                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-                    required
-                />
-            </div>
-
-            <div class="mb-4">
-                <label>Vehicle Type</label>
-                <input
-                    v-model="form.vehicletype"
-                    type="text"
-                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-                    required
-                />
-            </div>
-
-            <div class="mb-4">
-                <label>Vehicle Number</label>
-                <input
-                    v-model="form.vehiclenumber"
-                    type="number"
-                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-                    required
-                />
-            </div>
-
-            <div class="mb-4">
-                <label>Load Capacity</label>
-                <input
-                    v-model="form.loadcapacity"
-                    type="text"
-                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-                    required
-                />
-            </div>
-
-            <div class="mb-4">
-                <label>Zip Code</label>
-                <input
-                    v-model="form.zipcode"
-                    type="number"
-                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-                    required
-                />
-            </div>
-
-            <div class="mb-4 uploadFiles">
-                <label>Please Verify Your ID</label>
-                <!-- License Verification -->
-                <div class="fieldUpload">
-                    <label class="block mb-2 font-medium"
-                        >License Verification</label
-                    >
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" v-model="formData.email" id="email" />
+                </div>
+                <div class="form-group">
+                    <label for="zipcode">Zipcode</label>
+                    <input
+                        type="text"
+                        v-model="formData.zipcode"
+                        id="zipcode"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input
+                        type="text"
+                        v-model="formData.country"
+                        id="country"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input
+                        type="text"
+                        v-model="formData.address"
+                        id="address"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        v-model="formData.username"
+                        id="username"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        v-model="formData.password"
+                        id="password"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input
+                        type="password"
+                        v-model="formData.confirm_password"
+                        id="confirm_password"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="vehicle_type">Vehicle Type</label>
+                    <input
+                        type="text"
+                        v-model="formData.vehicle_type"
+                        id="vehicle_type"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="vehicle_number">Vehicle Number</label>
+                    <input
+                        type="text"
+                        v-model="formData.vehicle_number"
+                        id="vehicle_number"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="load_capacity">Load Capacity</label>
+                    <input
+                        type="text"
+                        v-model="formData.load_capacity"
+                        id="load_capacity"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="license_file">License</label>
                     <input
                         type="file"
-                        @change="handleFileUpload($event, 'license')"
+                        @change="handleFileUpload($event, 'license_file')"
+                        id="license_file"
                     />
-                    <p v-if="form.license" class="text-green-600 mt-1">
-                        File: {{ form.license.name }}
-                    </p>
                 </div>
-
-                <!-- Insurance Verification -->
-                <div class="fieldUpload">
-                    <label class="block mb-2 font-medium"
-                        >Insurance Verification</label
-                    >
+                <div class="form-group">
+                    <label for="insurance_file">Insurance</label>
                     <input
                         type="file"
-                        @change="handleFileUpload($event, 'insurance')"
+                        @change="handleFileUpload($event, 'insurance_file')"
+                        id="insurance_file"
                     />
-                    <p v-if="form.insurance" class="text-green-600 mt-1">
-                        File: {{ form.insurance.name }}
-                    </p>
                 </div>
-
-                <!-- Registration Verification -->
-                <div class="fieldUpload">
-                    <label class="block mb-2 font-medium"
-                        >Registration Verification</label
-                    >
+                <div class="form-group">
+                    <label for="registration_file">Registration</label>
                     <input
                         type="file"
-                        @change="handleFileUpload($event, 'registration')"
+                        @change="handleFileUpload($event, 'registration_file')"
+                        id="registration_file"
                     />
-                    <p v-if="form.registration" class="text-green-600 mt-1">
-                        File: {{ form.registration.name }}
-                    </p>
                 </div>
-            </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
 
-            <div class="mb-4">
-                <label>User Name</label>
-                <input
-                    v-model="form.username"
-                    type="text"
-                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-                    required
-                />
-            </div>
-
-            <div class="mb-4">
-                <label>Password</label>
-                <input
-                    v-model="form.password"
-                    type="password"
-                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-                    required
-                />
-            </div>
-
-            <div class="mb-4">
-                <label>Confirm Password</label>
-                <input
-                    v-model="form.confirmpassword"
-                    type="password"
-                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-                    required
-                />
-            </div>
-
-            <div class="submitBtn">
-                <button
-                    type="submit"
-                    class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
-                >
-                    Register
-                </button>
-            </div>
-            <div class="text-center alternativeForm">
-                <a href="registration">Registering as Shipper</a>
-            </div>
-        </form>
-
-        <div
-            v-if="submitted"
-            class="text-green-500 font-medium text-center mt-4"
-        >
-            Registration Successful!
+        <div v-else>
+            <h2>Verify Phone Number</h2>
+            <p>
+                An OTP has been sent to {{ formData.phone }}. Please enter it
+                below.
+            </p>
+            <form @submit.prevent="verifyOtp">
+                <div class="form-group">
+                    <label for="otp">OTP</label>
+                    <input type="text" v-model="otp" id="otp" required />
+                </div>
+                <button type="submit">Verify OTP</button>
+            </form>
+            <button @click="resendOtp">Resend OTP</button>
         </div>
     </div>
 </template>
+
+<script>
+import axios from "axios";
+
+export default {
+    data() {
+        return {
+            formData: {
+                role: "driver",
+                first_name: "",
+                last_name: "",
+                phone: "",
+                email: "",
+                zipcode: "",
+                country: "",
+                address: "",
+                username: "",
+                password: "",
+                confirm_password: "",
+                vehicle_type: "",
+                vehicle_number: "",
+                load_capacity: "",
+                license_file: null,
+                insurance_file: null,
+                registration_file: null,
+            },
+            registrationComplete: false,
+            otp: "",
+        };
+    },
+    methods: {
+        handleFileUpload(event, field) {
+            this.formData[field] = event.target.files[0];
+        },
+        async registerDriver() {
+            if (this.formData.password !== this.formData.confirm_password) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            const data = new FormData();
+            for (const key in this.formData) {
+                data.append(key, this.formData[key]);
+            }
+
+            try {
+                const response = await axios.post(
+                    "http://localhost:3000/api/register",
+                    data,
+                    {
+                        headers: {
+                            "Content-Type": "multipart/form-data",
+                        },
+                    }
+                );
+                console.log(response.data);
+                this.registrationComplete = true;
+                alert(
+                    "Registration successful! Please check your phone for an OTP."
+                );
+            } catch (error) {
+                console.error(error);
+                alert("Registration failed.");
+            }
+        },
+        async verifyOtp() {
+            try {
+                const response = await axios.post(
+                    "http://localhost:3000/api/verify-otp",
+                    {
+                        phone: this.formData.phone,
+                        otp: this.otp,
+                    }
+                );
+                console.log(response.data);
+                alert("OTP verification successful! You can now log in.");
+                // Optionally, redirect to login page
+                // window.location.href = '/login';
+            } catch (error) {
+                console.error(error);
+                alert("OTP verification failed.");
+            }
+        },
+        async resendOtp() {
+            try {
+                const response = await axios.post(
+                    "http://localhost:3000/api/resend-otp",
+                    {
+                        phone: this.formData.phone,
+                    }
+                );
+                console.log(response.data);
+                alert("A new OTP has been sent to your phone.");
+            } catch (error) {
+                console.error(error);
+                alert("Failed to resend OTP.");
+            }
+        },
+    },
+};
+</script>
+
+<style scoped>
+.form-group {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+</style>
