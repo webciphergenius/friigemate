@@ -65,7 +65,7 @@
                     <div class="col-sm-6">
                         <div class="heroContent text-end text-white">
                             <h1 class="fw-bold">
-                                Redefining Freight
+                                Redefining Freight 5
                                 Management
                             </h1>
                             <p>
