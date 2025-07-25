@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="!registrationComplete">
-            <h2>Driver Registration</h2>
+            <h2>Driver Registration 2</h2>
             <form @submit.prevent="registerDriver">
                 <div class="form-group">
                     <label for="first_name">First Name</label>

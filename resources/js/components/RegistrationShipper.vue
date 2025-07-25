@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="!registrationComplete">
-            <h2>Shipper Registration</h2>
+            <h2>Shipper Registration 2</h2>
             <form @submit.prevent="registerShipper">
                 <!-- Registration form fields remain the same -->
                 <div class="form-group">
