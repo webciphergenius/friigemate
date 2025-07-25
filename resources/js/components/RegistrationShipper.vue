@@ -1,8 +1,9 @@
 <template>
     <div>
         <div v-if="!registrationComplete">
-            <h2>Driver Registration</h2>
-            <form @submit.prevent="registerDriver">
+            <h2>Shipper Registration</h2>
+            <form @submit.prevent="registerShipper">
+                <!-- Registration form fields remain the same -->
                 <div class="form-group">
                     <label for="first_name">First Name</label>
                     <input
@@ -86,51 +87,11 @@
                     />
                 </div>
                 <div class="form-group">
-                    <label for="vehicle_type">Vehicle Type</label>
+                    <label for="company">Company</label>
                     <input
                         type="text"
-                        v-model="formData.vehicle_type"
-                        id="vehicle_type"
-                    />
-                </div>
-                <div class="form-group">
-                    <label for="vehicle_number">Vehicle Number</label>
-                    <input
-                        type="text"
-                        v-model="formData.vehicle_number"
-                        id="vehicle_number"
-                    />
-                </div>
-                <div class="form-group">
-                    <label for="load_capacity">Load Capacity</label>
-                    <input
-                        type="text"
-                        v-model="formData.load_capacity"
-                        id="load_capacity"
-                    />
-                </div>
-                <div class="form-group">
-                    <label for="license_file">License</label>
-                    <input
-                        type="file"
-                        @change="handleFileUpload($event, 'license_file')"
-                        id="license_file"
-                    />
-                </div>
-                <div class="form-group">
-                    <label for="insurance_file">Insurance</label>
-                    <input
-                        type="file"
-                        @change="handleFileUpload($event, 'insurance_file')"
-                        id="insurance_file"
-                    />
-                </div>
-                <div class="form-group">
-                    <label for="registration_file">Registration</label>
-                    <input
-                        type="file"
-                        @change="handleFileUpload($event, 'registration_file')"
-                        id="registration_file"
+                        v-model="formData.company"
+                        id="company"
                     />
                 </div>
                 <button type="submit">Register</button>
@@ -162,7 +123,7 @@ export default {
     data() {
         return {
             formData: {
-                role: "driver",
+                role: "shipper",
                 first_name: "",
                 last_name: "",
                 phone: "",
@@ -173,22 +134,14 @@ export default {
                 username: "",
                 password: "",
                 confirm_password: "",
-                vehicle_type: "",
-                vehicle_number: "",
-                load_capacity: "",
-                license_file: null,
-                insurance_file: null,
-                registration_file: null,
+                company: "",
             },
             registrationComplete: false,
             otp: "",
         };
     },
     methods: {
-        handleFileUpload(event, field) {
-            this.formData[field] = event.target.files[0];
-        },
-        async registerDriver() {
+        async registerShipper() {
             if (this.formData.password !== this.formData.confirm_password) {
                 alert("Passwords do not match!");
                 return;
