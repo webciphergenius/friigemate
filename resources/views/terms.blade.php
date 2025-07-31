@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Privacy Policy</title>
+    <title>Terms of Service</title>
     @vite('resources/js/app.js')
     @vite('resources/css/app.css')
 </head>
 <body>
     <div id="app">
-        <privacy-policy></privacy-policy>
+        <terms-of-service></terms-of-service>
     </div>
 </body>
 </html>

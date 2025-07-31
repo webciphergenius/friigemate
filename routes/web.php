@@ -15,8 +15,8 @@ Route::get('/registration', function () {
     return view('registration');
 });
 
-Route::get('/registration-driver', function () {
-    return view('registration-driver');
+Route::get('/terms-of-service', function () {
+    return view('terms');
 });
 
 Route::get('/privacy-policy', function () {

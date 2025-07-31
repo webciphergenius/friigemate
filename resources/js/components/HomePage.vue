@@ -65,7 +65,7 @@
                     <div class="col-sm-6">
                         <div class="heroContent text-end text-white">
                             <h1 class="fw-bold">
-                                Redefining Freight 5
+                                Redefining Freight
                                 Management
                             </h1>
                             <p>
@@ -1200,9 +1200,9 @@
                             <div class="footerWidget web-list">
                                 <h5>Useful Links</h5>
                                 <ul class="footer-list">
-                                    <li><a href="#">How It Works?</a></li>
-                                    <li><a href="https://gofreightmate.com/privacy-policy">Privacy Policy</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
+                                    <li>How It Works?</li>
+                                    <li><a href="https://friigemate.test/privacy-policy">Privacy Policy</a></li>
+                                    <li><a href="https://friigemate.test/terms-of-service">Terms of Service</a></li>
                                     <li><a href="#">Site Map</a></li>
                                 </ul>
                             </div>
@@ -1211,10 +1211,10 @@
                             <div class="footerWidget web-list">
                                 <h5>Support</h5>
                                 <ul class="footer-list">
-                                    <li><a href="#">FAQs</a></li>
-                                    <li><a href="#">Editor Help</a></li>
-                                    <li><a href="#">Life Chatting</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li>FAQs</li>
+                                    <li>Editor Help</li>
+                                    <li>Life Chatting</li>
+                                    <li>Contact Us</li>
                                 </ul>
                             </div>
                         </div>
@@ -1237,7 +1237,7 @@
                         <div class="col-sm-4 text-end">
                             <ul class="list-inline info-List">
                                 <li class="list-inline-item"><a href="#">Site Map </a></li>
-                                <li class="list-inline-item"><a href="https://gofreightmate.com/privacy-policy"> Privacy Policy</a></li>
+                                <li class="list-inline-item"><a href="https://friigemate.test/privacy-policy"> Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>

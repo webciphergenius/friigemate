@@ -1,14 +1,21 @@
 import { createApp } from "vue";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import PrivacyPolicy from './components/privacyPolicy.vue'
 import HomePage from "./components/HomePage.vue";
+import RegistrationForm from "./components/RegistrationForm.vue";
+import RegistrationDriver from "./components/RegistrationDriver.vue";
+import TermsOfService from './components/TermsOfService.vue';
+import PrivacyPolicy from "./components/PrivacyPolicy.vue";
 
 const app = createApp({
     components: {
         HomePage,
-        PrivacyPolicy
+        RegistrationForm,
+        RegistrationDriver,
+        TermsOfService,
+        PrivacyPolicy,
     },
 });
 
 app.mount("#app");
+

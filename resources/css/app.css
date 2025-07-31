@@ -564,7 +564,7 @@ form.registerFormMain textarea {
   transition: all 0.3s ease;
 }
 header.mainHead.sticky {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
@@ -639,6 +639,15 @@ a.getstartedBtn {
     background: url(../images/list-vector-icon.png);
     background-position: center;
     background-size: cover;
+}
+.web-list a {
+    color: #000;
+    text-decoration: none;
+}
+span.center-policy {
+    display: block;
+    text-align: center;
+    color: #000;
 }
 
 @media only screen and (min-width: 1440px) {
