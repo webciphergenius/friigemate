@@ -243,12 +243,20 @@
                 <div class="form-group policyfield">
                     <input
                         type="checkbox"
+                        v-model="formData.receive_offers"
+                        id="receive_offers"
+                        class="form-input"
+                    /> <span> I would like to receive offers and news</span>
+                </div>
+                <div class="form-group policyfield">
+                    <input
+                        type="checkbox"
                         v-model="formData.privacy_policy"
                         id="privacy_policy"
                         class="form-input"
-                    /> <span>I agree to receive marketing messaging from Twilio at the phone number provided above. I understand I will receive 2 messages a month, data rates may apply, reply STOP to opt out</span>
+                    /> <span> I accept the <a href="https://friigemate.test/terms-of-service">Terms of Service</a> & <a href="https://friigemate.test/privacy-policy">Privacy Policy</a> <br>
+                        By providing your phone number you agree to receive informational text messages from FreightMate. Consent is not a condition of purchase. Messages Frequency will vary. Msg & data rates may apply. Reply HELP for help or STOP to cancel.</span>
                 </div>
-                <span class="center-policy"><a href="https://friigemate.test/privacy-policy">Privacy Policy</a> | <a href="https://friigemate.test/terms-of-service">Terms of Service</a></span>
                 <button type="submit" class="form-button">Register</button>
             </form>
         </div>

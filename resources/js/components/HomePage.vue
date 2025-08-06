@@ -6,7 +6,7 @@
             
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                  <a class="navbar-brand fw-bold" href="/"><img src="../../images/logo.png" alt="brand-logo"></a>
+                  <a class="navbar-brand fw-bold" href="/"><img src="../../images/Go_FreightMate_logo.png" alt="brand-logo"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -56,7 +56,7 @@
                     <div class="col-sm-6">
                         <figure class="m-0">
                             <img
-                                src="../../images/hero-7-img.png"
+                                src="../../images/hero-with-newlogo.png"
                                 alt="hero-image"
                                 class="w-75"
                             />
@@ -158,7 +158,7 @@
                     <div class="col-sm-6">
                         <figure class="logisticsFigure text-center m-0">
                             <img
-                                src="../../images/smater01img.png"
+                                src="../../images/smart-with-newlogo.png"
                                 alt="logistics-image"
                                 class="w-75"
                             />
@@ -247,7 +247,7 @@
                     <div class="col-sm-6">
                         <figure class="partnerFigure text-center m-0">
                             <img
-                                src="../../images/partner-sec01img.png"
+                                src="../../images/partner-with-newlogo.png"
                                 alt="partner-image"
                                 class="w-45"
                             />

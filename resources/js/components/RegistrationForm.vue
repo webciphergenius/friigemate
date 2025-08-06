@@ -1,7 +1,7 @@
 <template>
     <div class="mainRegister p-5 text-white">
         <div class="panelLogo">
-            <img src="../../images/logo.png" alt="brand-logo" />
+            <img src="../../images/Go_FreightMate_logo.png" alt="brand-logo" />
         </div>
         <div class="tab-buttons flex justify-center mb-5 space-x-4">
             <button
