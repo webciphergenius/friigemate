@@ -167,12 +167,12 @@
                     <div class="col-sm-6">
                         <div class="logisticsBlock">
                             <h2>
-                                FreightMate: Smarter Freight, Simplified
+                                Go Freightmate: Smarter Freight, Simplified
                                 Logistics
                             </h2>
                             <p>
                                 Effortlessly manage your shipments with
-                                FreightMate®, your all-in-one logistics
+                                Go Freightmate®, your all-in-one logistics
                                 platform. Designed to connect shippers and
                                 carriers seamlessly, our intuitive app makes
                                 freight management easier, faster, and more
@@ -213,11 +213,11 @@
                     <div class="col-sm-6">
                         <div class="partnerBlock">
                             <h2>
-                                FreightMate: Your Logistics Partner on the Go
+                                Go Freightmate: Your Logistics Partner on the Go
                             </h2>
                             <p>
                                 Take control of your freight management with
-                                FreightMate®—the ultimate solution for seamless
+                                Go Freightmate®—the ultimate solution for seamless
                                 shipping. Easily create, manage, and track
                                 shipments, all from the palm of your hand.
                             </p>
@@ -260,9 +260,9 @@
         <section class="portfolioSec">
             <div class="container">
                 <div class="secHeading text-center">
-                    <h2>Explore FreightMate in Action</h2>
+                    <h2>Explore Go Freightmate in Action</h2>
                     <p>
-                        See why FreightMate® is the go-to platform for smarter
+                        See why Go Freightmate® is the go-to platform for smarter
                         logistics. Our intuitive design <br />and powerful
                         features make freight management effortless.
                     </p>
@@ -288,7 +288,7 @@
                         </li>
                     </ul>
                     <p>
-                        Discover how FreightMate simplifies your freight
+                        Discover how Go Freightmate simplifies your freight
                         operations and transforms <br />the way you manage
                         logistics.
                     </p>
@@ -370,7 +370,7 @@
             <div class="container text-center py-5">
                 <h2 class="fw-bold">Features In This App</h2>
                 <p class="text-muted">
-                    FreightMate® is packed with powerful features designed to
+                    Go Freightmate® is packed with powerful features designed to
                     make freight <br />management seamless and efficient. Here's
                     what sets us apart:
                 </p>
@@ -386,7 +386,7 @@
                             />
                             <h5 class="mt-3">Free Trial</h5>
                             <p class="text-muted">
-                                Experience all the features of FreightMate at no
+                                Experience all the features of Go Freightmate at no
                                 cost.
                             </p>
                         </div>
@@ -493,7 +493,7 @@
         <section class="howWorks">
             <div class="container">
                 <div class="secHeading text-center">
-                    <h2>How FreightMate™ Works</h2>
+                    <h2>How Go Freightmate™ Works</h2>
                     <p>
                         Lorem Ipsum has been the industry's standard dummy text
                         ever<br />
@@ -504,9 +504,9 @@
                     <div class="row align-items-center">
                         <div class="col-sm-6">
                             <div class="logisticsBlock">
-                                <h3>How FreightMate™ Works</h3>
+                                <h3>How Go Freightmate™ Works</h3>
                                 <p>
-                                    Simplify logistics with FreightMate®—your
+                                    Simplify logistics with Go Freightmate®—your
                                     all-in-one platform for seamless freight
                                     management. Here's how it works:
                                 </p>
@@ -536,7 +536,7 @@
                                     </li>
                                 </ul>
                                 <p>
-                                    FreightMate® makes freight handling faster,
+                                    Go Freightmate® makes freight handling faster,
                                     easier, and more efficient.
                                 </p>
                                 <a
@@ -576,7 +576,7 @@
                         <div class="logisticsBlock">
                             <h2>Experienced and Skilled</h2>
                             <p>
-                                FreightMate® brings decades of logistics
+                                Go Freightmate® brings decades of logistics
                                 expertise to your fingertips. Our platform is
                                 designed to provide seamless freight management,
                                 ensuring precision and efficiency every step of
@@ -601,7 +601,7 @@
                                 </li>
                             </ul>
                             <p>
-                                Take control of your logistics with FreightMate
+                                Take control of your logistics with Go Freightmate
                                 and experience the difference expertise makes.
                             </p>
                             <a
@@ -619,7 +619,7 @@
                 <div class="secHeading text-center">
                     <h2>Our Executive Team</h2>
                     <p>
-                        Meet the dedicated professionals driving FreightMate® to
+                        Meet the dedicated professionals driving Go Freightmate® to
                         success. With years of experience and a <br />commitment
                         to innovation, our team ensures we deliver the best
                         logistics solutions for our clients.
@@ -893,11 +893,11 @@
                     <div class="col-sm-6">
                         <div class="logisticsBlock">
                             <h3>
-                                FreightMate®: Your Logistics Solution on the Go
+                                Go Freightmate®: Your Logistics Solution on the Go
                             </h3>
                             <p>
                                 Manage, track, and optimize your freight with
-                                ease using FreightMate®. Whether you're a
+                                ease using Go Freightmate®. Whether you're a
                                 shipper or carrier, our platform connects you to
                                 the best logistics solutions at your fingertips.
                             </p>
@@ -921,7 +921,7 @@
                             </ul>
                             <p>
                                 <strong
-                                    >Download the FreightMate App Today!</strong
+                                    >Download the Go Freightmate App Today!</strong
                                 >
                                 <br />
                                 Available now on the App Store and Google Play
@@ -949,10 +949,10 @@
         <section class="helpSec sameSpacing">
             <div class="container">
                 <div class="secHeading text-center">
-                    <h2>Troubles with FreightMate™? We're Here to Help!</h2>
+                    <h2>Troubles with Go Freightmate™? We're Here to Help!</h2>
                     <p>
                         We understand that navigating new platforms can
-                        sometimes be challenging. That's why FreightMate® is
+                        sometimes be challenging. That's why Go Freightmate® is
                         backed by <br />a dedicated support team and a suite of
                         resources to ensure a smooth experience for all our
                         users.
@@ -1006,7 +1006,7 @@
                                 </li>
                             </ul>
                             <p>
-                                At FreightMate®, we're committed to ensuring
+                                At Go Freightmate®, we're committed to ensuring
                                 your logistics operations are seamless and
                                 hassle-free.
                             </p>
@@ -1045,7 +1045,7 @@
                                 >May 10, 2024</span
                             >
                             <h4>
-                                Empowering Drivers: How FreightMate is
+                                Empowering Drivers: How Go Freightmate is
                                 Transforming Logistics
                             </h4>
                             <p>
@@ -1089,7 +1089,7 @@
                             <p>
                                 Small businesses are the backbone of the
                                 economy, but logistics can often be a major
-                                hurdle. FreightMate® is here to change that.
+                                hurdle. Go Freightmate® is here to change that.
                             </p>
                             <ul class="newsBottom list-inline text-end">
                                 <li class="list-inline-item">
@@ -1124,12 +1124,12 @@
                                 >May 10, 2024</span
                             >
                             <h4>
-                                The Future of Freight: Insights from FreightMate
+                                The Future of Freight: Insights from Go Freightmate
                             </h4>
                             <p>
                                 The logistics industry is at a pivotal moment,
                                 with technology and sustainability reshaping the
-                                landscape. FreightMate® is at the helm
+                                landscape. Go Freightmate is at the helm
                             </p>
                             <ul class="newsBottom list-inline text-end">
                                 <li class="list-inline-item">
@@ -1159,7 +1159,7 @@
         <section class="newsletterSec sameSpacing">
             <div class="container text-center">
                 <div class="secHeading">
-                    <h3>Stay Connected with FreightMate</h3>
+                    <h3>Stay Connected with Go Freightmate</h3>
                     <p>
                         Never miss an update or exclusive offer. Subscribe to
                         our <br />newsletter and stay ahead in the world of
@@ -1192,8 +1192,8 @@
                                    <br>
                                      
 
-                                <p><strong>FreightMate®: Efficient. Reliable. Trusted.</strong><br>
-                                Transforming the logistics landscape, FreightMate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
+                                <p><strong>Go Freightmate®: Efficient. Reliable. Trusted.</strong><br>
+                                Transforming the logistics landscape, Go Freightmate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
                             </div>
                         </div>
                         <div class="col-sm-2">
@@ -1230,7 +1230,7 @@
                     <div class="row bottom-footer">
                         <div class="col-sm-8">
                             <div class="bottomLeft">
-                                <span>© 2025 <strong>FreightMate.</strong> All Rights Reserved</span><br>
+                                <span>© 2025 <strong>Go Freightmate.</strong> All Rights Reserved</span><br>
                                 <span>Site design & development by <a href="#">Contemporary Media Group, LLC</a></span>
                             </div>
                         </div>

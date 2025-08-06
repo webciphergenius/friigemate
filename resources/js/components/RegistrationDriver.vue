@@ -235,7 +235,7 @@
                                 class="file-selected"
                             >
                                 Selected: {{ formData.registration_file.name }}
-                            </span>
+                            </span> 
                         </div>
                     </div>
                 </div>
