@@ -221,8 +221,8 @@
                                    <br>
                                      
 
-                                <p><strong>FreightMate®: Efficient. Reliable. Trusted.</strong><br>
-                                Transforming the logistics landscape, FreightMate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
+                                <p><strong>Go Freightmate®: Efficient. Reliable. Trusted.</strong><br>
+                                Transforming the logistics landscape, Go Freightmate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
                             </div>
                         </div>
                         <div class="col-sm-2">
@@ -259,7 +259,7 @@
                     <div class="row bottom-footer">
                         <div class="col-sm-8">
                             <div class="bottomLeft">
-                                <span>© 2025 <strong>FreightMate.</strong> All Rights Reserved</span><br>
+                                <span>© 2025 <strong>Go Freightmate.</strong> All Rights Reserved</span><br>
                                 <span>Site design & development by <a href="#">Contemporary Media Group, LLC</a></span>
                             </div>
                         </div>

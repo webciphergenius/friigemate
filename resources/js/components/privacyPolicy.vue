@@ -54,7 +54,7 @@
             <h2>Privacy Policy</h2>
         </div>
         <div class="terms-content">
-            <p>This privacy policy sets out how FreightMate® uses and protects any information that you give COMPANY when you use this website. COMPANY is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using  this website, then you can be assured that it will only be used in accordance with this privacy statement. COMPANY may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes.</p>
+            <p>This privacy policy sets out how Go Freightmate® uses and protects any information that you give Go Freightmate® when you use this website. Go Freightmate® is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using  this website, then you can be assured that it will only be used in accordance with this privacy statement. Go Freightmate® may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes.</p>
 
             <h3>WHAT WE COLLECT</h3>
             <h4>We may collect the following information:</h4>
@@ -108,8 +108,8 @@
                                    <br>
                                      
 
-                                <p><strong>FreightMate®: Efficient. Reliable. Trusted.</strong><br>
-                                Transforming the logistics landscape, FreightMate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
+                                <p><strong>Go Freightmate®: Efficient. Reliable. Trusted.</strong><br>
+                                Transforming the logistics landscape, Go Freightmate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
                             </div>
                         </div>
                         <div class="col-sm-2">
@@ -146,7 +146,7 @@
                     <div class="row bottom-footer">
                         <div class="col-sm-8">
                             <div class="bottomLeft">
-                                <span>© 2025 <strong>FreightMate.</strong> All Rights Reserved</span><br>
+                                <span>© 2025 <strong>Go Freightmate.</strong> All Rights Reserved</span><br>
                                 <span>Site design & development by <a href="#">Contemporary Media Group, LLC</a></span>
                             </div>
                         </div>
