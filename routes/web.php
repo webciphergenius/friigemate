@@ -20,5 +20,5 @@ Route::get('/terms-of-service', function () {
 });
 
 Route::get('/privacy-policy', function () {
-    return view('privacy');
+    return view('privacy-policy');
 });
