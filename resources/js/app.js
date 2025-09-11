@@ -5,7 +5,7 @@ import HomePage from "./components/HomePage.vue";
 import RegistrationForm from "./components/RegistrationForm.vue";
 import RegistrationDriver from "./components/RegistrationDriver.vue";
 import TermsOfService from './components/TermsOfService.vue';
-import PrivacyPolicy from './components/PrivacyPolicy.vue';
+// import PrivacyPolicy from "./components/PrivacyPolicy.vue";
 
 const app = createApp({
     components: {
@@ -13,7 +13,7 @@ const app = createApp({
         RegistrationForm,
         RegistrationDriver,
         TermsOfService,
-        PrivacyPolicy,
+        // PrivacyPolicy,
     },
 });
 
