@@ -117,8 +117,8 @@
                                 <h5>Useful Links</h5>
                                 <ul class="footer-list">
                                     <li><a href="#">How It Works?</a></li>
-                                    <li><a href="https://friigemate.test/privacy-policy">Privacy Policy</a></li>
-                                    <li><a href="https://friigemate.test/terms-of-service">Terms of Service</a></li>
+                                    <li><a href="https://gofreightmate.com/privacy-policy">Privacy Policy</a></li>
+                                    <li><a href="https://gofreightmate.com/terms-of-service">Terms of Service</a></li>
                                     <li><a href="#">Site Map</a></li>
                                 </ul>
                             </div>
@@ -153,7 +153,7 @@
                         <div class="col-sm-4 text-end">
                             <ul class="list-inline info-List">
                                 <li class="list-inline-item"><a href="#">Site Map </a></li>
-                                <li class="list-inline-item"><a href="https://friigemate.test/privacy-policy"> Privacy Policy</a></li>
+                                <li class="list-inline-item"><a href="https://gofreightmate.com/privacy-policy"> Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
