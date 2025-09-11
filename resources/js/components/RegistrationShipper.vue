@@ -129,7 +129,7 @@
                         v-model="formData.privacy_policy"
                         id="privacy_policy"
                         class="form-input"
-                    /> <span> I accept the <a href="https://friigemate.test/terms-of-service">Terms of Service</a> & <a href="https://friigemate.test/privacy-policy">Privacy Policy</a> <br>
+                    /> <span> I accept the <a href="https://gofreightmate.com/terms-of-service">Terms of Service</a> & <a href="https://gofreightmate.com/privacy-policy">Privacy Policy</a> <br>
                         By providing your phone number you agree to receive informational text messages from FreightMate. Consent is not a condition of purchase. Messages Frequency will vary. Msg & data rates may apply. Reply HELP for help or STOP to cancel.</span>
                 </div>
                 <button type="submit" class="submit-btn">Register</button>
