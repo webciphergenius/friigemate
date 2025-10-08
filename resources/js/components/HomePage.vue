@@ -731,9 +731,9 @@
                             <p>Creative Director</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-facebook-f"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="#"
