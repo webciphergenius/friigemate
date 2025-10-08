@@ -671,13 +671,15 @@ span.center-policy {
 }
 .popup-content {
     position: relative;
-    background: #fff url(../images/pop-up-bg.png) no-repeat;
+    background: #fff url(../images/pop-bg-img.png) no-repeat;
     background-size: 100% 65%;
-    padding: 30px;
+    padding: 50px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-    max-width: 800px;
+    max-width: 750px;
     animation: scaleUp 0.3s ease-in-out;
-    margin-top: 100px;
+    margin-top: 60px;
+    overflow-y: scroll;
+    height: 85vh;
 }
 .close-btn {
     position: absolute;
@@ -699,29 +701,45 @@ span.center-policy {
     padding: 10px 0 0;
 }
 .pop-header h3 {
-    font-size: 28px !important;
-    font-weight: 600;
+    font-size: 42px!important;
     margin: 0;
+    font-weight: 700 !important;
+    color: #FFFFFF;
 }
 .pop-header h5 {
-    font-size: 22px !important;
+    font-size: 26px !important;
     font-weight: 400;
     margin: 5px 0 0;
     color: #666666;
+    color: #FFFFFF;
 }
 .pop-header p {
     font-size: 18px !important;
     color: #333333;
     margin: 10px 0 0;
+    color: #FFFFFF;
 }
 .pop-body {
     display: flex;
     gap: 20px;
+    background: #eee;
+    padding: 30px 30px 10px 0;
+    border: 1px solid #D9D9D9;
+    margin-top: 30px;
+    align-items: center;
+    overflow: hidden;
+}
+.pop-left-form h4 {
+    font-size: 24px !important;
 }
 .pop-body h4 {
     font-size: 20px !important;
     font-weight: 500;
     margin: 0 0 10px;
+}
+.pop-left-form {
+    margin-left: -5rem;
+    z-index: 1;
 }
 .pop-body p {
     font-size: 16px !important;
@@ -732,21 +750,23 @@ span.center-policy {
     width: 100%;
     height: 40px;
     padding: 15px 0;
-    border-radius: 0 !important;
+    border-radius: 0!important;
     border: none;
-    border-bottom: 1px solid #D5D4D4 !important;
+    border-bottom: 1px solid #D5D4D4!important;
     outline: none;
+    margin: 5px 0;
 }
 #popForm .submitBtnpop {
     text-align: center;
-    background: #F58743;
-    padding: 12px 25px;
-    border-radius: 4px !important;
+    background: #f58743;
+    padding: 10px 25px;
+    border-radius: 4px!important;
     border: none;
     color: #fff;
     text-transform: capitalize;
     text-decoration: none;
     font-size: 16px;
+    height: unset;
 }
 .highlight {
     color: #F58743;
@@ -754,6 +774,13 @@ span.center-policy {
 .pop-logo {
     text-align: center;
 }
+.pop-left-img img {
+    width: 100%;
+}
+.pop-left-img img {
+    margin-left: -2rem;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
