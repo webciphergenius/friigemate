@@ -1,7 +1,7 @@
 <template>
       <header class="mainHead">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-<div class="popup-overlay" id="popup">
+<div class="popup-overlay" id="popupOn">
     <div class="popup-content">
         <button class="close-btn" id="closeBtn">&times;</button>
         <div class="pop-header">
@@ -1536,25 +1536,19 @@ window.addEventListener('scroll', function () {
   }
 });
 
-data() {
-  return {
-    showPopup: false
-  };
-},
-mounted() {
-  setTimeout(() => {
-    this.showPopup = true;
-  }, 2000);
-},
-methods: {
-  closePopup() {
-    this.showPopup = false;
-  },
-  closeOnOutside(event) {
-    if (event.target.id === 'popup') {
-      this.showPopup = false;
-    }
-  }
-}
+window.addEventListener('load', () => {
+    setTimeout(() => {
+    document.getElementById('popupOn').style.display = 'flex';
+    }, 2000);
+});
 
+document.getElementById('closeBtn').addEventListener('click', () => {
+    document.getElementById('popupOn').style.display = 'none';
+});
+
+document.getElementById('popupOn').addEventListener('click', (event) => {
+    if (event.target.id === 'popupOn') {
+    document.getElementById('popupOn').style.display = 'none';
+    }
+});
 </script>
