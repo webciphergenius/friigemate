@@ -353,6 +353,14 @@
                                 />
                             </figure>
                         </div>
+                        <div class="portfolio-item text-center">
+                            <figure>
+                                <img
+                                    src="../../images/explore07img.png"
+                                    alt="portfolio-image"
+                                />
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -541,7 +549,7 @@
                         <div class="col-sm-6">
                             <figure class="logisticsFigure text-center m-0">
                                 <img
-                                    src="../../images/Driver/how-works-img.png"
+                                    src="../../images/how-works-img.png"
                                     alt="logistics-image"
                                     class="w-75"
                                 />
