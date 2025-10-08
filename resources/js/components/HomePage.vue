@@ -1509,19 +1509,4 @@ window.addEventListener('scroll', function () {
     header.classList.remove('sticky');
   }
 });
-window.addEventListener('load', () => {
-    setTimeout(() => {
-    document.getElementById('popup').style.display = 'flex';
-    }, 2000);
-});
-
-document.getElementById('closeBtn').addEventListener('click', () => {
-    document.getElementById('popup').style.display = 'none';
-});
-
-document.getElementById('popup').addEventListener('click', (event) => {
-    if (event.target.id === 'popup') {
-    document.getElementById('popup').style.display = 'none';
-    }
-});
 </script>
