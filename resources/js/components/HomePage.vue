@@ -638,21 +638,34 @@
                             <p>Chief Executive Officer/Founder</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-facebook-f"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-twitter"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><img
-                                            src="../../images/socialIcon.png"
-                                            alt="social-icon"
-                                    /></a>
+                                    <a href="#">
+                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -669,21 +682,34 @@
                             <p>Chief Operating Officer</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-facebook-f"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-twitter"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><img
-                                            src="../../images/socialIcon.png"
-                                            alt="social-icon"
-                                    /></a>
+                                    <a href="#">
+                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -700,21 +726,34 @@
                             <p>Chief Technology Officer</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-facebook-f"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-twitter"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><img
-                                            src="../../images/socialIcon.png"
-                                            alt="social-icon"
-                                    /></a>
+                                    <a href="#">
+                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -736,16 +775,29 @@
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-twitter"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><img
-                                            src="../../images/socialIcon.png"
-                                            alt="social-icon"
-                                    /></a>
+                                    <a href="#">
+                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -762,21 +814,34 @@
                             <p>Chief Financial Officer</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-facebook-f"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-twitter"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><img
-                                            src="../../images/socialIcon.png"
-                                            alt="social-icon"
-                                    /></a>
+                                    <a href="#">
+                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -793,21 +858,34 @@
                             <p>VP/Sales Operations</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-facebook-f"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-twitter"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><img
-                                            src="../../images/socialIcon.png"
-                                            alt="social-icon"
-                                    /></a>
+                                    <a href="#">
+                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -824,21 +902,34 @@
                             <p>Office & Logistics Support Administrator</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-facebook-f"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-twitter"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><img
-                                            src="../../images/socialIcon.png"
-                                            alt="social-icon"
-                                    /></a>
+                                    <a href="#">
+                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -855,21 +946,34 @@
                             <p>Marketing Director</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-facebook-f"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><i class="fa fa-twitter"></i
-                                    ></a>
+                                    <a href="#">
+                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"
-                                        ><img
-                                            src="../../images/socialIcon.png"
-                                            alt="social-icon"
-                                    /></a>
+                                    <a href="#">
+                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
