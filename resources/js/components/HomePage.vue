@@ -308,7 +308,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/explore01-2img.png"
+                                    src="../../images/explore02img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -316,7 +316,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/Driver/explore03img.png"
+                                    src="../../images/explore03img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -324,7 +324,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/Driver/explore02img.png"
+                                    src="../../images/explore04img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -332,7 +332,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/Driver/explore03img.png"
+                                    src="../../images/explore05img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -340,7 +340,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/Driver/explore06img.png"
+                                    src="../../images/explore06img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -348,15 +348,7 @@
                         <div class="portfolio-item text-center">
                             <figure>
                                 <img
-                                    src="../../images/Driver/explore05img.png"
-                                    alt="portfolio-image"
-                                />
-                            </figure>
-                        </div>
-                        <div class="portfolio-item text-center">
-                            <figure>
-                                <img
-                                    src="../../images/Driver/explore06img.png"
+                                    src="../../images/explore07img.png"
                                     alt="portfolio-image"
                                 />
                             </figure>
@@ -674,7 +666,7 @@
                         <div class="teamBlock">
                             <figure>
                                 <img
-                                    src="../../images/doreen.jpg"
+                                    src="../../images/doreen.png"
                                     alt="team-image"
                                 />
                             </figure>

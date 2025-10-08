@@ -465,6 +465,7 @@ a.navbar-brand.fw-bold img {
     height: 180px;
     object-fit: cover;
     object-position: top;
+    width: 180px;
 }
 form.newsletterForm ::placeholder {
     color: #FFFFFF;
@@ -648,6 +649,12 @@ span.center-policy {
     display: block;
     text-align: center;
     color: #000;
+}
+[alt="instagram-icon"], [alt="tik-tok-icon"] {
+    height: 21px;
+}
+[alt="twitter-icon"] {
+    height: 18px;
 }
 
 @media only screen and (min-width: 1440px) {
