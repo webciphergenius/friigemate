@@ -672,7 +672,7 @@ span.center-policy {
 .popup-content {
     position: relative;
     background: #fff url(../images/pop-bg-img.png) no-repeat;
-    background-size: 100% 65%;
+    background-size: 100% 85%;
     padding: 50px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
     max-width: 750px;
@@ -684,17 +684,16 @@ span.center-policy {
 .close-btn {
     position: absolute;
     top: 8px;
-    right: 12px;
-    background: #FFFFFF;
-    color: #000000;
+    right: 18px;
+    background: #fff;
+    color: #000;
     border: none;
     border-radius: 50%;
     width: 28px;
     height: 28px;
     font-size: 20px;
-    cursor: pointer;
-    line-height: 25px;
     text-align: center;
+    line-height: 20px;
 }
 .pop-header {
     text-align: center;
@@ -707,15 +706,12 @@ span.center-policy {
     color: #FFFFFF;
 }
 .pop-header h5 {
-    font-size: 26px !important;
+    font-size: 26px!important;
     font-weight: 400;
-    margin: 5px 0 0;
-    color: #666666;
-    color: #FFFFFF;
+    margin: 10px 0;
+    color: #fff;
 }
 .pop-header p {
-    font-size: 18px !important;
-    color: #333333;
     margin: 10px 0 0;
     color: #FFFFFF;
 }
@@ -733,7 +729,7 @@ span.center-policy {
     font-size: 24px !important;
 }
 .pop-body h4 {
-    font-size: 20px !important;
+    font-size: 25px !important;
     font-weight: 500;
     margin: 0 0 10px;
 }
@@ -829,6 +825,29 @@ section#myblg figure img {
 }
 }
 @media only screen and (max-width: 767px) {
+.popup-content {
+    max-width: 95%;
+    margin-top: 0;
+    padding: 20px;
+}
+.pop-logo img {
+    width: 60%;
+    margin-bottom: 10px;
+}
+.pop-header h3 {
+    font-size: 30px!important;
+}
+.pop-header h5 {
+    font-size: 22px!important;
+}
+.pop-body {
+    padding: 20px;
+    flex-direction: column-reverse;
+}
+.pop-left-form, .pop-left-img img {
+    margin: 0;
+}
+
 .teamBlock figure img {
     height: 270px;
 }

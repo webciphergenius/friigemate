@@ -10,7 +10,7 @@
             </div>
             <h3>WANT TO MOVE FREIGHT <span class="highlight">SMARTER</span> AND <span class="highlight">FASTER?</span></h3>
             <h5>Stay <b>on time and in control</b> with <span class="highlight"><b>Go FreightMate™.</b></span></h5>
-            <p>Let us handle the heavy lifting—track shipments, connect with drivers, and streamline deliveries all in one place.</p>
+            <p>Let us handle the heavy lifting—track shipments, connect with <br>drivers, and streamline deliveries all in one place.</p>
         </div>
         <div class="pop-body">
             <div class="pop-left-img">
