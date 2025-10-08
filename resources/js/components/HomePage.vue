@@ -1535,4 +1535,26 @@ window.addEventListener('scroll', function () {
     header.classList.remove('sticky');
   }
 });
+
+data() {
+  return {
+    showPopup: false
+  };
+},
+mounted() {
+  setTimeout(() => {
+    this.showPopup = true;
+  }, 2000);
+},
+methods: {
+  closePopup() {
+    this.showPopup = false;
+  },
+  closeOnOutside(event) {
+    if (event.target.id === 'popup') {
+      this.showPopup = false;
+    }
+  }
+}
+
 </script>
