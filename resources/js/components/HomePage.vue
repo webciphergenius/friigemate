@@ -1,7 +1,7 @@
 <template>
       <header class="mainHead">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-<div class="popup-overlay" id="popupOn">
+<div class="popup-overlay" id="popup">
     <div class="popup-content">
         <button class="close-btn" id="closeBtn">&times;</button>
         <div class="pop-header">
@@ -1535,20 +1535,23 @@ window.addEventListener('scroll', function () {
     header.classList.remove('sticky');
   }
 });
-
 window.addEventListener('load', () => {
     setTimeout(() => {
-    document.getElementById('popupOn').style.display = 'flex';
+        const popup = document.getElementById('popup');
+        const closeBtn = document.getElementById('closeBtn');
+        if (!popup || !closeBtn) return;
+
+        popup.style.display = 'flex';
+
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        popup.addEventListener('click', (event) => {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
     }, 2000);
-});
-
-document.getElementById('closeBtn').addEventListener('click', () => {
-    document.getElementById('popupOn').style.display = 'none';
-});
-
-document.getElementById('popupOn').addEventListener('click', (event) => {
-    if (event.target.id === 'popupOn') {
-    document.getElementById('popupOn').style.display = 'none';
-    }
 });
 </script>
