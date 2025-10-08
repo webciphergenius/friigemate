@@ -1,7 +1,33 @@
 <template>
       <header class="mainHead">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-
+<div class="popup-overlay" id="popup">
+    <div class="popup-content">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <div class="pop-header">
+            <div class="pop-logo">
+                <img src="../../images/Go_FreightMate_logo.png" alt="brand-logo">
+            </div>
+            <h3>WANT TO MOVE FREIGHT <span class="highlight">SMARTER</span> AND <span class="highlight">FASTER?</span></h3>
+            <h5>Stay on time and in control with <span class="highlight">Go FreightMate™.</span></h5>
+            <p>Let us handle the heavy lifting—track shipments, connect with drivers, and streamline deliveries all in one place.</p>
+        </div>
+        <div class="pop-body">
+            <div class="pop-left-img">
+                <img src="../../images/pop-img-left.png" alt="pop-img-left">
+            </div>
+            <div class="pop-left-form">
+                <h4>Sign up for early access</h4>
+                <p>Be the first to test Go FreightMate™ and unlock smoother shipping.</p>
+                <form action="#" method="post" id="popForm">
+                    <input type="text" name="userName" id="userName" placeholder="Your Name">
+                    <input type="email" name="userEmail" id="userEmail" placeholder="Your Email*" required>
+                    <input type="submit" value="Let's move freight!" class="submitBtnpop">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
         <div class="container">
             
             <nav class="navbar navbar-expand-lg">
@@ -1508,5 +1534,20 @@ window.addEventListener('scroll', function () {
   } else {
     header.classList.remove('sticky');
   }
+});
+window.addEventListener('load', () => {
+    setTimeout(() => {
+    document.getElementById('popup').style.display = 'flex';
+    }, 2000);
+});
+
+document.getElementById('closeBtn').addEventListener('click', () => {
+    document.getElementById('popup').style.display = 'none';
+});
+
+document.getElementById('popup').addEventListener('click', (event) => {
+    if (event.target.id === 'popup') {
+    document.getElementById('popup').style.display = 'none';
+    }
 });
 </script>
