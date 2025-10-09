@@ -22,13 +22,20 @@ class BlogController extends Controller
 
             // Transform the data to match the frontend needs
             $formattedPosts = $posts->map(function ($post) {
+                // Ensure the cover photo path is a full URL
+                $coverPhotoUrl = $post->cover_photo_path;
+                if (!str_starts_with($coverPhotoUrl, 'http')) {
+                    // If it's a relative path, prepend the storage URL
+                    $coverPhotoUrl = asset('storage/' . $post->cover_photo_path);
+                }
+                
                 return [
                     'id' => $post->id,
                     'title' => $post->title,
                     'sub_title' => $post->sub_title,
                     'slug' => $post->slug,
                     'body' => $post->body,
-                    'cover_photo_path' => $post->cover_photo_path,
+                    'cover_photo_path' => $coverPhotoUrl,
                     'photo_alt_text' => $post->photo_alt_text,
                     'published_at' => $post->published_at,
                     'excerpt' => $this->getExcerpt($post->body, 150), // Get first 150 characters
