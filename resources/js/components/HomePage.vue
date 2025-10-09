@@ -1479,23 +1479,29 @@ export default {
       },
       successMessage: "",
       errorMessage: "",
+      newsletterEmail: "",
+      newsletterSuccessMessage: "",
+      newsletterErrorMessage: "",
     };
   },
   methods: {
     async submitForm() {
-    console.log(this.form); 
+      console.log(this.form); 
+      this.successMessage = "";
+      this.errorMessage = "";
+      
       try {
         const response = await axios.post('/contact', this.form);
         console.log('Form submitted successfully:', response.data);
-        alert('Message sent successfully!');
+        this.successMessage = 'Message sent successfully!';
         this.resetForm();
       } catch (error) {
-        console.error('Error submitting form:', error.response.data);
-        alert('Failed to send message. Please try again.');
+        console.error('Error submitting form:', error.response ? error.response.data : error);
+        this.errorMessage = 'Failed to send message. Please try again.';
       }
     },
     resetForm() {
-      this.formData = {
+      this.form = {
         username: '',
         email: '',
         message: '',
