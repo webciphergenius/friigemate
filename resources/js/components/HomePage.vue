@@ -1155,126 +1155,56 @@
                     <h2>Our Latest News</h2>
                     <p>Stay up to date with what's happening at Go FreightMate™ — from new app features and driver success stories to shipper <br>partnerships and event highlights. We're on the move, and so is the future of local delivery.</p>
                 </div>
-                <div class="row newsBlock">
-                    <div class="col-sm-4 newsBox">
+                
+                <!-- Loading State -->
+                <div v-if="blogLoading" class="text-center py-5">
+                    <p>Loading blog posts...</p>
+                </div>
+                
+                <!-- Error State -->
+                <div v-else-if="blogError" class="text-center py-5">
+                    <p class="text-danger">{{ blogError }}</p>
+                </div>
+                
+                <!-- Blog Posts -->
+                <div v-else-if="blogPosts.length > 0" class="row newsBlock">
+                    <div v-for="post in blogPosts" :key="post.id" class="col-sm-4 newsBox">
                         <figure>
                             <img
-                                src="../../images/news01.png"
-                                alt="blog-image"
+                                :src="post.cover_photo_path.startsWith('http') ? post.cover_photo_path : '/storage/' + post.cover_photo_path"
+                                :alt="post.photo_alt_text || post.title"
                             />
                         </figure>
                         <div class="newData">
-                            <span class="newsMeta"
-                                >July 05, 2025</span
-                            >
-                            <h4>
-                                Empowering Drivers: How Go Freightmate is
-                                Transforming Logistics
-                            </h4>
-                            <p>
-                                The logistics industry is rapidly evolving, and
-                                drivers are at the forefront of this
-                                transformation.
-                            </p>
+                            <span class="newsMeta">{{ post.formatted_date }}</span>
+                            <h4>{{ post.title }}</h4>
+                            <p>{{ post.excerpt }}</p>
                             <ul class="newsBottom list-inline text-end">
                                 <li class="list-inline-item">
                                     <img
                                         src="../../images/heart-icon.png"
                                         alt="heart-icon"
                                     />
-                                    15
+                                    0
                                 </li>
                                 <li class="list-inline-item">
                                     <img
                                         src="../../images/comment-icon.png"
                                         alt="comment-icon"
                                     />
-                                    8
+                                    0
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#">More Details</a>
+                                    <a :href="'/blogs/' + post.slug">More Details</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-4 newsBox">
-                        <figure>
-                            <img
-                                src="../../images/news02.png"
-                                alt="blog-image"
-                            />
-                        </figure>
-                        <div class="newData">
-                            <span class="newsMeta"
-                                >July 15, 2025</span
-                            >
-                            <h4>Simplifying Deliveries for Small Businesses</h4>
-                            <p>
-                                Small businesses are the backbone of the
-                                economy, but logistics can often be a major
-                                hurdle. Go Freightmate® is here to change that.
-                            </p>
-                            <ul class="newsBottom list-inline text-end">
-                                <li class="list-inline-item">
-                                    <img
-                                        src="../../images/heart-icon.png"
-                                        alt="heart-icon"
-                                    />
-                                    15
-                                </li>
-                                <li class="list-inline-item">
-                                    <img
-                                        src="../../images/comment-icon.png"
-                                        alt="comment-icon"
-                                    />
-                                    8
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">More Details</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 newsBox">
-                        <figure>
-                            <img
-                                src="../../images/news03.png"
-                                alt="blog-image"
-                            />
-                        </figure>
-                        <div class="newData">
-                            <span class="newsMeta"
-                                >July 25, 2025</span
-                            >
-                            <h4>
-                                The Future of Freight: Insights from Go Freightmate
-                            </h4>
-                            <p>
-                                The logistics industry is at a pivotal moment,
-                                with technology and sustainability reshaping the
-                                landscape. Go Freightmate is at the helm
-                            </p>
-                            <ul class="newsBottom list-inline text-end">
-                                <li class="list-inline-item">
-                                    <img
-                                        src="../../images/heart-icon.png"
-                                        alt="heart-icon"
-                                    />
-                                    15
-                                </li>
-                                <li class="list-inline-item">
-                                    <img
-                                        src="../../images/comment-icon.png"
-                                        alt="comment-icon"
-                                    />
-                                    8
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">More Details</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                </div>
+                
+                <!-- No Posts State -->
+                <div v-else class="text-center py-5">
+                    <p>No blog posts available yet. Check back soon!</p>
                 </div>
             </div>
         </section>
@@ -1482,6 +1412,9 @@ export default {
       newsletterEmail: "",
       newsletterSuccessMessage: "",
       newsletterErrorMessage: "",
+      blogPosts: [],
+      blogLoading: false,
+      blogError: "",
     };
   },
   methods: {
@@ -1535,6 +1468,30 @@ export default {
         this.newsletterSuccessMessage = "";
       }
     },
+    // Function to fetch blog posts
+    async fetchBlogPosts() {
+      this.blogLoading = true;
+      this.blogError = "";
+      
+      try {
+        const response = await axios.get('/api/blog/posts');
+        
+        if (response.data.success && response.data.posts) {
+          this.blogPosts = response.data.posts;
+        } else {
+          this.blogError = "No blog posts available.";
+        }
+      } catch (error) {
+        console.error('Error fetching blog posts:', error);
+        this.blogError = "Failed to load blog posts.";
+      } finally {
+        this.blogLoading = false;
+      }
+    },
+  },
+  mounted() {
+    // Fetch blog posts when component is mounted
+    this.fetchBlogPosts();
   },
 };
 window.addEventListener('scroll', function () {
