@@ -42,15 +42,24 @@ class ContactController extends Controller
             ], 200);
 
         } catch (\Exception $e) {
-            // Log error
+            // Log detailed error
             Log::error('Contact form error: ' . $e->getMessage(), [
-                'exception' => $e,
+                'exception' => get_class($e),
+                'message' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+                'trace' => $e->getTraceAsString(),
                 'request_data' => $request->all()
             ]);
 
+            // In production, return generic error. In development, show details
+            $errorMessage = app()->environment('production') 
+                ? 'Failed to send message. Please try again later.'
+                : 'Error: ' . $e->getMessage();
+
             return response()->json([
                 'success' => false,
-                'message' => 'Failed to send message. Please try again later.'
+                'message' => $errorMessage
             ], 500);
         }
     }
