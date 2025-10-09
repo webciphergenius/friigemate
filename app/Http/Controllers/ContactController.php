@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
 use App\Mail\ContactMail;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
@@ -27,24 +28,37 @@ class ContactController extends Controller
                 ], 422);
             }
 
-            // Check mail configuration
-            $mailMailer = config('mail.default');
-            $mailFromAddress = config('mail.from.address');
-            
-            // Log mail configuration for debugging
-            Log::info('Mail configuration', [
-                'mailer' => $mailMailer,
-                'from_address' => $mailFromAddress,
+            // SAVE TO DATABASE FIRST (never lose a submission!)
+            $contact = Contact::create([
+                'username' => $request->username,
+                'email' => $request->email,
+                'message' => $request->message,
+                'ip_address' => $request->ip(),
+                'emailed' => false
             ]);
 
-            // Send email
-            Mail::to('info@gofreightmate.com')->send(new ContactMail($request->all()));
-
-            // Log success
-            Log::info('Contact form submitted successfully', [
+            Log::info('Contact saved to database', [
+                'id' => $contact->id,
                 'email' => $request->email,
                 'username' => $request->username
             ]);
+
+            // TRY to send email (but don't fail if it doesn't work)
+            try {
+                Mail::to('info@gofreightmate.com')->send(new ContactMail($request->all()));
+                
+                // Mark as emailed if successful
+                $contact->update(['emailed' => true]);
+                
+                Log::info('Contact email sent successfully', ['contact_id' => $contact->id]);
+            } catch (\Exception $emailError) {
+                // Email failed but we have it in database
+                Log::warning('Contact saved but email failed', [
+                    'contact_id' => $contact->id,
+                    'error' => $emailError->getMessage()
+                ]);
+                // Don't throw - still return success since we saved it
+            }
 
             return response()->json([
                 'success' => true,
