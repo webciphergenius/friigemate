@@ -1,17 +1,14 @@
 <?php namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ContactMail extends Mailable implements ShouldQueue
+class ContactMailSync extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $contact;
-    public $tries = 3; // Retry 3 times if it fails
-    public $timeout = 30; // Timeout after 30 seconds
 
     public function __construct($contact)
     {
@@ -27,3 +24,4 @@ class ContactMail extends Mailable implements ShouldQueue
                     ->with('contact', $this->contact);
     }
 }
+

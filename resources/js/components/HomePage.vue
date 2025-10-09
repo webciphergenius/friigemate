@@ -1497,7 +1497,18 @@ export default {
         this.resetForm();
       } catch (error) {
         console.error('Error submitting form:', error.response ? error.response.data : error);
-        this.errorMessage = 'Failed to send message. Please try again.';
+        
+        // Show detailed error message from server
+        if (error.response && error.response.data) {
+          this.errorMessage = error.response.data.message || 'Failed to send message. Please try again.';
+          
+          // Log debug info if available
+          if (error.response.data.debug) {
+            console.error('Debug info:', error.response.data.debug);
+          }
+        } else {
+          this.errorMessage = 'Failed to send message. Please check your connection.';
+        }
       }
     },
     resetForm() {

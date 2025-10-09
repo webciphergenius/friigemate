@@ -27,11 +27,21 @@ class ContactController extends Controller
                 ], 422);
             }
 
+            // Check mail configuration
+            $mailMailer = config('mail.default');
+            $mailFromAddress = config('mail.from.address');
+            
+            // Log mail configuration for debugging
+            Log::info('Mail configuration', [
+                'mailer' => $mailMailer,
+                'from_address' => $mailFromAddress,
+            ]);
+
             // Send email
             Mail::to('info@gofreightmate.com')->send(new ContactMail($request->all()));
 
             // Log success
-            Log::info('Contact form submitted', [
+            Log::info('Contact form submitted successfully', [
                 'email' => $request->email,
                 'username' => $request->username
             ]);
@@ -41,7 +51,23 @@ class ContactController extends Controller
                 'message' => 'Message sent successfully!'
             ], 200);
 
-        } catch (\Exception $e) {
+        } catch (\Swift_TransportException $e) {
+            // SMTP/Mail transport error
+            Log::error('Mail transport error: ' . $e->getMessage(), [
+                'exception' => get_class($e),
+                'request_data' => $request->all()
+            ]);
+
+            return response()->json([
+                'success' => false,
+                'message' => 'Email service unavailable. Error: ' . $e->getMessage(),
+                'debug' => [
+                    'type' => 'transport',
+                    'mailer' => config('mail.default')
+                ]
+            ], 500);
+
+        } catch (\Throwable $e) {
             // Log detailed error
             Log::error('Contact form error: ' . $e->getMessage(), [
                 'exception' => get_class($e),
@@ -52,14 +78,14 @@ class ContactController extends Controller
                 'request_data' => $request->all()
             ]);
 
-            // In production, return generic error. In development, show details
-            $errorMessage = app()->environment('production') 
-                ? 'Failed to send message. Please try again later.'
-                : 'Error: ' . $e->getMessage();
-
             return response()->json([
                 'success' => false,
-                'message' => $errorMessage
+                'message' => 'Failed to send message: ' . $e->getMessage(),
+                'debug' => [
+                    'type' => get_class($e),
+                    'file' => basename($e->getFile()),
+                    'line' => $e->getLine()
+                ]
             ], 500);
         }
     }
