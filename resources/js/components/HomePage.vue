@@ -520,11 +520,7 @@
             <div class="container">
                 <div class="secHeading text-center">
                     <h2>How Go Freightmate™ Works</h2>
-                    <p>
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever<br />
-                        lorem Ipsum has been the industry's
-                    </p>
+                    <p>Go FreightMate™ makes moving freight simple for everyone. <br>Shippers post what they need moved—drivers pick it up, track it, and deliver it—all through one easy-to-use app. With real-time updates, <br>instant communication, and same-day delivery options, Go FreightMate™ keeps business moving smoothly for both sides.</p>
                 </div>
                 <div class="mainWorkBlock">
                     <div class="row align-items-center">
@@ -925,7 +921,7 @@
                                 />
                             </figure>
                             <h5>Shanita Julye</h5>
-                            <p>Office & Logistics Support Administrator</p>
+                            <p>Office & Logistics Manager</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#">
@@ -969,7 +965,7 @@
                                 />
                             </figure>
                             <h5>Reena Shaw</h5>
-                            <p>Marketing Director</p>
+                            <p>Director of Marketing & Media</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#">
@@ -1157,10 +1153,7 @@
             <div class="container">
                 <div class="secHeading text-center">
                     <h2>Our Latest News</h2>
-                    <p>
-                        standard dummy text ever since the 1500s, when an
-                        unknown <br />printer took a galley of type
-                    </p>
+                    <p>Stay up to date with what's happening at Go FreightMate™ — from new app features and driver success stories to shipper <br>partnerships and event highlights. We're on the move, and so is the future of local delivery.</p>
                 </div>
                 <div class="row newsBlock">
                     <div class="col-sm-4 newsBox">
@@ -1172,7 +1165,7 @@
                         </figure>
                         <div class="newData">
                             <span class="newsMeta"
-                                >May 10, 2024</span
+                                >July 05, 2025</span
                             >
                             <h4>
                                 Empowering Drivers: How Go Freightmate is
@@ -1213,7 +1206,7 @@
                         </figure>
                         <div class="newData">
                             <span class="newsMeta"
-                                >May 10, 2024</span
+                                >July 15, 2025</span
                             >
                             <h4>Simplifying Deliveries for Small Businesses</h4>
                             <p>
@@ -1251,7 +1244,7 @@
                         </figure>
                         <div class="newData">
                             <span class="newsMeta"
-                                >May 10, 2024</span
+                                >July 25, 2025</span
                             >
                             <h4>
                                 The Future of Freight: Insights from Go Freightmate
