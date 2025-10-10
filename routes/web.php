@@ -24,3 +24,7 @@ Route::get('/terms-of-service', function () {
 Route::get('/privacy-policy', function () {
     return view('privacy-policy');
 });
+
+Route::get('/blog/{slug}', function ($slug) {
+    return view('blog-inner', ['slug' => $slug]);
+});
