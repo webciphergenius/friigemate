@@ -12,21 +12,6 @@
             </div>
             <div class="mx-auto mb-20 space-y-10">
                 <div class="grid gap-x-20 sm:grid-cols-[minmax(min-content,10%)_1fr_minmax(min-content,10%)]">
-                    <div class="py-5">
-                        <div class="sticky top-24 flex flex-col items-center gap-y-5 divide-y-2">
-                            <button x-data="" x-on:click="document.getElementById('comments').scrollIntoView({ behavior: 'smooth'})" class="group/btn flex flex-col items-center justify-center gap-y-2">
-                                <div class="flex items-center justify-center rounded-full bg-slate-100 px-4 py-4 group-hover/btn:bg-slate-200">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24">
-                                        <path fill="currentColor" d="M13 11H7a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2m4-4H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2m2-5H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11.59l3.7 3.71A1 1 0 0 0 21 22a.84.84 0 0 0 .38-.08A1 1 0 0 0 22 21V5a3 3 0 0 0-3-3m1 16.59l-2.29-2.3A1 1 0 0 0 17 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z" />
-                                    </svg>
-                                </div>
-                                <span class="text-xs font-semibold">COMMENTS</span>
-                            </button>
-                            <div class="pt-5">
-                                {!! $shareButton?->html_code !!}
-                            </div>
-                        </div>
-                    </div>
                     <div class="space-y-10">
                         <div>
                             <div class="flex flex-col justify-end">
@@ -80,7 +65,7 @@
                                 </div>
                             </div>
                         </div>
-                        @if($post->comments->count())
+                        <!-- @if($post->comments->count())
                         <div class="border-t-2 py-10">
                             <div class="mb-4">
                                 <h3 class="mb-2 text-2xl font-semibold">Comments</h3>
@@ -107,21 +92,11 @@
                                 @endforeach
                             </div>
                         </div>
-                        @endif
+                        @endif -->
                         <x-blog-comment :post="$post" />
                     </div>
-                    <div>
-                        {{-- Ads Section            --}}
-                        {{-- <div--}}
-                        {{-- class="sticky top-24 flex h-[600px] w-[160px] items-center justify-center overflow-hidden rounded bg-slate-200 font-medium text-slate-500/20">--}}
-                        {{-- <span>ADS</span>--}}
-                        {{-- </div>--}}
-                    </div>
-                </div>
-            </div>
 
-            <div>
-                <div>
+                    <div class="relativeBlogs">
                     <div class="relative mb-6 flex items-center gap-x-8">
                         <h2 class="whitespace-nowrap text-xl font-semibold">
                             <span class="text-primary font-bold">#</span> Related Posts
@@ -130,7 +105,7 @@
                             <span class="h-0.5 w-full rounded-full bg-slate-200"></span>
                         </div>
                     </div>
-                    <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-x-12 gap-y-10">
+                    <div class="relatedList">
                         @forelse($post->relatedPosts() as $post)
                         <x-blog-card :post="$post" />
                         @empty
@@ -138,7 +113,7 @@
                             <p class="text-center text-xl font-semibold text-gray-300">No related posts found.</p>
                         </div>
                         @endforelse
-                    </div>
+                    <!-- </div>
                     <div class="flex justify-center pt-20">
                         <a href="{{ route('filamentblog.post.all') }}" class="flex items-center justify-center md:gap-x-5 rounded-full bg-slate-100 px-20 py-4 text-sm font-semibold transition-all duration-300 hover:bg-slate-200">
                             <span>Show all blogs</span>
@@ -146,7 +121,7 @@
                                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6m0 0H9m9 0v9" />
                             </svg>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -155,6 +130,9 @@
 </x-blog-layout>
 <style>
 /* Blogs SH */
+.sm\:grid-cols-\[minmax\(min-content\2c 10\%\)_1fr_minmax\(min-content\2c 10\%\)\] {
+    grid-template-columns: 1fr minmax(min-content,10%);
+}
 .min-h-screen div#navbarSupportedContent {
     visibility: visible;
 }
@@ -184,7 +162,7 @@ textarea#author-comment {
     border: 1px solid #e5e6ea !important;
 }
 h2.whitespace-nowrap.text-xl.font-semibold {
-    font-size: 32px !important;
+    font-size: 28px !important;
 }
 h2.group-hover\/blog-item\:text-primary-700.mb-3.line-clamp-2.text-xl.font-semibold.hover\:text-blue-600 {
     font-size: 18px !important;
