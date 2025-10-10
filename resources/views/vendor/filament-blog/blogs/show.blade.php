@@ -215,5 +215,14 @@ body.antialiased .container {
     font-weight: 500;
     padding-bottom: 10px;
 }
+@media only screen and (max-width: 768px) {
+ body.antialiased h1.mb-6.text-4xl.font-semibold {
+    font-size: 28px !important;
+}
+h3.mb-2.text-2xl.font-semibold {
+    font-size: 24px !important;
+}
+
+}
 /* Blogs EH */
 </style>

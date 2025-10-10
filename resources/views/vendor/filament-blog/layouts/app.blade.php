@@ -196,6 +196,7 @@
                                     <br><br>
                                     <p><strong>Go Freightmate®: Efficient. Reliable. Trusted.</strong><br>
                                     Transforming the logistics landscape, Go Freightmate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
+                                    <a class="footerPhone" href="tel:8885094480"><i class="fa fa-phone"></i> (888) 509-4480</a>
                                 </div>
                             </div>
                             <div class="col-sm-2">
