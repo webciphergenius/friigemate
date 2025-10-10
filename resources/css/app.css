@@ -51,6 +51,10 @@ a.navbar-brand img {
 nav.navbar.navbar-expand-lg {
     padding: 0;
 }
+a.footerPhone {
+    color: #000;
+    text-decoration: none;
+}
 .pgHero {
     background: url(../images/hero-bg01img.png);
     background-size: cover;
