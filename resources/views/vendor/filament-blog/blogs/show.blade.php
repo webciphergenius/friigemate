@@ -1,15 +1,15 @@
 <x-blog-layout>
     <section class="pb-16">
+        <div class="mb-10 flex gap-x-2 text-sm font-semibold blogDetailBanner">
+            <a href="{{ route('filamentblog.post.index') }}" class="opacity-60">Home</a>
+            <span class="opacity-30">/</span>
+            <a href="{{ route('filamentblog.post.all') }}" class="opacity-60">Blog</a>
+            <span class="opacity-30">/</span>
+            <a title="{{ $post->slug }}" href="{{ route('filamentblog.post.show', ['post' => $post->slug]) }}" class="hover:text-primary-600 max-w-2xl truncate font-medium transition-all duration-300">
+                {{ $post->title }}
+            </a>
+        </div>
         <div class="container mx-auto">
-            <div class="mb-10 flex gap-x-2 text-sm font-semibold">
-                <a href="{{ route('filamentblog.post.index') }}" class="opacity-60">Home</a>
-                <span class="opacity-30">/</span>
-                <a href="{{ route('filamentblog.post.all') }}" class="opacity-60">Blog</a>
-                <span class="opacity-30">/</span>
-                <a title="{{ $post->slug }}" href="{{ route('filamentblog.post.show', ['post' => $post->slug]) }}" class="hover:text-primary-600 max-w-2xl truncate font-medium transition-all duration-300">
-                    {{ $post->title }}
-                </a>
-            </div>
             <div class="mx-auto mb-20 space-y-10">
                 <div class="grid gap-x-20 sm:grid-cols-[minmax(min-content,10%)_1fr_minmax(min-content,10%)]">
                     <div class="space-y-10">
@@ -102,26 +102,46 @@
 <style>
 /* Blogs SH */
 .sm\:grid-cols-\[minmax\(min-content\2c 10\%\)_1fr_minmax\(min-content\2c 10\%\)\] {
-    grid-template-columns: 1fr minmax(min-content,10%);
+    display: flex;
 }
 .min-h-screen div#navbarSupportedContent {
     visibility: visible;
 }
+.space-y-10 {
+    flex-basis: 80%;
+}
+.relativeBlogs {
+    flex-basis: 30%;
+}
+h2.whitespace-nowrap.text-xl.font-semibold span.text-primary.font-bold {
+    display: none;
+}
 body.antialiased main {
     margin-top: 150px;
-    padding-top: 60px;
+    padding-top: 18px;
 }
 body.antialiased header.mainHead {
     background: #21233c;
     padding: 10px 0;
 }
 body.antialiased h1.mb-6.text-4xl.font-semibold {
-    font-size: 38px !important;
+    font-size: 32px !important;
     line-height: 1.2;
 }
 .mb-5.flex.items-center.justify-between.gap-x-3.py-5 {
-    padding: 0 !important;
-    margin-bottom: 20px !important;
+    display: none;
+}
+.blogDetailBanner {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/build/assets/hero-bg01img-aKiOuSax.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.blogDetailBanner * {
+    color: #fff;
 }
 a.bg-primary-600.hover\:bg-primary-700.rounded-lg.px-8.py-4.font-semibold.text-white.transition-all.duration-300 {
     padding: 14px 60px !important;
@@ -133,10 +153,10 @@ textarea#author-comment {
     border: 1px solid #e5e6ea !important;
 }
 h2.whitespace-nowrap.text-xl.font-semibold {
-    font-size: 28px !important;
+    font-size: 24px !important;
 }
 h2.group-hover\/blog-item\:text-primary-700.mb-3.line-clamp-2.text-xl.font-semibold.hover\:text-blue-600 {
-    font-size: 18px !important;
+    font-size: 16px !important;
     font-weight: 500 !important;
     line-height: 1.2;
 }
@@ -153,7 +173,38 @@ a.flex.items-center.justify-center.md\:gap-x-5.rounded-full {
     font-weight: 500;
 }
 .relative.mb-6.flex.items-center.gap-x-8 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+}
+.relatedList .group\/blog-item.flex.flex-col.gap-y-5 {
+    flex-direction: row;
+    gap: 10px;
+}
+.relatedList .group\/blog-item.flex.flex-col.gap-y-5 .h-\[250px\].w-full {
+    flex-basis: 60%;
+}
+.relatedList .group\/blog-item.flex.flex-col.gap-y-5 .h-\[250px\].w-full, .relatedList .group\/blog-item.flex.flex-col.gap-y-5 .h-\[250px\].w-full img {
+    border-radius: 0 !important;
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+}
+.relatedList a {
+    margin-bottom: 20px;
+    display: block;
+}
+.grid.gap-x-14.gap-y-14.sm\:grid-cols-3 {
+    display: block;
+}
+.grid.gap-x-14.gap-y-14.sm\:grid-cols-3 a {
+    display: block;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #ccc;
+}
+.grid.gap-x-14.gap-y-14.sm\:grid-cols-3 a .h-\[250px\].w-full.rounded-xl.bg-zinc-300.overflow-hidden {
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid #eee;
 }
 body.antialiased .container {
     max-width: 1320px;
