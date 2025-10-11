@@ -136,9 +136,10 @@ body.antialiased h1.mb-6.text-4xl.font-semibold {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/build/assets/hero-bg01img-aKiOuSax.png)no-repeat;
+    background: url(../images/inner-banner.png) no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 30px;
 }
 .blogDetailBanner * {
     color: #fff;
@@ -193,19 +194,7 @@ a.flex.items-center.justify-center.md\:gap-x-5.rounded-full {
     margin-bottom: 20px;
     display: block;
 }
-.grid.gap-x-14.gap-y-14.sm\:grid-cols-3 {
-    display: block;
-}
-.grid.gap-x-14.gap-y-14.sm\:grid-cols-3 a {
-    display: block;
-    margin-bottom: 35px;
-    border-bottom: 1px solid #ccc;
-}
-.grid.gap-x-14.gap-y-14.sm\:grid-cols-3 a .h-\[250px\].w-full.rounded-xl.bg-zinc-300.overflow-hidden {
-    border-radius: 0;
-    background: transparent;
-    border: 1px solid #eee;
-}
+
 body.antialiased .container {
     max-width: 1320px;
     padding: 0 10px;

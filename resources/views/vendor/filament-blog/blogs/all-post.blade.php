@@ -33,7 +33,22 @@
 }
 body.antialiased main {
     margin-top: 150px;
-    padding-top: 60px;
+    padding-top: 18px;
+}
+section.py-10 {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/inner-banner.png) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    margin-bottom: 30px;
+}
+h3.inherits-color.text-balance.leading-tighter.relative.z-10.text-3xl.font-semibold.tracking-tight {
+    text-align: center;
+    color: #fff;
+    font-size: 35px !important;
 }
 body.antialiased header.mainHead {
     background: #21233c;
@@ -87,6 +102,19 @@ body.antialiased .container {
     font-size: 1.25rem;
     font-weight: 500;
     padding-bottom: 10px;
+}
+.grid.gap-x-14.gap-y-14.sm\:grid-cols-3 {
+    display: block;
+}
+.grid.gap-x-14.gap-y-14.sm\:grid-cols-3 a {
+    display: block;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #ccc;
+}
+.grid.gap-x-14.gap-y-14.sm\:grid-cols-3 a .h-\[250px\].w-full.rounded-xl.bg-zinc-300.overflow-hidden {
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid #eee;
 }
 @media only screen and (max-width: 768px) {
  body.antialiased h1.mb-6.text-4xl.font-semibold {
