@@ -139,7 +139,7 @@ body.antialiased h1.mb-6.text-4xl.font-semibold {
     background: url(../../../images/inner-banner.png) no-repeat;
     background-size: cover;
     background-position: center bottom;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 .blogDetailBanner * {
     color: #fff;

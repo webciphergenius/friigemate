@@ -43,7 +43,7 @@ section.py-10 {
     background: url(../../../images/inner-banner.png) no-repeat;
     background-size: cover;
     background-position: center bottom;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 h3.inherits-color.text-balance.leading-tighter.relative.z-10.text-3xl.font-semibold.tracking-tight {
     text-align: center;
