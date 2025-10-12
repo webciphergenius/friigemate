@@ -77,8 +77,8 @@
                                     <span class="h-0.5 w-full rounded-full bg-slate-200"></span>
                                 </div>
                             </div>
-                            <form action="#" id="searchForm" method="POST">
-                                    <input type="search" placeholder="Search...">
+                            <form action="{{ route('blog.search') }}" id="searchForm" method="GET">
+                                    <input type="search" name="q" placeholder="Search blogs..." required>
                                 </form>
                             </div>
                             <div class="sideCat">
@@ -91,10 +91,21 @@
                                 </div>
                             </div>
                             <ul class="catList">
-                                <li><a href="#">Lorem Ipsum</a></li>
-                                <li><a href="#">Lorem Ipsum</a></li>
-                                <li><a href="#">Lorem Ipsum</a></li>
-                                <li><a href="#">Lorem Ipsum</a></li>
+                                @php
+                                    $categories = app(\App\Http\Controllers\BlogController::class)->getAllCategories();
+                                @endphp
+                                @forelse($categories as $category)
+                                    <li>
+                                        <a href="{{ route('filamentblog.category.post', ['category' => $category->slug]) }}">
+                                            {{ $category->name }} 
+                                            @if($category->posts_count > 0)
+                                                <span class="text-gray-500">({{ $category->posts_count }})</span>
+                                            @endif
+                                        </a>
+                                    </li>
+                                @empty
+                                    <li class="text-gray-500">No categories found</li>
+                                @endforelse
                             </ul>
                         </div>
                     <div class="relative mb-6 flex items-center gap-x-8">
@@ -133,12 +144,21 @@
                         </div>
                     </div>
                     <ul class="blogTagsList">
-                        <li><a href="#">Lorem Ipsum</a></li>
-                        <li><a href="#">Lorem Ipsum</a></li>
-                        <li><a href="#">Lorem Ipsum</a></li>
-                        <li><a href="#">Lorem Ipsum</a></li>
-                        <li><a href="#">Lorem Ipsum</a></li>
-                        <li><a href="#">Lorem Ipsum</a></li>
+                        @php
+                            $tags = app(\App\Http\Controllers\BlogController::class)->getAllTags();
+                        @endphp
+                        @forelse($tags as $tag)
+                            <li>
+                                <a href="{{ route('filamentblog.tag.post', ['tag' => $tag->slug]) }}">
+                                    {{ $tag->name }}
+                                    @if($tag->posts_count > 0)
+                                        <span class="text-xs text-gray-500">({{ $tag->posts_count }})</span>
+                                    @endif
+                                </a>
+                            </li>
+                        @empty
+                            <li class="text-gray-500">No tags found</li>
+                        @endforelse
                     </ul>
                 </div>
             </div>

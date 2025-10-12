@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Firefly\FilamentBlog\Models\Post;
+use Firefly\FilamentBlog\Models\Category;
+use Firefly\FilamentBlog\Models\Tag;
 
 class BlogController extends Controller
 {
@@ -56,6 +59,64 @@ class BlogController extends Controller
                 'message' => 'Failed to fetch blog posts',
                 'posts' => []
             ], 500);
+        }
+    }
+
+    public function search(Request $request)
+    {
+        try {
+            $query = $request->input('q', '');
+            
+            if (empty($query)) {
+                return redirect()->route('filamentblog.post.all');
+            }
+
+            // Search in title, sub_title, and body
+            $posts = Post::published()
+                ->where(function ($q) use ($query) {
+                    $q->where('title', 'like', '%' . $query . '%')
+                      ->orWhere('sub_title', 'like', '%' . $query . '%')
+                      ->orWhere('body', 'like', '%' . $query . '%');
+                })
+                ->with(['user', 'categories', 'tags'])
+                ->paginate(12);
+
+            return view('vendor.filament-blog.blogs.search', compact('posts', 'query'));
+        } catch (\Exception $e) {
+            \Log::error('Blog search error: ' . $e->getMessage());
+            return redirect()->route('filamentblog.post.all')
+                ->with('error', 'Search failed. Please try again.');
+        }
+    }
+
+    public function getAllCategories()
+    {
+        try {
+            $categories = Category::withCount(['posts' => function ($query) {
+                $query->where('status', 'published');
+            }])->orderBy('name')->get();
+
+            return $categories;
+        } catch (\Exception $e) {
+            \Log::error('Categories fetch error: ' . $e->getMessage());
+            return collect([]);
+        }
+    }
+
+    public function getAllTags()
+    {
+        try {
+            $tags = Tag::withCount(['posts' => function ($query) {
+                $query->where('status', 'published');
+            }])
+            ->having('posts_count', '>', 0)
+            ->orderBy('name')
+            ->get();
+
+            return $tags;
+        } catch (\Exception $e) {
+            \Log::error('Tags fetch error: ' . $e->getMessage());
+            return collect([]);
         }
     }
 
