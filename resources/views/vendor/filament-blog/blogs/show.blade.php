@@ -68,6 +68,35 @@
                     </div>
 
                     <div class="relativeBlogs">
+                        <div class="sidesearch">
+                            <div class="mb-6 flex items-center gap-x-8">
+                                <h2 class="whitespace-nowrap text-xl font-semibold">
+                                    Search
+                                </h2>
+                                <div class="flex w-full items-center">
+                                    <span class="h-0.5 w-full rounded-full bg-slate-200"></span>
+                                </div>
+                            </div>
+                            <form action="#" id="searchForm" method="POST">
+                                    <input type="search" placeholder="Search...">
+                                </form>
+                            </div>
+                            <div class="sideCat">
+                            <div class="mb-6 flex items-center gap-x-8">
+                                <h2 class="whitespace-nowrap text-xl font-semibold">
+                                    Categories
+                                </h2>
+                                <div class="flex w-full items-center">
+                                    <span class="h-0.5 w-full rounded-full bg-slate-200"></span>
+                                </div>
+                            </div>
+                            <ul class="catList">
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                            </ul>
+                        </div>
                     <div class="relative mb-6 flex items-center gap-x-8">
                         <h2 class="whitespace-nowrap text-xl font-semibold">
                             <span class="text-primary font-bold">#</span> Related Posts
@@ -93,6 +122,24 @@
                             </svg>
                         </a>
                     </div> -->
+                </div>
+                <div class="blogTags">
+                    <div class="mb-6 flex items-center gap-x-8">
+                        <h2 class="whitespace-nowrap text-xl font-semibold">
+                            Tags
+                        </h2>
+                        <div class="flex w-full items-center">
+                            <span class="h-0.5 w-full rounded-full bg-slate-200"></span>
+                        </div>
+                    </div>
+                    <ul class="blogTagsList">
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -207,7 +254,36 @@ body.antialiased .container {
 form#comments {
     display: none;
 }
-
+.sidesearch {
+    margin-bottom: 35px;
+}
+form#searchForm {
+    border: 1px solid #ededed;
+}
+form#searchForm input[type="search"] {
+    width: 100%;
+    padding: 15px;
+}
+.sideCat {
+    margin-bottom: 30px;
+}
+.sideCat li {
+    padding-bottom: 5px;
+}
+.blogTags {
+    margin-top: 40px;
+}
+ul.blogTagsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+ul.blogTagsList a {
+    border: 1px solid #ccc;
+    font-size: 13px;
+    padding: 5px 10px;
+    display: block;
+}
 @media only screen and (max-width: 768px) {
  body.antialiased h1.mb-6.text-4xl.font-semibold {
     font-size: 28px !important;
