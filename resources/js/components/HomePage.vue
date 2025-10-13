@@ -107,13 +107,11 @@
                                 >Get Started Today</a
                             >  -->
                             <div class="heroBtns">
-                                <a href="javascript:void(0)"
-                                    ><img
+                                <a href="javascript:void(0)" class="hover-msg"><img
                                         src="../../images/app-store-icon.png"
                                         alt="app-store"
                                 /></a>
-                                <a href="javascript:void(0)"
-                                    ><img
+                                <a href="javascript:void(0)" class="hover-msg"><img
                                         src="../../images/play-store-icon.png"
                                         alt="play-store"
                                 /></a>

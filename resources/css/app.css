@@ -791,21 +791,21 @@ span.center-policy {
   display: inline-block;
   text-decoration: none;
 }
-.hover-msg::after {
-  content: 'In Final Prep';
-  position: absolute;
-  left: 50%;
-  bottom: -25px; /* message below the image */
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
+.hover-msg:after {
+    content: "In Final Prep";
+    position: absolute;
+    left: 50%;
+    bottom: 51px;
+    transform: translate(-50%);
+    background: #f68743;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 2px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s;
 }
 .hover-msg:hover::after {
   opacity: 1;
