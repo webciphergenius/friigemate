@@ -39,7 +39,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#home" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Home
                             </a>
                            
@@ -1058,13 +1058,12 @@
                                 logistics, wherever you are.
                             </p>
                             <div class="heroBtns">
-                                <a href="javascript:void(0)"
-                                    ><img
-                                        src="../../images/appstore-grey.png.png"
+                                <a href="javascript:void(0)" class="hover-msg"><img
+                                        src="../../images/app-store-icon.png"
                                         alt="app-store"
                                 /></a>
                                 <a href="javascript:void(0)" class="hover-msg"><img
-                                        src="../../images/googleplay-grey.png.png"
+                                        src="../../images/play-store-icon.png"
                                         alt="play-store"
                                 /></a>
                             </div>
