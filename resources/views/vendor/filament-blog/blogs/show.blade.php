@@ -1,9 +1,9 @@
 <x-blog-layout>
     <section class="pb-16">
         <div class="mb-10 flex gap-x-2 text-sm font-semibold blogDetailBanner">
-            <a href="{{ route('filamentblog.post.index') }}" class="opacity-60">Home</a>
+            <a href="{{ route('filamentblog.post.index') }}">Home</a>
             <span class="opacity-30">/</span>
-            <a href="{{ route('filamentblog.post.all') }}" class="opacity-60">Blog</a>
+            <a href="{{ route('filamentblog.post.all') }}">Blog</a>
             <span class="opacity-30">/</span>
             <a title="{{ $post->slug }}" href="{{ route('filamentblog.post.show', ['post' => $post->slug]) }}" class="hover:text-primary-600 max-w-2xl truncate font-medium transition-all duration-300">
                 {{ $post->title }}
@@ -203,7 +203,7 @@ body.antialiased h1.mb-6.text-4xl.font-semibold {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #464973 url(../../../../images/inner-banner.png) no-repeat;
+    background: #f68743 url(../../../../images/inner-banner.png) no-repeat;
     background-size: cover;
     background-position: center bottom;
     margin-bottom: 60px;
