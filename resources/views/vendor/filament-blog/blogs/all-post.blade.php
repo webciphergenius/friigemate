@@ -40,7 +40,7 @@ section.py-10 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #464973 url(../../../images/inner-banner.png) no-repeat;
+    background: #464973 url(../../../../images/inner-banner.png) no-repeat;
     background-size: cover;
     background-position: center bottom;
     margin-bottom: 60px;
