@@ -65,7 +65,7 @@ h1 {
     font-size: 3.2rem !important;
 }
 .sameSpace {
-    padding: 120px 0;
+    padding: 70px 0;
 }
 a.yellowBtn {
     background: #F58743;
@@ -100,10 +100,10 @@ section.partnerMain:before {
 }
 section.partnerMain {
     position: relative;
-    padding: 80px 0;
+    padding: 50px 0;
 }
 section.logisticsMain {
-    padding-bottom: 120px;
+    padding-bottom: 50px;
 }
 section.featuredMate .rounded img {
     height: 60px;
@@ -112,12 +112,7 @@ section.howWorks {
     background: url(../images/darksecbg.png) no-repeat;
     background-size: cover;
     background-position: center;
-}
-section.howWorks {
-    background: url(../images/darksecbg.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 80px 0;
+    padding: 60px 0 70px;
 }
 section.howWorks .secHeading {
     color: #fff;
@@ -151,7 +146,7 @@ section#myblg {
     top: 50%;
 }
 section.skilledMain {
-    padding: 80px 0;
+    padding: 40px 0 50px;
 }
 .count-up p {
     margin: 0;
@@ -182,7 +177,7 @@ figure.statinfoimg {
 }
 section.teamSec {
     background: #f0f0f0;
-    padding: 80px 0;
+    padding: 50px 0 70px;
 }
 section.testimonialsSec {
     padding: 80px 0;
@@ -223,9 +218,9 @@ section#team .row.text-center {
 .slider-item {
     padding: 30px;
 }
-.wrapperSlider {
+/* .wrapperSlider {
     padding-top: 40px;
-}
+} */
 .my-slider .slick-slide {
     opacity: 0.2;
 }
@@ -236,12 +231,13 @@ section.solutionSec {
     background: url(../images/solution-imgbg.png) no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 60px 0;
 }
 section.solutionSec * {
     color: #fff;
 }
 .sameSpacing {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 section.pressSec.sameSpacing {
     background: #f0f0f0;
@@ -790,7 +786,33 @@ span.center-policy {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
 }
-
+.hover-msg {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.hover-msg::after {
+  content: 'In Final Prep';
+  position: absolute;
+  left: 50%;
+  bottom: -25px; /* message below the image */
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.hover-msg:hover::after {
+  opacity: 1;
+}
+section#feature {
+    padding: 50px 0 70px;
+}
 @media only screen and (min-width: 1440px) {
 .teamBlock figure img {
     height: 220px;

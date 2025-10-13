@@ -78,8 +78,8 @@
         
     </header>
     
-    <div class="wrapperMain" id="home">
-        <section class="pgHero">
+    <div class="wrapperMain">
+        <section class="pgHero" id="home">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-sm-6">
@@ -101,11 +101,11 @@
                                 Effortless logistics, smarter solutions, and
                                 unmatched reliability.
                             </p> 
-                            <a
+                            <!-- <a
                                 href="https://gofreightmate.com/registration"
                                 class="btn border border-2 rounded-0 text-white p-3 my-3 bold"
                                 >Get Started Today</a
-                            > 
+                            >  -->
                             <div class="heroBtns">
                                 <a href="javascript:void(0)"
                                     ><img
@@ -396,7 +396,7 @@
         </section>
 
         <section class="featuredMate" id="feature">
-            <div class="container text-center py-5">
+            <div class="container text-center">
                 <h2 class="fw-bold">Features In This App</h2>
                 <p class="text-muted">
                     Go Freightmate® is packed with powerful features designed to
@@ -564,11 +564,11 @@
                                     Go Freightmate® makes freight handling faster,
                                     easier, and more efficient.
                                 </p>
-                                <a
+                                <!-- <a
                                     href="javascript:void(0)"
                                     class="webBtn yellowBtn"
                                     >Discover More</a
-                                >
+                                > -->
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -629,11 +629,11 @@
                                 Take control of your logistics with Go Freightmate
                                 and experience the difference expertise makes.
                             </p>
-                            <a
+                            <!-- <a
                                 href="javascript:void(0)"
                                 class="webBtn yellowBtn"
                                 >How It Works</a
-                            >
+                            > -->
                         </div>
                     </div>
                 </div>
@@ -1063,8 +1063,7 @@
                                         src="../../images/appstore-grey.png.png"
                                         alt="app-store"
                                 /></a>
-                                <a href="javascript:void(0)"
-                                    ><img
+                                <a href="javascript:void(0)" class="hover-msg"><img
                                         src="../../images/googleplay-grey.png.png"
                                         alt="play-store"
                                 /></a>
@@ -1143,7 +1142,7 @@
                     </div>
                 </div>
                 <div class="text-center helpbtn">
-                    <a href="javascript:void(0)" class="webBtn yellowBtn"
+                    <a href="#footer" class="webBtn yellowBtn"
                         >Contact Support</a
                     >
                 </div>

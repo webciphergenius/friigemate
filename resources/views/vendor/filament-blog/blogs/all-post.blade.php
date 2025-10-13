@@ -36,7 +36,7 @@ body.antialiased main {
     padding-top: 18px;
 }
 section.py-10 {
-    height: 250px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;

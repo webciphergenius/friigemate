@@ -199,7 +199,7 @@ body.antialiased h1.mb-6.text-4xl.font-semibold {
     display: none;
 }
 .blogDetailBanner {
-    height: 250px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
