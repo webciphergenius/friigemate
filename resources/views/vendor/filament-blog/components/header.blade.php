@@ -36,10 +36,11 @@
                         </li>
                     </ul>
                     <ul class="list-inline socialLinks">
-                        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=61577783482435" target="_blank"><img src="../../images/facebook.png" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="https://youtube.com/@gofreightmate?si=KgThF0f_TcgdmwMf" target="_blank"><img src="../../images/youtube.png" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="https://www.instagram.com/gofreightmate?igsh=OTdsZ2ZqY24ycHAx&utm_source=qr" target="_blank"><img src="../../images/insta.png" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="https://www.tiktok.com/@gofreightmate?_t=ZS-90Xr1wJJ5Wa&_r=1" target="_blank"><img src="../../images/tiktok.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=61577783482435" target="_blank"><img src="{{ asset('assets/images/facebook.png') }}" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://youtube.com/@gofreightmate?si=KgThF0f_TcgdmwMf" target="_blank"><img src="{{ asset('assets/images/youtube.png') }}" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/gofreightmate?igsh=OTdsZ2ZqY24ycHAx&utm_source=qr" target="_blank"><img src="{{ asset('assets/images/insta.png') }}" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://www.tiktok.com/@gofreightmate?_t=ZS-90Xr1wJJ5Wa&_r=1" target="_blank"><img src="{{ asset('assets/images/tiktok.png') }}" alt="social-icon"></a></li>
+                    </ul>
                     <!-- <a href="/registration" class="getstartedBtn">Get Started</a> -->
                 </div>
             </div>
