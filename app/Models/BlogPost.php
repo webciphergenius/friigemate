@@ -24,16 +24,35 @@ class BlogPost extends BasePost
         // Use Cloudflare disk for new uploads
         $disk = config('cloudflare.blog.disk', 'cloudflare');
         
-        if (Storage::disk($disk)->exists($this->cover_photo_path)) {
-            return Storage::disk($disk)->url($this->cover_photo_path);
+        try {
+            // Try to get the URL directly from Cloudflare disk
+            // This works even if exists() fails due to eventual consistency
+            $cloudflareUrl = Storage::disk($disk)->url($this->cover_photo_path);
+            
+            // If the path starts with the expected Cloudflare directory, assume it's on Cloudflare
+            $expectedDirectory = config('cloudflare.blog.directory', 'blog-images');
+            if (str_starts_with($this->cover_photo_path, $expectedDirectory . '/')) {
+                return $cloudflareUrl;
+            }
+        } catch (\Exception $e) {
+            // If Cloudflare fails, continue to fallback methods
         }
 
         // Fallback to local storage for existing images
-        if (Storage::disk('public')->exists($this->cover_photo_path)) {
-            return asset('storage/' . $this->cover_photo_path);
+        try {
+            if (Storage::disk('public')->exists($this->cover_photo_path)) {
+                return asset('storage/' . $this->cover_photo_path);
+            }
+        } catch (\Exception $e) {
+            // If local storage fails, continue
         }
 
-        // Return the path as-is if no storage method works
-        return $this->cover_photo_path;
+        // Try Cloudflare URL generation as final fallback
+        try {
+            return Storage::disk($disk)->url($this->cover_photo_path);
+        } catch (\Exception $e) {
+            // Return the path as-is if all methods fail
+            return $this->cover_photo_path;
+        }
     }
 }
