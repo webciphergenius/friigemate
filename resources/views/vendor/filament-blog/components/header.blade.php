@@ -41,7 +41,7 @@
                         <li class="list-inline-item"><a href="#"><img src="{{ asset('assets/images/insta.png') }}" alt="social-icon"></a></li>
                         <li class="list-inline-item"><a href="#"><img src="{{ asset('assets/images/tiktok.png') }}" alt="social-icon"></a></li>
                     </ul>
-                    <a href="/registration" class="getstartedBtn">Get Started</a>
+                    <!-- <a href="/registration" class="getstartedBtn">Get Started</a> -->
                 </div>
             </div>
         </nav>
