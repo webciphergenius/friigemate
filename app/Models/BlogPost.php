@@ -15,6 +15,32 @@ class BlogPost extends BasePost
     ];
 
     /**
+     * Override the categories relationship to use the correct foreign key
+     */
+    public function categories(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    {
+        return $this->belongsToMany(
+            \Firefly\FilamentBlog\Models\Category::class,
+            config('filamentblog.tables.prefix') . 'category_' . config('filamentblog.tables.prefix') . 'post',
+            'post_id', // Use 'post_id' instead of 'blog_post_id'
+            'category_id'
+        );
+    }
+
+    /**
+     * Override the tags relationship to use the correct foreign key
+     */
+    public function tags(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    {
+        return $this->belongsToMany(
+            \Firefly\FilamentBlog\Models\Tag::class,
+            config('filamentblog.tables.prefix') . 'tag_' . config('filamentblog.tables.prefix') . 'post',
+            'post_id', // Use 'post_id' instead of 'blog_post_id'
+            'tag_id'
+        );
+    }
+
+    /**
      * Get the feature photo URL with proper disk handling
      */
     protected function getFeaturePhotoAttribute()
