@@ -780,6 +780,9 @@ span.center-policy {
 a.nav-link:hover, ul.footer-list a:hover {
     color: #f68743 !important;
 }
+.footerWidget.footerApp a.hover-msg {
+    margin-top: 18px;
+}
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

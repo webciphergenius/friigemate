@@ -1052,7 +1052,7 @@
                         <div class="col-sm-2">
                             <div class="footerWidget footerApp">
                                 <div class="heroBtns">
-                                    <a href="javascript:void(0)"><img src="../../images/app-store-icon.png" alt="app-store"></a>
+                                    <a href="javascript:void(0)" class="hover-msg"><img src="../../images/app-store-icon.png" alt="app-store"></a>
                                     <a href="javascript:void(0)"><img src="../../images/play-store-icon.png" alt="play-store"></a>
                                 </div>
                             </div>
