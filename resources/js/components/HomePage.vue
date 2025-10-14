@@ -1052,8 +1052,8 @@
                         <div class="col-sm-2">
                             <div class="footerWidget footerApp">
                                 <div class="heroBtns">
-                                    <a href="https://apps.apple.com/in/app/expo-go/id982107779" target="_blank" class="hover-msg"><img src="../../images/app-store-icon.png" alt="app-store"></a>
-                                    <a href="javascript:void(0)"><img src="../../images/play-store-icon.png" alt="play-store"></a>
+                                    <a href="https://apps.apple.com/in/app/expo-go/id982107779" target="_blank"><img src="../../images/app-store-icon.png" alt="app-store"></a>
+                                    <a href="javascript:void(0)"><img src="../../images/play-store-icon.png" class="hover-msg" alt="play-store"></a>
                                 </div>
                             </div>
                         </div>
