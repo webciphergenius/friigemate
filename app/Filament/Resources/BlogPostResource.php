@@ -129,6 +129,7 @@ class BlogPostResource extends Resource
                         'published' => 'success',
                         'scheduled' => 'warning',
                         'pending' => 'gray',
+                        default => 'gray',
                     }),
                 Tables\Columns\TextColumn::make('user.name')
                     ->label('Author')

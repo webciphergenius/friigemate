@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\Storage;
 class BlogPost extends BasePost
 {
     /**
+     * The attributes that should be cast.
+     */
+    protected $casts = [
+        'status' => 'string', // Cast enum to string for Filament compatibility
+    ];
+
+    /**
      * Get the feature photo URL with proper disk handling
      */
     protected function getFeaturePhotoAttribute()
