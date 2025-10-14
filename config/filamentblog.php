@@ -12,10 +12,14 @@
  */
 
 use Firefly\FilamentBlog\Models\User;
+use App\Models\BlogPost;
 
 return [
     'tables' => [
         'prefix' => 'fblog_', // prefix for all blog tables
+    ],
+    'models' => [
+        'post' => BlogPost::class,
     ],
     'route' => [
         'prefix' => 'blogs',

@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Filament\Facades\Filament;
+use Firefly\FilamentBlog\Models\Post;
+use App\Models\BlogPost;
 
 class BlogServiceProvider extends ServiceProvider
 {
@@ -12,7 +14,8 @@ class BlogServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Bind our custom BlogPost model
+        $this->app->bind(Post::class, BlogPost::class);
     }
 
     /**

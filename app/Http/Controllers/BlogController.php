@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Firefly\FilamentBlog\Models\Post;
+use App\Models\BlogPost;
 use Firefly\FilamentBlog\Models\Category;
 use Firefly\FilamentBlog\Models\Tag;
 
@@ -72,7 +72,7 @@ class BlogController extends Controller
             }
 
             // Search in title, sub_title, and body
-            $posts = Post::published()
+            $posts = BlogPost::published()
                 ->where(function ($q) use ($query) {
                     $q->where('title', 'like', '%' . $query . '%')
                       ->orWhere('sub_title', 'like', '%' . $query . '%')

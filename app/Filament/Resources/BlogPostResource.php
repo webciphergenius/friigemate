@@ -8,14 +8,14 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Firefly\FilamentBlog\Models\Post;
+use App\Models\BlogPost;
 use FilamentTiptapEditor\TiptapEditor;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class BlogPostResource extends Resource
 {
-    protected static ?string $model = Post::class;
+    protected static ?string $model = BlogPost::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
