@@ -19,11 +19,13 @@
             <div class="pop-left-form">
                 <h4>Sign up for early access</h4>
                 <p>Be the first to test Go FreightMate™ and unlock smoother shipping.</p>
-                <form action="#" method="post" id="popForm">
-                    <input type="text" name="userName" id="userName" placeholder="Your Name">
-                    <input type="email" name="userEmail" id="userEmail" placeholder="Your Email*" required>
+                <form @submit.prevent="submitPopupForm" id="popForm">
+                    <input type="text" name="userName" id="userName" v-model="popupForm.userName" placeholder="Your Name">
+                    <input type="email" name="userEmail" id="userEmail" v-model="popupForm.userEmail" placeholder="Your Email*" required>
                     <input type="submit" value="Let's move freight!" class="submitBtnpop">
                 </form>
+                <p v-if="popupSuccessMessage" class="success">{{ popupSuccessMessage }}</p>
+                <p v-if="popupErrorMessage" class="error">{{ popupErrorMessage }}</p>
             </div>
         </div>
     </div>
@@ -1412,6 +1414,12 @@ export default {
       newsletterEmail: "",
       newsletterSuccessMessage: "",
       newsletterErrorMessage: "",
+      popupForm: {
+        userName: '',
+        userEmail: '',
+      },
+      popupSuccessMessage: "",
+      popupErrorMessage: "",
       blogPosts: [],
       blogLoading: false,
       blogError: "",
@@ -1486,6 +1494,32 @@ export default {
         this.blogError = "Failed to load blog posts.";
       } finally {
         this.blogLoading = false;
+      }
+    },
+    // Function to submit the popup form
+    async submitPopupForm() {
+      this.popupSuccessMessage = "";
+      this.popupErrorMessage = "";
+      
+      try {
+        const response = await axios.post("/popup", this.popupForm);
+        console.log(response.data);
+        this.popupSuccessMessage = "Thank you! We'll be in touch soon.";
+        this.popupErrorMessage = "";
+        this.popupForm.userName = "";
+        this.popupForm.userEmail = ""; // Reset form
+        
+        // Close popup after successful submission
+        const popup = document.getElementById('popup');
+        if (popup) {
+          setTimeout(() => {
+            popup.style.display = 'none';
+          }, 2000);
+        }
+      } catch (error) {
+        console.error(error.response ? error.response.data : error);
+        this.popupErrorMessage = "Failed to submit. Please try again.";
+        this.popupSuccessMessage = "";
       }
     },
   },
