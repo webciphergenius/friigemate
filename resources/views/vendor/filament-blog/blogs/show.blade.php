@@ -1,7 +1,8 @@
 <x-blog-layout>
     <section class="pb-16">
         <div class="mb-10 flex gap-x-2 text-sm font-semibold blogDetailBanner">
-            <a href="{{ route('filamentblog.post.index') }}">Home</a>
+            <!-- <a href="{{ route('filamentblog.post.index') }}">Home</a> -->
+            <a href="/">Home</a>
             <span class="opacity-30">/</span>
             <a href="{{ route('filamentblog.post.all') }}">Blog</a>
             <span class="opacity-30">/</span>
@@ -304,6 +305,9 @@ ul.blogTagsList a {
     padding: 5px 10px;
     display: block;
 }
+.hover\:text-primary-600:hover {
+    color: rgb(255 241 223) !important;
+}
 @media only screen and (max-width: 768px) {
  body.antialiased h1.mb-6.text-4xl.font-semibold {
     font-size: 28px !important;
@@ -311,7 +315,6 @@ ul.blogTagsList a {
 h3.mb-2.text-2xl.font-semibold {
     font-size: 24px !important;
 }
-
 }
 /* Blogs EH */
 </style>
