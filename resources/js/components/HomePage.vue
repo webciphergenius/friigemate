@@ -109,7 +109,7 @@
                                 >Get Started Today</a
                             >  -->
                             <div class="heroBtns">
-                                <a href="javascript:void(0)" class="hover-msg"><img
+                                <a href="javascript:void(0)"><img
                                         src="../../images/app-store-icon.png"
                                         alt="app-store"
                                 /></a>
@@ -834,7 +834,7 @@
                                 logistics, wherever you are.
                             </p>
                             <div class="heroBtns">
-                                <a href="javascript:void(0)" class="hover-msg"><img
+                                <a href="javascript:void(0)"><img
                                         src="../../images/app-store-icon.png"
                                         alt="app-store"
                                 /></a>
