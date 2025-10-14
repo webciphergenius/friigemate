@@ -861,6 +861,19 @@ div#navbarSupportedContent {
 .row.bottom-footer .col-sm-8 {
     padding: 0;
 }
+.mainWorkBlock .row.align-items-center {
+    padding: 30px 20px;
+}
+.portfolio-slider .slick-center:before {
+    height: 95%;
+}
+section#feature .p-4.border.rounded.shadow-sm {
+    padding: 15px !important;
+    height: 230px;
+}
+section.featuredMate .rounded img {
+    height: 50px;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 div#navbarSupportedContent a.nav-link {
