@@ -67,10 +67,10 @@
                       </li>
                     </ul>
                     <ul class="list-inline socialLinks">
-                        <li class="list-inline-item"><a href="#"><img src="../../images/facebook.png" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="#"><img src="../../images/youtube.png" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="#"><img src="../../images/insta.png" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="#"><img src="../../images/tiktok.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=61577783482435" target="_blank"><img src="../../images/facebook.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://youtube.com/@gofreightmate?si=KgThF0f_TcgdmwMf" target="_blank"><img src="../../images/youtube.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/gofreightmate?igsh=OTdsZ2ZqY24ycHAx&utm_source=qr" target="_blank"><img src="../../images/insta.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://www.tiktok.com/@gofreightmate?_t=ZS-90Xr1wJJ5Wa&_r=1" target="_blank"><img src="../../images/tiktok.png" alt="social-icon"></a></li>
                     </ul>
                     <!-- <a href="/registration" class="getstartedBtn">Get Started</a> -->
                 </div>
@@ -661,7 +661,7 @@
                             </figure>
                             <h5>Richard Marthens</h5>
                             <p>Chief Executive Officer/Founder</p>
-                            <ul class="list-inline">
+                            <!-- <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="#">
                                         <img src="../../images/facebook-icon.png" alt="facebook-icon" />
@@ -692,7 +692,7 @@
                                         <img src="../../images/youtube-icon.png" alt="youtube-icon" />
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -705,38 +705,6 @@
                             </figure>
                             <h5>Doreen Julye</h5>
                             <p>Chief Operating Officer</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -749,38 +717,6 @@
                             </figure>
                             <h5>Devender Kumar</h5>
                             <p>Chief Technology Officer</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -793,38 +729,6 @@
                             </figure>
                             <h5>Rich Silivanch</h5>
                             <p>Creative Director</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -837,38 +741,6 @@
                             </figure>
                             <h5>Peter Tysdale</h5>
                             <p>Chief Financial Officer</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -881,38 +753,6 @@
                             </figure>
                             <h5>Michael Moskowitz</h5>
                             <p>VP/Sales Operations</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -925,38 +765,6 @@
                             </figure>
                             <h5>Shanita Julye</h5>
                             <p>Office & Logistics Manager</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -969,38 +777,6 @@
                             </figure>
                             <h5>Reena Shaw</h5>
                             <p>Director of Marketing & Media</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/facebook-icon.png" alt="facebook-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/instagram-icon.png" alt="instagram-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/linkedin-icon.png" alt="linkedin-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/twitter-icon.png" alt="twitter-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/tik-tok-icon.png" alt="tik-tok-icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <img src="../../images/youtube-icon.png" alt="youtube-icon" />
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -1554,5 +1330,19 @@ window.addEventListener('load', () => {
             }
         });
     }, 2000);
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    const headerOffset = 120; // height of your sticky header
+    const elementPosition = target.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  });
 });
 </script>
