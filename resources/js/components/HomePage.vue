@@ -1303,27 +1303,6 @@ export default {
     // Fetch blog posts when component is mounted
     this.fetchBlogPosts();
   },
-  // Wait until DOM is rendered
-    this.$nextTick(() => {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', (e) => {
-          e.preventDefault();
-          const href = anchor.getAttribute('href');
-          const target = document.querySelector(href);
-
-          if (target) {
-            const headerOffset = 120; // adjust to your sticky header height
-            const elementPosition = target.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.scrollY - headerOffset;
-
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-    });
 };
 window.addEventListener('scroll', function () {
   const header = document.querySelector('.mainHead');
@@ -1352,18 +1331,18 @@ window.addEventListener('load', () => {
         });
     }, 2000);
 });
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     const target = document.querySelector(this.getAttribute('href'));
-//     const headerOffset = 120; // height of your sticky header
-//     const elementPosition = target.getBoundingClientRect().top;
-//     const offsetPosition = elementPosition + window.scrollY - headerOffset;
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    const headerOffset = 120; // height of your sticky header
+    const elementPosition = target.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
-//     window.scrollTo({
-//       top: offsetPosition,
-//       behavior: "smooth"
-//     });
-//   });
-// });
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  });
+});
 </script>
