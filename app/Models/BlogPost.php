@@ -43,7 +43,7 @@ class BlogPost extends BasePost
     /**
      * Override the SEO details relationship to use the correct foreign key
      */
-    public function seoDetails()
+    public function seoDetails(): \Illuminate\Database\Eloquent\Relations\HasOne
     {
         return $this->hasOne(
             \Firefly\FilamentBlog\Models\SeoDetail::class,
@@ -55,7 +55,7 @@ class BlogPost extends BasePost
     /**
      * Override the comments relationship to use the correct foreign key
      */
-    public function comments()
+    public function comments(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(
             \Firefly\FilamentBlog\Models\Comment::class,
