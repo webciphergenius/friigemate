@@ -62,10 +62,12 @@ class BlogPost extends BasePost
             // This works even if exists() fails due to eventual consistency
             $cloudflareUrl = Storage::disk($disk)->url($this->cover_photo_path);
             
-            // If the path starts with the expected Cloudflare directory, assume it's on Cloudflare
-            $expectedDirectory = config('cloudflare.blog.directory', 'blog-images');
-            if (str_starts_with($this->cover_photo_path, $expectedDirectory . '/')) {
-                return $cloudflareUrl;
+            // If the path starts with any blog directory, assume it's on Cloudflare
+            $blogDirectories = ['blog-images/', 'blog-feature-images/'];
+            foreach ($blogDirectories as $directory) {
+                if (str_starts_with($this->cover_photo_path, $directory)) {
+                    return $cloudflareUrl;
+                }
             }
         } catch (\Exception $e) {
             // If Cloudflare fails, continue to fallback methods
