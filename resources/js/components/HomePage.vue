@@ -1309,12 +1309,18 @@ export default {
     },
   },
   mounted() {
+    console.log('🚀 HomePage component mounted!');
+    console.log('📊 Initial state:', {
+      blogLoading: this.blogLoading,
+      blogError: this.blogError,
+      blogPosts: this.blogPosts.length
+    });
+    
     // Fetch blog posts when component is mounted
     this.fetchBlogPosts();
-  },
-  mounted() {
+    
+    // Handle smooth scrolling for anchor links
     const headerOffset = 120; // height of sticky header
-
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', (e) => {
         e.preventDefault();
