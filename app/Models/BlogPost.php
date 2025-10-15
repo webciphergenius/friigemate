@@ -34,7 +34,7 @@ class BlogPost extends BasePost
     {
         return $this->belongsToMany(
             \Firefly\FilamentBlog\Models\Tag::class,
-            config('filamentblog.tables.prefix') . 'tag_' . config('filamentblog.tables.prefix') . 'post',
+            config('filamentblog.tables.prefix') . 'post_' . config('filamentblog.tables.prefix') . 'tag',
             'post_id', // Use 'post_id' instead of 'blog_post_id'
             'tag_id'
         );
