@@ -56,6 +56,14 @@ class BlogPost extends BasePost
             'id'
         );
     }
+    
+    /**
+     * Override the getForeignKey method to return the correct foreign key
+     */
+    public function getForeignKey(): string
+    {
+        return 'post_id';
+    }
 
     /**
      * Override the comments relationship to use the correct foreign key

@@ -21,6 +21,9 @@ class BlogServiceProvider extends ServiceProvider
         $this->app->singleton(Post::class, function () {
             return new BlogPost();
         });
+        
+        // Override the model alias
+        $this->app->alias(Post::class, BlogPost::class);
     }
 
     /**
