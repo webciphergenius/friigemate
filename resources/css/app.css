@@ -827,7 +827,10 @@ section#feature {
     height: 290px;
     object-fit: cover;
 }
-
+/* Temp */
+span.newsMeta {
+    display: none;
+}
 @media only screen and (min-width: 1440px) {
 .teamBlock figure img {
     height: 220px;
