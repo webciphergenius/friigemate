@@ -289,7 +289,11 @@ section.newsletterSec {
 }
 section.newsletterSec * {
     color: #fff;
-} 
+}
+ul.list-inline.socialLinks img {
+    height: 18px;
+    width: auto;
+}
 form.newsletterForm input {
     padding: 10px 0;
     color: #FFF;
