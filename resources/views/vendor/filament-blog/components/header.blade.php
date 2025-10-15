@@ -39,9 +39,9 @@
                         <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=61577783482435" target="_blank"><img src="{{ asset('assets/images/facebook.png') }}" alt="social-icon"></a></li>
                         <li class="list-inline-item"><a href="https://youtube.com/@gofreightmate?si=KgThF0f_TcgdmwMf" target="_blank"><img src="{{ asset('assets/images/youtube.png') }}" alt="social-icon"></a></li>
                         <li class="list-inline-item"><a href="https://www.instagram.com/gofreightmate?igsh=OTdsZ2ZqY24ycHAx&utm_source=qr" target="_blank"><img src="{{ asset('assets/images/insta.png') }}" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="https://www.tiktok.com/@gofreightmate?_t=ZS-90Xr1wJJ5Wa&_r=1" target="_blank"><img src="{{ asset('assets/images/tiktok-head-icon.png') }}" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/gofreightmate" target="_blank"><img src="{{ asset('assets/images/linkedin-head-icon.png') }}" alt="social-icon"></a></li>
-                        <li class="list-inline-item"><a href="https://x.com/gofreightmate?s=21" target="_blank"><img src="{{ asset('assets/images/twitter-head-icon.png') }}" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://www.tiktok.com/@gofreightmate?_t=ZS-90Xr1wJJ5Wa&_r=1" target="_blank"><img src="https://gofreightmate.com/build/assets/tiktok-head-icon-3PWq1qXI.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/gofreightmate" target="_blank"><img src="https://gofreightmate.com/build/assets/linkedin-head-icon-BVdJa89f.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://x.com/gofreightmate?s=21" target="_blank"><img src="https://gofreightmate.com/build/assets/twitter-head-icon-5igx1qW_.png" alt="social-icon"></a></li>
                     </ul>
                     <!-- <a href="/registration" class="getstartedBtn">Get Started</a> -->
                 </div>
@@ -189,6 +189,10 @@ ul.blogTagsList a {
 }
 .hover\:text-primary-600:hover {
     color: rgb(255 241 223) !important;
+}
+ul.list-inline.socialLinks img {
+    height: 18px;
+    width: auto;
 }
 @media only screen and (max-width: 768px) {
  body.antialiased h1.mb-6.text-4xl.font-semibold {
