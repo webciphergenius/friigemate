@@ -41,6 +41,30 @@ class BlogPost extends BasePost
     }
 
     /**
+     * Override the SEO details relationship to use the correct foreign key
+     */
+    public function seoDetails()
+    {
+        return $this->hasOne(
+            \Firefly\FilamentBlog\Models\SeoDetail::class,
+            'post_id', // Use 'post_id' instead of 'blog_post_id'
+            'id'
+        );
+    }
+
+    /**
+     * Override the comments relationship to use the correct foreign key
+     */
+    public function comments()
+    {
+        return $this->hasMany(
+            \Firefly\FilamentBlog\Models\Comment::class,
+            'post_id', // Use 'post_id' instead of 'blog_post_id'
+            'id'
+        );
+    }
+
+    /**
      * Get the feature photo URL with proper disk handling
      */
     protected function getFeaturePhotoAttribute()
