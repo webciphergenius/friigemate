@@ -822,6 +822,12 @@ a.nav-link:hover, ul.footer-list a:hover {
 section#feature {
     padding: 50px 0 70px;
 }
+.newsBox figure img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
 @media only screen and (min-width: 1440px) {
 .teamBlock figure img {
     height: 220px;
@@ -1111,5 +1117,4 @@ section.pgHero .heroBtns a:nth-child(1) img {
     width: 176px;
     margin-bottom: 10px;
 }
-
 }

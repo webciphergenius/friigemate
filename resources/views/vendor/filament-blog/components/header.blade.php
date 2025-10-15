@@ -194,6 +194,11 @@ ul.list-inline.socialLinks img {
     height: 18px;
     width: auto;
 }
+.mb-6.h-full.w-full.overflow-hidden.rounded.bg-slate-200 img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
 @media only screen and (max-width: 768px) {
  body.antialiased h1.mb-6.text-4xl.font-semibold {
     font-size: 28px !important;
