@@ -184,7 +184,9 @@ body.antialiased .container {
     display: flex;
     gap: 20px;
 }
-
+.grid.grid-cols-2.gap-x-14.gap-y-14 a:nth-child(10), .grid.grid-cols-2.gap-x-14.gap-y-14 a:nth-child(11), .grid.grid-cols-2.gap-x-14.gap-y-14 a:nth-child(12) {
+    display: none;
+}
 /* Left content area */
 .grid.gap-x-20 > div:first-child {
     flex-basis: 70%;
