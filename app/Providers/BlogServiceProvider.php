@@ -16,6 +16,11 @@ class BlogServiceProvider extends ServiceProvider
     {
         // Bind our custom BlogPost model
         $this->app->bind(Post::class, BlogPost::class);
+        
+        // Also bind it as a singleton to ensure it's used everywhere
+        $this->app->singleton(Post::class, function () {
+            return new BlogPost();
+        });
     }
 
     /**

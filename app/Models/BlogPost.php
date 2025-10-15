@@ -15,6 +15,11 @@ class BlogPost extends BasePost
     ];
 
     /**
+     * Override the foreign key for relationships
+     */
+    protected $foreignKey = 'post_id';
+
+    /**
      * Override the categories relationship to use the correct foreign key
      */
     public function categories(): \Illuminate\Database\Eloquent\Relations\BelongsToMany

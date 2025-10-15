@@ -20,6 +20,10 @@ return [
     ],
     'models' => [
         'post' => BlogPost::class,
+        'seo_detail' => \Firefly\FilamentBlog\Models\SeoDetail::class,
+        'comment' => \Firefly\FilamentBlog\Models\Comment::class,
+        'category' => \Firefly\FilamentBlog\Models\Category::class,
+        'tag' => \Firefly\FilamentBlog\Models\Tag::class,
     ],
     'route' => [
         'prefix' => 'blogs',
