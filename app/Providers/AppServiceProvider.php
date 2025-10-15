@@ -26,6 +26,8 @@ class AppServiceProvider extends ServiceProvider
         }
         
         // Bind the blog post model for route model binding
-        Route::model('post', BlogPost::class);
+        Route::bind('post', function ($value) {
+            return BlogPost::where('slug', $value)->firstOrFail();
+        });
     }
 }
