@@ -941,9 +941,8 @@ section#myblg figure img {
 .pop-left-form, .pop-left-img img {
     margin: 0;
 }
-
-.teamBlock figure img {
-    height: 270px;
+.teamBlock p {
+    height: auto;
 }
 figure.partnerFigure img {
     width: 100%;
@@ -1094,6 +1093,23 @@ section.statMain .col-sm-4:nth-child(2) {
 }
 section.pgHero .heroBtns img {
     width: 160px;
+}
+ul.logisticList li, p {
+    line-height: 1.5;
+}
+.secHeading br, section#feature p br {
+    display: none;
+}
+.teamBlock {
+    padding: 40px 40px 20px;
+}
+section.pgHero .heroBtns a:nth-child(1) img {
+    width: 163px;
+    margin: 0 -5px 5px 0;
+}
+.logisticsBlock a:nth-child(1) img {
+    width: 176px;
+    margin-bottom: 10px;
 }
 
 }
