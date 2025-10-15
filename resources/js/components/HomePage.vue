@@ -71,6 +71,8 @@
                         <li class="list-inline-item"><a href="https://youtube.com/@gofreightmate?si=KgThF0f_TcgdmwMf" target="_blank"><img src="../../images/youtube.png" alt="social-icon"></a></li>
                         <li class="list-inline-item"><a href="https://www.instagram.com/gofreightmate?igsh=OTdsZ2ZqY24ycHAx&utm_source=qr" target="_blank"><img src="../../images/insta.png" alt="social-icon"></a></li>
                         <li class="list-inline-item"><a href="https://www.tiktok.com/@gofreightmate?_t=ZS-90Xr1wJJ5Wa&_r=1" target="_blank"><img src="../../images/tiktok.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/posts/gofreightmate_gofreightmate-lastmiledelivery-lasvegaslogistics-activity-7382376899509121024-kL4i?utm_source=share&utm_medium=member_ios&rcm=ACoAAANVKrIBS2V8GFSQ9dp7WHH-X6wEI0To3xk" target="_blank"><img src="../../images/linkedin-head-icon.png" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://x.com/gofreightmate?s=21" target="_blank"><img src="../../images/twitter-head-icon.png" alt="social-icon"></a></li>
                     </ul>
                     <!-- <a href="/registration" class="getstartedBtn">Get Started</a> -->
                 </div>
@@ -1303,6 +1305,25 @@ export default {
     // Fetch blog posts when component is mounted
     this.fetchBlogPosts();
   },
+  mounted() {
+    const headerOffset = 120; // height of sticky header
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (!target) return;
+
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }); 
+    });
+  },
 };
 window.addEventListener('scroll', function () {
   const header = document.querySelector('.mainHead');
@@ -1331,18 +1352,18 @@ window.addEventListener('load', () => {
         });
     }, 2000);
 });
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    const headerOffset = 120; // height of your sticky header
-    const elementPosition = target.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     const target = document.querySelector(this.getAttribute('href'));
+//     const headerOffset = 120; // height of your sticky header
+//     const elementPosition = target.getBoundingClientRect().top;
+//     const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth"
-    });
-  });
-});
+//     window.scrollTo({
+//       top: offsetPosition,
+//       behavior: "smooth"
+//     });
+//   });
+// });
 </script>

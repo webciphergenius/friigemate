@@ -34,12 +34,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="tel:8885094480"><i class="fa fa-phone"></i> (888) 509-4480</a>
                         </li>
-                    </ul>
+                    </ul> 
                     <ul class="list-inline socialLinks">
                         <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=61577783482435" target="_blank"><img src="{{ asset('assets/images/facebook.png') }}" alt="social-icon"></a></li>
                         <li class="list-inline-item"><a href="https://youtube.com/@gofreightmate?si=KgThF0f_TcgdmwMf" target="_blank"><img src="{{ asset('assets/images/youtube.png') }}" alt="social-icon"></a></li>
                         <li class="list-inline-item"><a href="https://www.instagram.com/gofreightmate?igsh=OTdsZ2ZqY24ycHAx&utm_source=qr" target="_blank"><img src="{{ asset('assets/images/insta.png') }}" alt="social-icon"></a></li>
                         <li class="list-inline-item"><a href="https://www.tiktok.com/@gofreightmate?_t=ZS-90Xr1wJJ5Wa&_r=1" target="_blank"><img src="{{ asset('assets/images/tiktok.png') }}" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/posts/gofreightmate_gofreightmate-lastmiledelivery-lasvegaslogistics-activity-7382376899509121024-kL4i?utm_source=share&utm_medium=member_ios&rcm=ACoAAANVKrIBS2V8GFSQ9dp7WHH-X6wEI0To3xk" target="_blank"><img src="{{ asset('assets/images/linkedin-head-icon.png') }}" alt="social-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://x.com/gofreightmate?s=21" target="_blank"><img src="{{ asset('assets/images/twitter-head-icon.png') }}" alt="social-icon"></a></li>
                     </ul>
                     <!-- <a href="/registration" class="getstartedBtn">Get Started</a> -->
                 </div>
