@@ -204,3 +204,26 @@ h3.mb-2.text-2xl.font-semibold {
 }
 /* Blogs EH */
 </style>
+<script>
+export default {
+  mounted() {
+    const headerOffset = 120; // height of sticky header
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (!target) return;
+
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      });
+    });
+  }
+}
+</script>
