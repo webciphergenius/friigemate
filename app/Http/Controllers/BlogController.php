@@ -13,24 +13,16 @@ class BlogController extends Controller
     public function getLatestPosts()
     {
         try {
-            // Get the table prefix from config
-            $prefix = config('filamentblog.tables.prefix');
-            
-            // Fetch latest 3 published blog posts
-            $posts = DB::table($prefix . 'posts')
-                ->where('status', 'published')
+            // Use Eloquent model instead of raw DB queries
+            $posts = BlogPost::where('status', 'published')
                 ->orderBy('published_at', 'desc')
                 ->limit(3)
                 ->get();
 
             // Transform the data to match the frontend needs
             $formattedPosts = $posts->map(function ($post) {
-                // Ensure the cover photo path is a full URL
-                $coverPhotoUrl = $post->cover_photo_path;
-                if (!str_starts_with($coverPhotoUrl, 'http')) {
-                    // If it's a relative path, prepend the storage URL
-                    $coverPhotoUrl = asset('storage/' . $post->cover_photo_path);
-                }
+                // Use the model's accessor for the cover photo URL
+                $coverPhotoUrl = $post->feature_photo;
                 
                 return [
                     'id' => $post->id,
@@ -56,7 +48,7 @@ class BlogController extends Controller
             
             return response()->json([
                 'success' => false,
-                'message' => 'Failed to fetch blog posts',
+                'message' => 'Failed to fetch blog posts: ' . $e->getMessage(),
                 'posts' => []
             ], 500);
         }
