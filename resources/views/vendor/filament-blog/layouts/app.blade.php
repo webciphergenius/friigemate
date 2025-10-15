@@ -188,7 +188,7 @@
         <footer class="mainfooter" id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-9">
+                    <div class="col-sm-8">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="footerWidget web-icon">
@@ -199,7 +199,7 @@
                                     <a class="footerPhone" href="tel:8885094480"><i class="fa fa-phone"></i> (888) 509-4480</a>
                                 </div>
                             </div>
-                            <div class="col-sm-2">
+                            <div class="col-sm-3">
                                 <div class="footerWidget web-list">
                                     <h5>Useful Links</h5>
                                     <ul class="footer-list">
@@ -210,7 +210,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-2">
+                            <!-- <div class="col-sm-2">
                                 <div class="footerWidget web-list">
                                     <h5>Support</h5>
                                     <ul class="footer-list">
@@ -220,7 +220,7 @@
                                         <li>Contact Us</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-sm-2">
                                 <div class="footerWidget footerApp">
                                     <div class="heroBtns">
@@ -245,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="footerForm">
                             <form action="/contact" method="POST" class="footerContact">
                                 @csrf
