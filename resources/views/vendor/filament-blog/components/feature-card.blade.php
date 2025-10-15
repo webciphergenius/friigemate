@@ -1,7 +1,7 @@
 @props(['post'])
 <div class="grid sm:grid-cols-2 gap-y-5 gap-x-10">
     <div class="md:h-[400px] w-full overflow-hidden rounded-xl bg-zinc-300">
-        <img class="flex h-full w-full items-center justify-center md:object-cover object-contain object-top" src="{{ $post->cover_photo_path && str_starts_with($post->cover_photo_path, 'http') ? $post->cover_photo_path : asset('storage/' . $post->cover_photo_path) }}" alt="{{ $post->photo_alt_text }}">
+        <img class="flex h-full w-full items-center justify-center md:object-cover object-contain object-top" src="{{ $post->feature_photo }}" alt="{{ $post->photo_alt_text }}">
     </div>
     <div class="flex flex-col justify-center space-y-10 py-4 sm:pl-10">
         <div>

@@ -22,7 +22,7 @@
                                     <div class="flex-shrink-0">
                                         <a href="{{ route('filamentblog.post.show', ['post' => $post->slug]) }}">
                                             <img class="h-48 w-64 object-cover rounded-lg" 
-                                                 src="{{ $post->cover_photo_path && str_starts_with($post->cover_photo_path, 'http') ? $post->cover_photo_path : asset('storage/' . $post->cover_photo_path) }}" 
+                                                 src="{{ $post->feature_photo }}" 
                                                  alt="{{ $post->photo_alt_text }}">
                                         </a>
                                     </div>

@@ -950,7 +950,7 @@
                     <div v-for="post in blogPosts" :key="post.id" class="col-sm-4 newsBox">
                         <figure>
                             <img
-                                :src="post.cover_photo_path.startsWith('http') ? post.cover_photo_path : '/storage/' + post.cover_photo_path"
+                                :src="post.cover_photo_path"
                                 :alt="post.photo_alt_text || post.title"
                             />
                         </figure>

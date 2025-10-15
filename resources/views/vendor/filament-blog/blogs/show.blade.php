@@ -17,7 +17,7 @@
                         <div>
                             <div class="flex flex-col justify-end">
                                 <div class="mb-6 h-full w-full overflow-hidden rounded bg-slate-200">
-                                    <img class="flex h-full min-h-[400px] items-center justify-center object-cover object-top text-sm text-xl font-semibold text-slate-400" src="{{ $post->cover_photo_path && str_starts_with($post->cover_photo_path, 'http') ? $post->cover_photo_path : asset('storage/' . $post->cover_photo_path) }}" alt="{{ $post->photo_alt_text }}">
+                                    <img class="flex h-full min-h-[400px] items-center justify-center object-cover object-top text-sm text-xl font-semibold text-slate-400" src="{{ $post->feature_photo }}" alt="{{ $post->photo_alt_text }}">
                                 </div>
                                 <div class="mb-6">
                                     <h1 class="mb-6 text-4xl font-semibold">
