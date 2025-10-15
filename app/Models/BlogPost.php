@@ -12,6 +12,8 @@ class BlogPost extends BasePost
      */
     protected $casts = [
         'status' => 'string', // Cast enum to string for Filament compatibility
+        'published_at' => 'datetime',
+        'scheduled_for' => 'datetime',
     ];
 
     /**
@@ -63,6 +65,23 @@ class BlogPost extends BasePost
     public function getForeignKey(): string
     {
         return 'post_id';
+    }
+
+    /**
+     * Get formatted published date
+     */
+    public function formattedPublishedDate()
+    {
+        if (!$this->published_at) {
+            return $this->created_at->format('M d, Y');
+        }
+        
+        // Handle both Carbon objects and string dates
+        if (is_string($this->published_at)) {
+            return \Carbon\Carbon::parse($this->published_at)->format('M d, Y');
+        }
+        
+        return $this->published_at->format('M d, Y');
     }
 
     /**
