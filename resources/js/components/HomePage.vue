@@ -984,6 +984,7 @@
                 <!-- No Posts State -->
                 <div v-else class="text-center py-5">
                     <p>No blog posts available yet. Check back soon!</p>
+                    <p><small>Debug: Loading={{blogLoading}}, Error={{blogError}}, Posts={{blogPosts.length}}</small></p>
                 </div>
             </div>
         </section>
@@ -1256,22 +1257,28 @@ export default {
     },
     // Function to fetch blog posts
     async fetchBlogPosts() {
+      console.log('🔄 Starting to fetch blog posts...');
       this.blogLoading = true;
       this.blogError = "";
       
       try {
+        console.log('📡 Making API call to /api/blog/posts');
         const response = await axios.get('/api/blog/posts');
+        console.log('✅ API response received:', response.data);
         
         if (response.data.success && response.data.posts) {
+          console.log('📝 Found posts:', response.data.posts.length);
           this.blogPosts = response.data.posts;
         } else {
+          console.log('⚠️ No posts in response');
           this.blogError = "No blog posts available.";
         }
       } catch (error) {
-        console.error('Error fetching blog posts:', error);
-        this.blogError = "Failed to load blog posts.";
+        console.error('❌ Error fetching blog posts:', error);
+        this.blogError = "Failed to load blog posts: " + error.message;
       } finally {
         this.blogLoading = false;
+        console.log('🏁 Blog loading completed');
       }
     },
     // Function to submit the popup form
