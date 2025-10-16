@@ -302,9 +302,12 @@ form.newsletterForm input:focus-visible {
     outline: none;
 }
 form.newsletterForm * {
-    background: transparent !important;
+    background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
+}
+form.newsletterForm input[type="email"] {
+    background: transparent !important;
 }
 form.newsletterForm input#email {
     flex-basis: 90%;
@@ -827,6 +830,24 @@ section#feature {
     height: 290px;
     object-fit: cover;
 }
+form.footerContact p.success, .pop-left-form p.success {
+    background: #009a00;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px !important;
+}
+section.newsletterSec.sameSpacing p.success {
+    background: #009a00;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px !important;
+    width: 230px;
+    margin: 10px auto 0;
+    text-transform: capitalize;
+}
+
 /* Temp */
 span.newsMeta {
     display: none;
