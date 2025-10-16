@@ -199,6 +199,23 @@ ul.list-inline.socialLinks img {
     height: 480px;
     object-fit: cover;
 }
+h2.text-2xl.font-semibold.mb-3 a {
+    font-size: 28px;
+    line-height: 1.2;
+    display: block;
+}
+.flex.items-center.gap-4.text-sm.text-gray-500 span {
+    display: none;
+}
+.flex.items-center.gap-4.text-sm.text-gray-500 div span {
+    display: block;
+}
+h2.text-2xl.font-semibold.mb-3 a:hover {
+    color: #f47e19 !important;
+}
+.mb-10 h1.text-4xl.font-semibold.mb-4 {
+    font-size: 32px !important;
+}
 @media only screen and (max-width: 768px) {
  body.antialiased h1.mb-6.text-4xl.font-semibold {
     font-size: 28px !important;
