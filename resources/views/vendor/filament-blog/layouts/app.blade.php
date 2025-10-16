@@ -224,8 +224,8 @@
                             <div class="col-sm-2">
                                 <div class="footerWidget footerApp">
                                     <div class="heroBtns">
-                                        <a href="javascript:void(0)"><img src="{{ asset('assets/images/app-store-icon.png') }}" alt="app-store"></a>
-                                        <a href="javascript:void(0)"><img src="{{ asset('assets/images/play-store-icon.png') }}" alt="play-store"></a>
+                                        <a href="https://apps.apple.com/in/app/go-freightmate/id6748914156" target="_blank"><img src="{{ asset('assets/images/app-store-icon.png') }}" alt="app-store"></a>
+                                        <a href="javascript:void(0)" class="hover-msg"><img src="{{ asset('assets/images/play-store-icon.png') }}" alt="play-store"></a>
                                     </div>
                                 </div>
                             </div>

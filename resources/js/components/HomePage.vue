@@ -111,7 +111,7 @@
                                 >Get Started Today</a
                             >  -->
                             <div class="heroBtns">
-                                <a href="https://apps.apple.com/in/app/expo-go/id982107779" target="_blank"><img
+                                <a href="https://apps.apple.com/in/app/go-freightmate/id6748914156" target="_blank"><img
                                         src="../../images/app-store-icon.png"
                                         alt="app-store"
                                 /></a>
@@ -836,7 +836,7 @@
                                 logistics, wherever you are.
                             </p>
                             <div class="heroBtns">
-                                <a href="https://apps.apple.com/in/app/expo-go/id982107779" target="_blank"><img
+                                <a href="https://apps.apple.com/in/app/go-freightmate/id6748914156" target="_blank"><img
                                         src="../../images/app-store-icon.png"
                                         alt="app-store"
                                 /></a>
@@ -1055,7 +1055,7 @@
                         <div class="col-sm-2">
                             <div class="footerWidget footerApp">
                                 <div class="heroBtns">
-                                    <a href="https://apps.apple.com/in/app/expo-go/id982107779" target="_blank"><img src="../../images/app-store-icon.png" alt="app-store"></a>
+                                    <a href="https://apps.apple.com/in/app/go-freightmate/id6748914156" target="_blank"><img src="../../images/app-store-icon.png" alt="app-store"></a>
                                     <a href="javascript:void(0)" class="hover-msg"><img src="../../images/play-store-icon.png" alt="play-store"></a>
                                 </div>
                             </div>
