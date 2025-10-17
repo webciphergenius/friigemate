@@ -264,8 +264,13 @@ ul.newsBottom {
     padding: 12px 0;
 }
 .newData p {
-    color: #333333;
-    padding-bottom: 20px;
+    color: #333;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
 }
 span.newsMeta {
     font-size: 14px;
@@ -275,6 +280,10 @@ span.newsMeta {
 }
 .newData h4 {
     font-size: 18px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 form.newsletterForm {
     justify-content: center;
@@ -679,15 +688,15 @@ span.center-policy {
 }
 .popup-content {
     position: relative;
-    background: #fff url(../images/pop-bg-img.png) no-repeat;
+    background: #fff url(/build/assets/pop-bg-img-xEgDVnWy.png) no-repeat;
     background-size: 100% 85%;
-    padding: 50px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    box-shadow: 0 0 25px #0006;
     max-width: 750px;
-    animation: scaleUp 0.3s ease-in-out;
+    animation: scaleUp .3s ease-in-out;
     margin-top: 60px;
     overflow-y: scroll;
-    height: 85vh;
+    height: 80vh;
 }
 .close-btn {
     position: absolute;
@@ -708,15 +717,16 @@ span.center-policy {
     padding: 10px 0 0;
 }
 .pop-header h3 {
-    font-size: 42px!important;
-    margin: 0;
-    font-weight: 700 !important;
-    color: #FFFFFF;
+    font-size: 32px!important;
+    font-weight: 700!important;
+    color: #fff;
+    width: 70%;
+    margin: 10px auto 0;
 }
 .pop-header h5 {
-    font-size: 26px!important;
+    font-size: 22px!important;
     font-weight: 400;
-    margin: 10px 0;
+    margin: 5px 0;
     color: #fff;
 }
 .pop-header p {
@@ -727,7 +737,7 @@ span.center-policy {
     display: flex;
     gap: 20px;
     background: #FFFFFF;
-    padding: 30px 30px 10px 0;
+    padding: 10px 20px 10px 0;
     border: 1px solid #D9D9D9;
     margin-top: 30px;
     align-items: center;
@@ -779,10 +789,8 @@ span.center-policy {
     text-align: center;
 }
 .pop-left-img img {
-    width: 100%;
-}
-.pop-left-img img {
-    margin-left: -2rem;
+    width: 87%;
+    margin-left: -1rem;
 }
 a.nav-link:hover, ul.footer-list a:hover {
     color: #f68743 !important;
@@ -852,6 +860,11 @@ h2.text-2xl.font-semibold.mb-3 a {
     line-height: 1.2;
     display: block;
 }
+.pop-logo img {
+    height: 110px;
+    width: auto;
+}
+
 
 /* Temp */
 span.newsMeta {
@@ -1090,7 +1103,8 @@ ul.newsBottom {
     padding-bottom: 35px;
 }
 section#myblg {
-    padding-bottom: 0;
+    padding-top: 35px;
+    background: #F0F0F0;
 }
 .footerWidget.web-list, .footerApp, .footerForm {
     margin-top: 2rem;
