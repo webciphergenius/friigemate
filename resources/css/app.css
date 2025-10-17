@@ -121,7 +121,7 @@ section.helpSec.sameSpacing .row.align-items-center {
     padding-top: 30px;
 }
 section#myblg {
-    padding-top: 0;
+    background: #F0F0F0;
 }
 .mainWorkBlock {
     position: relative;
