@@ -791,7 +791,7 @@
                     <div class="col-sm-6">
                         <figure class="logisticsFigure text-center m-0">
                             <img
-                                src="../../images/Driver/logistics-img.png"
+                                src="../../images/logistics-img.png"
                                 alt="logistics-image"
                                 class="w-50"
                             />
