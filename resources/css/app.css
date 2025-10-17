@@ -688,12 +688,12 @@ span.center-policy {
 }
 .popup-content {
     position: relative;
-    background: #fff url(/build/assets/pop-bg-img-xEgDVnWy.png) no-repeat;
+    background: #fff url(../images/pop-bg-img.png) no-repeat;
     background-size: 100% 85%;
     padding: 30px;
-    box-shadow: 0 0 25px #0006;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
     max-width: 750px;
-    animation: scaleUp .3s ease-in-out;
+    animation: scaleUp 0.3s ease-in-out;
     margin-top: 60px;
     overflow-y: scroll;
     height: 80vh;
