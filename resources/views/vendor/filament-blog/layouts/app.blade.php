@@ -234,7 +234,7 @@
                             <div class="col-sm-8">
                                 <div class="bottomLeft">
                                     <span>© 2025 <strong>Go Freightmate.</strong> All Rights Reserved</span><br>
-                                    <span>Site design & development by <a href="#">Contemporary Media Group, LLC</a></span>
+                                    <span>Site design & development by <a href="https://contemporarymediagrp.com" target="_blank">Contemporary Media Group, LLC</a></span>
                                 </div>
                             </div>
                             <div class="col-sm-4 text-end">
