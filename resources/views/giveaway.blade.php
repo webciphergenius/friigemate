@@ -25,6 +25,6 @@
 </head>
 <body style="margin:0; padding:0; text-align: center;">
   <iframe src="/pdf-gofreightmate.pdf" style="width:100%; height:100vh;" frameborder="0" class="desktoppdf"></iframe>
-  <iframe src="https://contemporarymediagrp.com/wp-content/uploads/2025/10/mobile-main.pdf" style="width:100%; height: 1682px;" frameborder="0" class="mobilepdf"></iframe>
+  <iframe src="https://contemporarymediagrp.com/wp-content/uploads/2025/10/mobile-main01.pdf" style="width:100%; height: 1682px;" frameborder="0" class="mobilepdf"></iframe>
 </body>
 </html>
