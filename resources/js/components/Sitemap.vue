@@ -201,7 +201,11 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
+h1 {
+    font-size: 32px!important;
+    font-weight: 700;
+}
 header.mainHead {
   background: #21233c;
   position: relative;
@@ -243,11 +247,11 @@ li.listMain:before {
 li.listMain:after {
     content: "";
     position: absolute;
-    width: 1332px;
+    width: 91.6%;
     height: 2px;
     background: #000;
     bottom: 1.5rem;
-    right: -29px;
+    right: 0;
 }
 li.listMain {
     position: relative;
@@ -331,25 +335,25 @@ ul.quoteLitSM a {
     color: #000;
     position: relative;
     margin: 15px 0 0;
-    width: 160px;
+    width: 18   0px;
 }
 ul.quoteLitSM a:after {
     top: 17px;
     content: "";
     position: absolute;
-    width: 30px;
+    width: 18px;
     height: 2px;
     background: #000;
-    right: -30px;
+    right: -19px;
 }
 ul.quoteLitSM:after {
     content: "";
     position: absolute;
     width: 2px;
-    height: 196px;
+    height: 209px;
     background: #000;
-    top: -4rem;
-    right: -22px;
+    top: -4.4rem;
+    right: -18px;
 }
 ul.quoteLitSM {
     position: relative;
