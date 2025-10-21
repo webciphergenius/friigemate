@@ -99,7 +99,7 @@
     <footer class="mainfooter" id ="footer">
         <div class="container">
             <div class="row">
-              <div class="col-sm-9">
+                <div class="col-sm-8">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="footerWidget web-icon">
@@ -110,35 +110,36 @@
 
                                 <p><strong>Go Freightmate®: Efficient. Reliable. Trusted.</strong><br>
                                 Transforming the logistics landscape, Go Freightmate® connects businesses and drivers with seamless freight management tools. From real-time tracking to secure payments, we're here to make your logistics journey effortless and efficient.</p>
+                                <a class="footerPhone" href="tel:8885094480"><i class="fa fa-phone"></i> (888) 509-4480</a>
                             </div>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-3">
                             <div class="footerWidget web-list">
                                 <h5>Useful Links</h5>
                                 <ul class="footer-list">
-                                    <li><a href="#">How It Works?</a></li>
+                                    <li>How It Works?</li>
                                     <li><a href="https://gofreightmate.com/privacy-policy">Privacy Policy</a></li>
                                     <li><a href="https://gofreightmate.com/terms-of-service">Terms of Service</a></li>
                                     <li><a href="#">Site Map</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-sm-2">
+                        <!-- <div class="col-sm-2">
                             <div class="footerWidget web-list">
                                 <h5>Support</h5>
                                 <ul class="footer-list">
-                                    <li><a href="#">FAQs</a></li>
-                                    <li><a href="#">Editor Help</a></li>
-                                    <li><a href="#">Life Chatting</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li>FAQs</li>
+                                    <li>Editor Help</li>
+                                    <li>Life Chatting</li>
+                                    <li>Contact Us</li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-sm-2">
                             <div class="footerWidget footerApp">
                                 <div class="heroBtns">
-                                    <a href="javascript:void(0)"><img src="../../images/app-store-icon.png" alt="app-store"></a>
-                                    <a href="javascript:void(0)"><img src="../../images/play-store-icon.png" alt="play-store"></a>
+                                    <a href="https://apps.apple.com/in/app/go-freightmate/id6748914156" target="_blank"><img src="../../images/app-store-icon.png" alt="app-store"></a>
+                                    <a href="javascript:void(0)" class="hover-msg"><img src="../../images/play-store-icon.png" alt="play-store"></a>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +148,7 @@
                         <div class="col-sm-8">
                             <div class="bottomLeft">
                                 <span>© 2025 <strong>Go Freightmate.</strong> All Rights Reserved</span><br>
-                                <span>Site design & development by <a href="#">Contemporary Media Group, LLC</a></span>
+                                <span>Site design & development by <a href="https://contemporarymediagrp.com" target="_blank">Contemporary Media Group, LLC</a></span>
                             </div>
                         </div>
                         <div class="col-sm-4 text-end">
@@ -158,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="footerForm">
                       <form @submit.prevent="submitForm" class="footerContact">
                             <h5><img src="../../images/message-icon.png" alt="message-icon"> Quick Contact Form</h5>
@@ -170,12 +171,13 @@
                             </div>
                             <p v-if="successMessage" class="success">{{ successMessage }}</p>
     <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
-                      </form> 
+                        </form>
+                        
                     </div>
                 </div>
             </div>
         </div>
-  </footer>
+    </footer>
 </template>
 
 <script>
