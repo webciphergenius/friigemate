@@ -1,5 +1,6 @@
 <template>
-  <header class="mainHead">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header class="mainHead">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
         <div class="container">
@@ -16,9 +17,7 @@
                             <a class="nav-link" href="#home" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Home
                             </a>
-                           
                       </li>
-                     
                       <li class="nav-item">
                         <a class="nav-link" href="#screen">Screens</a>
                       </li>
@@ -240,7 +239,7 @@ li.listMain:before {
     width: 2px;
     height: 24px;
     background: #000;
-    top: 2.15rem;
+    top: 2.5rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -335,7 +334,7 @@ ul.quoteLitSM a {
     color: #000;
     position: relative;
     margin: 15px 0 0;
-    width: 18   0px;
+    width: 180px;
 }
 ul.quoteLitSM a:after {
     top: 17px;
@@ -383,6 +382,11 @@ ul.quoteLitSM a:after {
     width: 2px;
     height: 16px;
     right: 50%;
+}
+ul.sitemapListSecond {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 }
 </style>
