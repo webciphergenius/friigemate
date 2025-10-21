@@ -201,7 +201,10 @@ export default {
 };
 </script>
 <style>
-h1 {
+.sitemap-header {
+    margin-top: 170px;
+}
+.sitemap-header h1 {
     font-size: 32px!important;
     font-weight: 700;
 }
