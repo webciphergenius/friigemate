@@ -6,6 +6,7 @@ import RegistrationForm from "./components/RegistrationForm.vue";
 import RegistrationDriver from "./components/RegistrationDriver.vue";
 import TermsOfService from './components/TermsOfService.vue';
 import PrivacyPolicy from "./components/PrivacyPolicy.vue";
+import Sitemap from "./components/Sitemap.vue";
 
 const app = createApp({
     components: {
@@ -14,6 +15,7 @@ const app = createApp({
         RegistrationDriver,
         TermsOfService,
         PrivacyPolicy,
+        Sitemap,
     },
 });
 
