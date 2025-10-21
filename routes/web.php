@@ -35,3 +35,7 @@ Route::get('/terms-of-service', function () {
 Route::get('/privacy-policy', function () {
     return view('privacy-policy');
 });
+
+Route::get('/sitemap', function () {
+    return view('sitemap');
+});
