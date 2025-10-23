@@ -1385,9 +1385,8 @@ window.addEventListener('load', () => {
 </script>
 <style>
 header.mainHead {
-    background: #21233cb3;
-    padding: 10px 0;
-    position: fixed;
+    background: #21233cb3 !important;
+    position: fixed !important;
     z-index: 9;
 }
 </style>
