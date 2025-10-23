@@ -84,6 +84,9 @@
     
     <div class="wrapperMain">
         <section class="pgHero" id="home">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="../../images/go-freightmate-video.mp4" type="video/mp4" />
+            </video>
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-sm-6">
@@ -1037,7 +1040,7 @@
                                     <li>How It Works?</li>
                                     <li><a href="https://gofreightmate.com/privacy-policy">Privacy Policy</a></li>
                                     <li><a href="https://gofreightmate.com/terms-of-service">Terms of Service</a></li>
-                                    <li><a href="#">Site Map</a></li>
+                                    <li><a href="https://gofreightmate.com/sitemap">Site Map</a></li>
                                 </ul>
                             </div>
                         </div>

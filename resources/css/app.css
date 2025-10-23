@@ -56,9 +56,9 @@ a.footerPhone {
     text-decoration: none;
 }
 .pgHero {
-    background: url(../images/hero-bg01img.png);
+    /* background: url(../images/hero-bg01img.png);
     background-size: cover;
-    background-position: top center;
+    background-position: top center; */
     padding: 220px 0 50px;
 }
 h1 {
