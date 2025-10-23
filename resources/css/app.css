@@ -60,6 +60,27 @@ a.footerPhone {
     background-size: cover;
     background-position: top center; */
     padding: 220px 0 50px;
+    position: relative;
+}
+section#home .container {
+    position: relative;
+    z-index: 9;
+}
+section#home:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2f0e8f;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 1;
+}
+video.hero-video {
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 h1 {
     font-size: 3.2rem !important;
@@ -1031,7 +1052,8 @@ ul.list-inline.socialLinks li.list-inline-item {
 }
 .pgHero {
     background-position: 90%;
-    padding: 180px 0 60px;
+    padding: 60px 0;
+    overflow: hidden;
 }
 section.pgHero figure {
     text-align: center;
