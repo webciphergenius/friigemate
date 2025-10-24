@@ -74,7 +74,7 @@ section#home:before {
     background: #7847D6;
     top: 0;
     left: 0;
-    opacity: .9;
+    opacity: .8;
     z-index: 1;
 }
 video.hero-video {
