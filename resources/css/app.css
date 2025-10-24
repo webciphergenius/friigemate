@@ -10,6 +10,7 @@ header.mainHead {
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 div#navbarSupportedContent {
     flex-grow: unset;
