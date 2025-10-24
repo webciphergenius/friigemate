@@ -71,10 +71,10 @@ section#home:before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #2f0e8f;
+    background: #7847D6;
     top: 0;
     left: 0;
-    opacity: 0.8;
+    opacity: .9;
     z-index: 1;
 }
 video.hero-video {
