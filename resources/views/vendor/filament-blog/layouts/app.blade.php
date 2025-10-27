@@ -206,7 +206,7 @@
                                         <li>How It Works?</li>
                                         <li><a href="/privacy-policy">Privacy Policy</a></li>
                                         <li><a href="/terms-of-service">Terms of Service</a></li>
-                                        <li><a href="#">Site Map</a></li>
+                                        <li><a href="https://gofreightmate.com/sitemap">Site Map</a></li>
                                     </ul>
                                 </div>
                             </div>
