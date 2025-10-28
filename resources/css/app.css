@@ -711,13 +711,13 @@ span.center-policy {
     position: relative;
     background: #fff url(../images/pop-bg-img.png) no-repeat;
     background-size: 100% 85%;
-    padding: 30px;
+    padding: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-    max-width: 750px;
+    max-width: 660px;
     animation: scaleUp 0.3s ease-in-out;
     margin-top: 60px;
     overflow-y: scroll;
-    height: 80vh;
+    height: 85vh;
 }
 .close-btn {
     position: absolute;
@@ -738,14 +738,14 @@ span.center-policy {
     padding: 10px 0 0;
 }
 .pop-header h3 {
-    font-size: 32px!important;
+    font-size: 28px!important;
     font-weight: 700!important;
     color: #fff;
     width: 70%;
     margin: 10px auto 0;
 }
 .pop-header h5 {
-    font-size: 22px!important;
+    font-size: 20px!important;
     font-weight: 400;
     margin: 5px 0;
     color: #fff;
@@ -768,7 +768,7 @@ span.center-policy {
     font-size: 24px !important;
 }
 .pop-body h4 {
-    font-size: 25px !important;
+    font-size: 22px !important;
     font-weight: 500;
     margin: 0 0 10px;
 }
@@ -800,7 +800,7 @@ span.center-policy {
     color: #fff;
     text-transform: capitalize;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     height: unset;
 }
 .highlight {
@@ -998,10 +998,11 @@ section#myblg figure img {
     margin-bottom: 10px;
 }
 .pop-header h3 {
-    font-size: 30px!important;
+    font-size: 24px!important;
+    width: 100%;
 }
 .pop-header h5 {
-    font-size: 22px!important;
+    font-size: 20px!important;
 }
 .pop-body {
     padding: 20px;
