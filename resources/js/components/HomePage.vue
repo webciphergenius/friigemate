@@ -415,7 +415,7 @@
                     <div class="col">
                         <div class="p-4 border rounded shadow-sm">
                             <img
-                                src="../../images/Vector (1).png"
+                                src="../../images/feature-icon01.png"
                                 alt="featured-icon"
                             />
                             <h5 class="mt-3">Free Trial</h5>
@@ -429,7 +429,7 @@
                     <div class="col">
                         <div class="p-4 border rounded shadow-sm">
                             <img
-                                src="../../images/Vector (2).png"
+                                src="../../images/feature-icon02.png"
                                 alt="featured-icon"
                             />
                             <h5 class="mt-3">Unique Design</h5>
@@ -443,7 +443,7 @@
                     <div class="col">
                         <div class="p-4 border rounded shadow-sm">
                             <img
-                                src="../../images/Vector (3).png"
+                                src="../../images/feature-icon03.png"
                                 alt="featured-icon"
                             />
                             <h5 class="mt-3">Cross-Platform</h5>
@@ -456,7 +456,7 @@
                     <div class="col">
                         <div class="p-4 border rounded shadow-sm">
                             <img
-                                src="../../images/Vector (4).png"
+                                src="../../images/feature-icon04.png"
                                 alt="featured-icon"
                             />
                             <h5 class="mt-3">User Friendly</h5>
@@ -470,7 +470,7 @@
                     <div class="col">
                         <div class="p-4 border rounded shadow-sm">
                             <img
-                                src="../../images/Vector (5).png"
+                                src="../../images/feature-icon05.png"
                                 alt="featured-icon"
                             />
                             <h5 class="mt-3">Mailer Engine</h5>
@@ -483,7 +483,7 @@
                     <div class="col">
                         <div class="p-4 border rounded shadow-sm">
                             <img
-                                src="../../images/Vector (6).png"
+                                src="../../images/feature-icon06.png"
                                 alt="featured-icon"
                             />
                             <h5 class="mt-3">Notifications</h5>
@@ -497,7 +497,7 @@
                     <div class="col">
                         <div class="p-4 border rounded shadow-sm">
                             <img
-                                src="../../images/Vector (7).png"
+                                src="../../images/feature-icon07.png"
                                 alt="featured-icon"
                             />
                             <h5 class="mt-3">Free Updates</h5>
@@ -511,7 +511,7 @@
                     <div class="col">
                         <div class="p-4 border rounded shadow-sm">
                             <img
-                                src="../../images/Vector (8).png"
+                                src="../../images/feature-icon08.png"
                                 alt="featured-icon"
                             />
                             <h5 class="mt-3">Fast Support</h5>
